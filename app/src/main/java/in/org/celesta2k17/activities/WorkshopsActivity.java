@@ -1,5 +1,4 @@
 package in.org.celesta2k17.activities;
-
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
@@ -7,13 +6,13 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Window;
-
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.adapters.WorkshopsRecyclerViewAdapter;
 
-public class LecturesActivity extends AppCompatActivity implements WorkshopsRecyclerViewAdapter.ListCardClick {
+public class WorkshopsActivity extends AppCompatActivity implements WorkshopsRecyclerViewAdapter.ListCardClick {
 
     RecyclerView recyclerView;
     WorkshopsRecyclerViewAdapter workshopsRecyclerViewAdapter;
@@ -22,10 +21,11 @@ public class LecturesActivity extends AppCompatActivity implements WorkshopsRecy
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
-        setContentView(R.layout.activity_lectures);
+        setContentView(R.layout.activity_workshops);
 
-        recyclerView = findViewById(R.id.rv_events);
-
+        recyclerView = findViewById(R.id.rv_workshops);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setHasFixedSize(true);
         Resources resources = getResources();
 

@@ -7,7 +7,7 @@
     tools:context="in.org.celesta2k17.activities.LecturesActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_events"
+        android:id="@+id/rv_lec"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:isScrollContainer="true">

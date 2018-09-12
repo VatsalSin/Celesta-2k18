@@ -4,6 +4,8 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="my_profile">My Profile</string>
     <string name="events">Events</string>
+    <string name="lectures">Lectures</string>
+    <string name="workshops">Workshops</string>
     <string name="schedule">Schedule</string>
     <string name="team">Team</string>
     <string name="developers">App Developers</string>
@@ -68,7 +70,6 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="url_forgot_password">http://celesta.org.in/reset</string>
     <string name="username">User Name </string>
-
     <string name="sign_up_label">Sign Up</string>
     <string name="log_in_label">Log In</string>
     <string name="email_hint">Email</string>

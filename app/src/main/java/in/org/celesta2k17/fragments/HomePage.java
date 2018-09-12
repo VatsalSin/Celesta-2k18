@@ -13,10 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
+import in.org.celesta2k17.activities.LecturesActivity;
+import in.org.celesta2k17.activities.WorkshopsActivity;
 import in.org.celesta2k17.activities.ScheduleActivity;
 import in.org.celesta2k17.activities.SocialActivity;
-
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.activities.DevelopersActivity;
 import in.org.celesta2k17.activities.EventsActivity;
@@ -127,13 +127,13 @@ public class HomePage extends android.support.v4.app.Fragment {
         scheduleLinearLayout = rootView.findViewById(R.id.schedule);
         scheduleLinearLayout.setOnClickListener(v -> {
 //                comingSoonToast.show();
-            Intent intent = new Intent(rootView.getContext(), ScheduleActivity.class);
+            Intent intent = new Intent(rootView.getContext(), LecturesActivity.class);
             startActivity(intent);
         });
 
         devLinearLayout = rootView.findViewById(R.id.developers);
         devLinearLayout.setOnClickListener(v -> {
-            Intent intent = new Intent(rootView.getContext(), DevelopersActivity.class);
+            Intent intent = new Intent(rootView.getContext(), WorkshopsActivity.class);
             startActivity(intent);
         });
 

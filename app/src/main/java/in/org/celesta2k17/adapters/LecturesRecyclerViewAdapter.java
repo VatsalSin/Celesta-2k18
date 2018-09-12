@@ -34,7 +34,7 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
         this.eventTopic= eventTopic;
         this.intent = intent;
         mOnClickListener = listCardClick;
-        images = img;
+                                                                                                                                                                                                                                                                                    images = img;
         this.context = context;
     }
 
@@ -47,17 +47,16 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
         LecturesViewHolder lecturesViewHolder = new LecturesViewHolder(view);
         return lecturesViewHolder;
     }
-
     @Override
     public void onBindViewHolder(LecturesViewHolder holder, int position) {
         lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],intent[position],images.getResourceId(position, -1));
         dataList.add(clubsData);
         holder.textViewHeader.setText(eventHeader[position]);
-        holder.textViewDate.setText(eventDate[position]);
-        holder.textViewVenue.setText(eventVenue[position]);
-        holder.textViewTime.setText(eventTime[position]);
-        holder.textViewTopic.setText(eventTopic[position]);
-        holder.textViewIntro.setText(eventIntro[position]);
+        holder.textViewDate.setText("Date:- "+eventDate[position]);
+        holder.textViewVenue.setText("Venue:- "+eventVenue[position]);
+        holder.textViewTime.setText("Time"+eventTime[position]);
+        holder.textViewTopic.setText("Topic:- "+eventTopic[position]);
+        holder.textViewIntro.setText("About:- "+eventIntro[position]);
         holder.imageView.setImageResource(images.getResourceId(position, -1));
     }
     @Override
@@ -75,10 +74,9 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
         TextView textViewTopic;
         TextView textViewIntro;
         ImageView imageView;
-
         public LecturesViewHolder(View itemView) {
             super(itemView);
-            textViewHeader = (TextView) itemView.findViewById(R.id.card_header);
+            textViewHeader = (TextView) itemView.findViewById(R.id.card_Headers);
             textViewDate = (TextView) itemView.findViewById(R.id.card_text_date);
             textViewTime = (TextView) itemView.findViewById(R.id.card_text_time);
             textViewTopic = (TextView) itemView.findViewById(R.id.card_text_topic);
