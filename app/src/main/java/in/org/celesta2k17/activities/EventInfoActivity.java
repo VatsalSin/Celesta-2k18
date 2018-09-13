@@ -1,24 +1,43 @@
 package in.org.celesta2k17.activities;
 
+import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
+
 
 import com.bumptech.glide.Glide;
 
 import in.org.celesta2k17.R;
 
-public class EventInfoActivity extends AppCompatActivity {
+public class EventInfoActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
 
+    private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR  = 0.9f;
+    private static final float PERCENTAGE_TO_HIDE_TITLE_DETAILS     = 0.3f;
+    private static final int ALPHA_ANIMATIONS_DURATION              = 200;
+
+    private boolean mIsTheTitleVisible          = false;
+    private boolean mIsTheTitleContainerVisible = true;
+
+    private LinearLayout mTitleContainer;
+    private TextView mTitle;
+    private AppBarLayout mAppBarLayout;
+    private Toolbar mToolbar;
     public static final String EXTRA_HEADER = "Header",
             EXTRA_DESCRIPTION = "Text",
             EXTRA_RULES = "Rules",
@@ -40,9 +59,12 @@ public class EventInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_info);
-
-        final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsing_tb_event_info);
-
+        mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
+        mTitle          = (TextView) findViewById(R.id.main_textview_title);
+        mTitleContainer = (LinearLayout) findViewById(R.id.main_linearlayout_title);
+        mAppBarLayout   = (AppBarLayout) findViewById(R.id.main_appbar);
+        mAppBarLayout.addOnOffsetChangedListener(this);
+        startAlphaAnimation(mTitle, 0, View.INVISIBLE);
         // Get the Intent that started this activity and extract the strings needed
         Intent intent = getIntent();
         final String header = intent.getStringExtra(EXTRA_HEADER);
@@ -52,27 +74,10 @@ public class EventInfoActivity extends AppCompatActivity {
         String venue = intent.getStringExtra(EXTRA_VENUE);
         final int imageId = intent.getIntExtra(EXTRA_IMAGE_ID, -1);
 
-        AppBarLayout appBarLayout = findViewById(R.id.appbar_event_info);
-        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-            boolean isShow = false;
-            int scrollRange = -1;
 
-            @Override
-            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                if (scrollRange == -1) {
-                    scrollRange = appBarLayout.getTotalScrollRange();
-                }
-                if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbarLayout.setTitle(header);
-                    isShow = true;
-                } else if(isShow) {
-                    collapsingToolbarLayout.setTitle(" ");//careful there should a space between double quote otherwise it wont work
-                    isShow = false;
-                }
-            }
-        });
 
         ((TextView) findViewById(R.id.event_info_name)).setText(header);
+        mTitle.setText(header);
         if (imageId != -1)
             Glide.with(this)
                     .load(imageId)
@@ -116,7 +121,7 @@ public class EventInfoActivity extends AppCompatActivity {
         else
             ((TextView) findViewById(R.id.event_venue)).setVisibility(View.GONE);
 
-        FloatingActionButton fab = findViewById(R.id.fab_share_event);
+        /*FloatingActionButton fab = findViewById(R.id.fab_share_event);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,7 +136,7 @@ public class EventInfoActivity extends AppCompatActivity {
                 shareIntent.setType("text/plain");
                 startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
             }
-        });
+        });*/
     }
 
     @Override
@@ -144,4 +149,57 @@ public class EventInfoActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+    @Override
+    public void onOffsetChanged(AppBarLayout appBarLayout, int offset) {
+        int maxScroll = appBarLayout.getTotalScrollRange();
+        float percentage = (float) Math.abs(offset) / (float) maxScroll;
+
+        handleAlphaOnTitle(percentage);
+        handleToolbarTitleVisibility(percentage);
+    }
+    private void handleToolbarTitleVisibility(float percentage) {
+        if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
+
+            if(!mIsTheTitleVisible) {
+                startAlphaAnimation(mTitle, ALPHA_ANIMATIONS_DURATION, View.VISIBLE);
+                mIsTheTitleVisible = true;
+            }
+
+        } else {
+
+            if (mIsTheTitleVisible) {
+                startAlphaAnimation(mTitle, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
+                mIsTheTitleVisible = false;
+            }
+        }
+    }
+
+    private void handleAlphaOnTitle(float percentage) {
+        if (percentage >= PERCENTAGE_TO_HIDE_TITLE_DETAILS) {
+            if(mIsTheTitleContainerVisible) {
+                startAlphaAnimation(mTitleContainer, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
+                mIsTheTitleContainerVisible = false;
+            }
+
+        } else {
+
+            if (!mIsTheTitleContainerVisible) {
+                startAlphaAnimation(mTitleContainer, ALPHA_ANIMATIONS_DURATION, View.VISIBLE);
+                mIsTheTitleContainerVisible = true;
+            }
+        }
+    }
+
+    public static void startAlphaAnimation (View v, long duration, int visibility) {
+        AlphaAnimation alphaAnimation = (visibility == View.VISIBLE)
+                ? new AlphaAnimation(0f, 1f)
+                : new AlphaAnimation(1f, 0f);
+
+        alphaAnimation.setDuration(duration);
+        alphaAnimation.setFillAfter(true);
+        v.startAnimation(alphaAnimation);
+    }
 }
+
