@@ -57,11 +57,11 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
         lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],intent[position],images.getResourceId(position, -1));
         dataList.add(clubsData);
         holder.textViewHeader.setText(eventHeader[position]);
-        holder.textViewDate.setText(eventDate[position]);
-        holder.textViewVenue.setText(eventVenue[position]);
-        holder.textViewTime.setText(eventTime[position]);
-        holder.textViewTopic.setText(eventTopic[position]);
-        holder.textViewIntro.setText(eventIntro[position]);
+        holder.textViewDate.setText("Date:- "+eventDate[position]);
+        holder.textViewVenue.setText("Venue:- "+eventVenue[position]);
+        holder.textViewTime.setText("Time:- "+eventTime[position]);
+        holder.textViewTopic.setText("Topics:- "+eventTopic[position]);
+        holder.textViewIntro.setText("Takeaways:- "+eventIntro[position]);
         holder.imageView.setImageResource(images.getResourceId(position, -1));
     }
     @Override
@@ -82,7 +82,7 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
 
         public WorkshopsViewHolder(View itemView) {
             super(itemView);
-            textViewHeader = (TextView) itemView.findViewById(R.id.card_header);
+            textViewHeader = (TextView) itemView.findViewById(R.id.card_Headers);
             textViewDate = (TextView) itemView.findViewById(R.id.card_text_date);
             textViewTime = (TextView) itemView.findViewById(R.id.card_text_time);
             textViewTopic = (TextView) itemView.findViewById(R.id.card_text_topic);
