@@ -10,13 +10,15 @@ public class lAndwData {
     public String time;
     public String topics;
     public String venue;
+    public String organiser;
+    public String contacts;
     public String intro;
     public String intentClass;
     public int img;
     public String description;
 
 
-    public lAndwData(String header,String date,String time,String venue,String intro,String description,String topics,String intentClass,int img) {
+    public lAndwData(String header,String date,String time,String venue,String intro,String description,String topics,String organiser,String contacts,int img) {
         this.headers=header;
         this.intro=intro;
         this.topics=topics;
@@ -26,6 +28,8 @@ public class lAndwData {
         this.date = date;
         this.time = time;
         this.venue = venue;
+        this.organiser=organiser;
+        this.contacts=contacts;
     }
 
 }

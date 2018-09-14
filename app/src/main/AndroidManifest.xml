@@ -39,8 +39,22 @@
                 android:value="in.org.celesta2k17.activities.MainActivity" />
         </activity>
         <activity
+            android:name=".activities.ActivityPronite"
+            android:label="@string/events">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.org.celesta2k17.activities.MainActivity" />
+        </activity>
+        <activity
             android:name=".activities.LecturesActivity"
             android:label="@string/lectures">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.org.celesta2k17.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.landwInfoActivity"
+            android:label="">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />

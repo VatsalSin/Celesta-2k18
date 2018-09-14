@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import in.org.celesta2k17.R;
+import in.org.celesta2k17.data.EventsData;
 import in.org.celesta2k17.data.lAndwData;
 import java.util.ArrayList;
 public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRecyclerViewAdapter.LecturesViewHolder> {
@@ -19,22 +20,25 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
     String eventVenue[];
     String eventIntro[];
     String eventDescription[];
+    String eventOrganiser[];
+    String eventContacts[];
     String intent[];
     String eventTopic[];
     TypedArray images;
     Context context;
 
-    public LecturesRecyclerViewAdapter(Context context, ListCardClick listCardClick,String eventTopic[] ,String eventHeader[], String eventDate[],String eventTime[],String eventVenue[],String eventIntro[],String eventDescription[] ,String intent[], TypedArray img) {
+    public LecturesRecyclerViewAdapter(Context context, ListCardClick listCardClick,String eventTopic[] ,String eventHeader[], String eventDate[],String eventTime[],String eventVenue[],String eventIntro[],String eventDescription[] ,String eventOrganiser[],String eventContacts[], TypedArray img) {
         this.eventHeader = eventHeader;
         this.eventDescription = eventDescription;
         this.eventDate = eventDate;
         this.eventTime= eventTime;
         this.eventVenue= eventVenue;
         this.eventIntro= eventIntro;
+        this.eventOrganiser=eventOrganiser;
+        this.eventContacts=eventContacts;
         this.eventTopic= eventTopic;
-        this.intent = intent;
         mOnClickListener = listCardClick;
-                                                                                                                                                                                                                                                                                    images = img;
+        images = img;
         this.context = context;
     }
 
@@ -49,7 +53,7 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
     }
     @Override
     public void onBindViewHolder(LecturesViewHolder holder, int position) {
-        lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],intent[position],images.getResourceId(position, -1));
+        lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],eventOrganiser[position],eventContacts[position],images.getResourceId(position, -1));
         dataList.add(clubsData);
         holder.textViewHeader.setText(eventHeader[position]);
         holder.textViewDate.setText("Date:- "+eventDate[position]);
@@ -64,7 +68,7 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
         return eventHeader.length;
     }
     public interface ListCardClick {
-        void onListClick(String intent) throws ClassNotFoundException;
+        void onListClick(lAndwData eventsData, View view) throws ClassNotFoundException;
     }
     class LecturesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView textViewHeader;
@@ -90,7 +94,7 @@ public class LecturesRecyclerViewAdapter extends RecyclerView.Adapter<LecturesRe
         public void onClick(View v) {
             int position = getAdapterPosition();
             try {
-                mOnClickListener.onListClick(dataList.get(position).intentClass);
+                mOnClickListener.onListClick(dataList.get(position), v);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }

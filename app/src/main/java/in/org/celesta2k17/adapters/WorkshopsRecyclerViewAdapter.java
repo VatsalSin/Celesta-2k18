@@ -23,12 +23,13 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
     String eventVenue[];
     String eventIntro[];
     String eventDescription[];
-    String intent[];
+    String eventOrganiser[];
+    String eventContacts[];
     String eventTopic[];
     TypedArray images;
     Context context;
 
-    public WorkshopsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventTopic[] , String eventHeader[], String eventDate[], String eventTime[], String eventVenue[], String eventIntro[], String eventDescription[] , String intent[], TypedArray img) {
+    public WorkshopsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventTopic[] , String eventHeader[], String eventDate[], String eventTime[], String eventVenue[], String eventIntro[], String eventDescription[] , String eventOrganiser[],String eventContact[] ,TypedArray img) {
         this.eventHeader = eventHeader;
         this.eventDescription = eventDescription;
         this.eventDate = eventDate;
@@ -36,7 +37,8 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
         this.eventVenue= eventVenue;
         this.eventIntro= eventIntro;
         this.eventTopic= eventTopic;
-        this.intent = intent;
+        this.eventContacts = eventContact;
+        this.eventOrganiser=eventOrganiser;
         mOnClickListener = listCardClick;
         images = img;
         this.context = context;
@@ -54,7 +56,7 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
 
     @Override
     public void onBindViewHolder(WorkshopsViewHolder holder, int position) {
-        lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],intent[position],images.getResourceId(position, -1));
+        lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],eventOrganiser[position],eventContacts[position],images.getResourceId(position, -1));
         dataList.add(clubsData);
         holder.textViewHeader.setText(eventHeader[position]);
         holder.textViewDate.setText("Date:- "+eventDate[position]);
@@ -69,7 +71,7 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
         return eventHeader.length;
     }
     public interface ListCardClick {
-        void onListClick(String intent) throws ClassNotFoundException;
+        void onListClick(lAndwData eventsData, View view) throws ClassNotFoundException;
     }
     class WorkshopsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView textViewHeader;
@@ -96,7 +98,7 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
         public void onClick(View v) {
             int position = getAdapterPosition();
             try {
-                mOnClickListener.onListClick(dataList.get(position).intentClass);
+                mOnClickListener.onListClick(dataList.get(position), v);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }

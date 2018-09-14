@@ -59,7 +59,16 @@
         <item>Senate Hall</item>
         <item>Senate Hall</item>
     </string-array>
-
+    <string-array name="array_lec_organiser">
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+    </string-array>
+    <string-array name="array_lec_contacts">
+        <item>9989898999</item>
+        <item>9989898999</item>
+        <item>9989898999</item>
+    </string-array>
     <string-array name="array_lec_intro">
     <item>Prof at MIT and noble prize winner in physics</item>
     <item>Prof at MIT and noble prize winner in physics</item>
@@ -71,9 +80,9 @@
         <item>@drawable/abhishekjaiswal</item>
     </string-array>
     <string-array name="array_lec_description">
-        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics</item>
-        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics</item>
-        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics..Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.git status</item>
     </string-array>
 
     <string-array name="array_workshop_headers">
@@ -87,7 +96,16 @@
         <item>Modern physics and Astroparticles</item>
         <item>Modern physics and Astroparticles</item>
     </string-array>
-
+    <string-array name="array_workshop_organiser">
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+    </string-array>
+    <string-array name="array_workshop_contacts">
+        <item>9989898999</item>
+        <item>9989898999</item>
+        <item>9989898999</item>
+    </string-array>
     <string-array name="array_workshop_date">
         <item>October 28 2018</item>
         <item>October 28 2018</item>
