@@ -158,6 +158,7 @@ public class HomePage extends android.support.v4.app.Fragment {
         faqLinearLayout.setOnClickListener(v -> {
            Intent intent = new Intent(rootView.getContext() ,FaqActivity.class);
            startActivity(intent);
+
         });
         return rootView;
     }
