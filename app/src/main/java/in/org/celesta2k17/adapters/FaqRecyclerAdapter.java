@@ -20,16 +20,18 @@ public class FaqRecyclerAdapter extends RecyclerView.Adapter<FaqRecyclerAdapter.
 
     private List<Faq_answer> Faq;
     private LayoutInflater mInflater;
-    private ItemClickListener mClickListener;
-
+    public ItemClickListener mClickListener;
+    Context context;
     public FaqRecyclerAdapter(Context context, List<Faq_answer> faq) {
-        this.mInflater = LayoutInflater.from(context);
         this.Faq = faq;
     }
 
     @NonNull
     @Override
     public FaqViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        context  = parent.getContext();
+        this.mInflater = LayoutInflater.from(context);
+
         View view = mInflater.inflate(R.layout.activity_faq, parent, false);
         return new FaqViewHolder(view);
 
@@ -56,7 +58,7 @@ public class FaqRecyclerAdapter extends RecyclerView.Adapter<FaqRecyclerAdapter.
             super(itemView);
             question_textView = itemView.findViewById(R.id.question_textview);
             answer_textView = itemView.findViewById(R.id.answer_text_view);
-//            itemView.setOnClickListener(this);
+            itemView.setOnClickListener(this);
         }
 
         @Override
@@ -65,14 +67,14 @@ public class FaqRecyclerAdapter extends RecyclerView.Adapter<FaqRecyclerAdapter.
         }
     }
 
-    Faq_answer getItem(int id) {
-        return Faq.get(id);
-    }
+//    Faq_answer getItem(int id) {
+//        return Faq.get(id);
+//    }
 
     // allows clicks events to be caught
-    void setClickListener(ItemClickListener itemClickListener) {
-        this.mClickListener = itemClickListener;
-    }
+//    void setClickListener(ItemClickListener itemClickListener) {
+//        this.mClickListener = itemClickListener;
+//    }
 
     // parent activity will implement this method to respond to click events
     public interface ItemClickListener {
