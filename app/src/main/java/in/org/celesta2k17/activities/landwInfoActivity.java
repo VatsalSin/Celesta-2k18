@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -51,6 +52,7 @@ public class landwInfoActivity extends AppCompatActivity implements AppBarLayout
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_landw_info);
         mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
         mTitle          = (TextView) findViewById(R.id.main_textview_title);
