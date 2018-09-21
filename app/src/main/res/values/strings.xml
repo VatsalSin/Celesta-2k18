@@ -110,4 +110,10 @@
     <string name="log_in">Log In</string>
     <string name="log_out">Log Out</string>
     <string name="faq">FAQ</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="answer">Answer</string>
+    <string name="default_rating">100</string>
+    <string name="question">Question</string>
+    <string name="rating_imageView">rating_imageView</string>
 </resources>
