@@ -23,12 +23,12 @@ public class FaqActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq);
         List<Faq_answer> Faq = new ArrayList<>();
-        Faq.add(new Faq_answer("Question", "Answer"));
-        Faq.add(new Faq_answer("Question", "Answer"));
-        Faq.add(new Faq_answer("Question", "Answer"));
-        Faq.add(new Faq_answer("Question", "Answer"));
-        Faq.add(new Faq_answer("Question", "Answer"));
-        recyclerView = findViewById(R.id.rv_events);
+        Faq.add(new Faq_answer("Question", "Answer","100"));
+        Faq.add(new Faq_answer("Question", "Answer","100"));
+        Faq.add(new Faq_answer("Question", "Answer","100"));
+        Faq.add(new Faq_answer("Question", "Answer","100"));
+        Faq.add(new Faq_answer("Question", "Answer","100"));
+        recyclerView = findViewById(R.id.rv_faq);
         faqRecyclerAdapter = new FaqRecyclerAdapter(FaqActivity.this, Faq);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(FaqActivity.this);
         recyclerView.setLayoutManager(linearLayoutManager);
