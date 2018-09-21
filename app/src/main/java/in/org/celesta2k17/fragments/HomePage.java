@@ -129,6 +129,10 @@ public class HomePage extends android.support.v4.app.Fragment {
         scheduleLinearLayout.setOnClickListener(v -> {
 //                comingSoonToast.show();
 
+    
+
+            Intent intent = new Intent(rootView.getContext(), ScheduleActivity.class);
+            startActivity(intent);
         });
 
         devLinearLayout = rootView.findViewById(R.id.developers);
@@ -140,6 +144,7 @@ public class HomePage extends android.support.v4.app.Fragment {
         sponsorsLinearLayout = rootView.findViewById(R.id.sponsors_menu_item);
         sponsorsLinearLayout.setOnClickListener(view -> comingSoonToast.show());
 
+
         teamLinearLayout = rootView.findViewById(R.id.team);
         teamLinearLayout.setOnClickListener(v -> {
             Intent intent = new Intent(rootView.getContext(), TeamActivity.class);
@@ -150,12 +155,14 @@ public class HomePage extends android.support.v4.app.Fragment {
         socialLinearLayout.setOnClickListener(v -> {
             Intent intent= new Intent(rootView.getContext(), SocialActivity.class) ;
             startActivity(intent);
+
         });
 
         faqLinearLayout = rootView.findViewById(R.id.faq);
         faqLinearLayout.setOnClickListener(v -> {
            Intent intent = new Intent(rootView.getContext() ,FaqActivity.class);
            startActivity(intent);
+
         });
         return rootView;
     }
