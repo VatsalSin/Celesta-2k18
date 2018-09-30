@@ -1,5 +1,4 @@
 package in.org.celesta2k17.activities;
-
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -121,7 +120,7 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         else
             ((TextView) findViewById(R.id.event_venue)).setVisibility(View.GONE);
 
-        /*FloatingActionButton fab = findViewById(R.id.fab_share_event);
+        FloatingActionButton fab = findViewById(R.id.fab_share_event);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,7 +135,7 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
                 shareIntent.setType("text/plain");
                 startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
             }
-        });*/
+        });
     }
 
     @Override
