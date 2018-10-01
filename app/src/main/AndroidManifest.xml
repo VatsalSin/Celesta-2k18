@@ -40,7 +40,8 @@
         </activity>
         <activity
             android:name=".activities.ActivityPronite"
-            android:label="@string/events">
+            android:label="@string/pronite"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />

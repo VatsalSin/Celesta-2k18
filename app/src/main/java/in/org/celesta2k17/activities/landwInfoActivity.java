@@ -1,8 +1,10 @@
 package in.org.celesta2k17.activities;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.method.LinkMovementMethod;
@@ -115,14 +117,14 @@ public class landwInfoActivity extends AppCompatActivity implements AppBarLayout
         else
             ((TextView) findViewById(R.id.event_venue)).setVisibility(View.GONE);
 
-        /*FloatingActionButton fab = findViewById(R.id.fab_share_event);
+        FloatingActionButton fab = findViewById(R.id.fab_share_event);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Resources resources = getResources();
                 String shareString = resources.getText(R.string.share_message) + "\n"
                         + resources.getText(R.string.name) + ": " + header + "\n"
-                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
+                        + resources.getText(R.string.date_time) + ": " + (date.equals("-1") ? "Keep checking the app and website for updates." : date) + "\n"
                         + finalText;
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
@@ -130,7 +132,7 @@ public class landwInfoActivity extends AppCompatActivity implements AppBarLayout
                 shareIntent.setType("text/plain");
                 startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
             }
-        });*/
+        });
     }
 
     @Override

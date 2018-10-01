@@ -231,4 +231,14 @@
         app:startToolbarPosition="2dp"
         app:startXPosition="2dp"
         />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_share_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_share_white_24dp"
+        app:backgroundTint="@android:color/holo_blue_light" />
 </android.support.design.widget.CoordinatorLayout>
