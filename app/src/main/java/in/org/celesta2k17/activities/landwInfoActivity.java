@@ -1,31 +1,24 @@
 package in.org.celesta2k17.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AlphaAnimation;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.text.method.LinkMovementMethod;
-import android.view.MenuItem;
-
 
 import com.bumptech.glide.Glide;
 
 import in.org.celesta2k17.R;
 
-public class EventInfoActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
+public class landwInfoActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
 
     private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR  = 0.9f;
     private static final float PERCENTAGE_TO_HIDE_TITLE_DETAILS     = 0.3f;
@@ -42,7 +35,8 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
             EXTRA_DESCRIPTION = "Text",
             EXTRA_RULES = "Rules",
             EXTRA_VENUE = "Venue",
-            EXTRA_DATE_TIME = "DateTime",
+            EXTRA_DATE = "Date",
+            EXTRA_TIME = "Time",
             EXTRA_IMAGE_ID = "ImageId",
             EXTRA_ORGANIZERS = "Organizers",
             EXTRA_CONTACTS = "Contacts";
@@ -58,7 +52,8 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_info);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_landw_info);
         mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
         mTitle          = (TextView) findViewById(R.id.main_textview_title);
         mTitleContainer = (LinearLayout) findViewById(R.id.main_linearlayout_title);
@@ -69,8 +64,8 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         Intent intent = getIntent();
         final String header = intent.getStringExtra(EXTRA_HEADER);
         String text = intent.getStringExtra(EXTRA_DESCRIPTION);
-        String rules = intent.getStringExtra(EXTRA_RULES);
-        final String dateTime = intent.getStringExtra(EXTRA_DATE_TIME);
+        final String date = intent.getStringExtra(EXTRA_DATE);
+        final String time = intent.getStringExtra(EXTRA_TIME);
         String venue = intent.getStringExtra(EXTRA_VENUE);
         final int imageId = intent.getIntExtra(EXTRA_IMAGE_ID, -1);
 
@@ -93,12 +88,6 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         final String finalText = text.equals("-1") ? "Keep checking the app and website for updates." : text;
 
         TextView rulesTextView = findViewById(R.id.event_rules_textview);
-        if (rules.equals("-1")) {
-            rulesTextView.setVisibility(View.GONE);
-            (findViewById(R.id.rules_header)).setVisibility(View.GONE);
-        } else {
-            rulesTextView.setText(rules);
-        }
         String organizers = intent.getStringExtra(EXTRA_ORGANIZERS);
         final String contacts = intent.getStringExtra(EXTRA_CONTACTS);
         if (organizers.equals("-1"))
@@ -111,10 +100,15 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         else
             ((TextView) findViewById(R.id.event_contact)).setText(contacts);
 
-        if (!dateTime.equals("-1"))
-            ((TextView) findViewById(R.id.event_date_time)).setText(dateTime);
+        if (!time.equals("-1"))
+            ((TextView) findViewById(R.id.event_date)).setText(time);
         else
-            ((TextView) findViewById(R.id.event_date_time)).setVisibility(View.GONE);
+            ((TextView) findViewById(R.id.event_date)).setVisibility(View.GONE);
+
+        if (!date.equals("-1"))
+            ((TextView) findViewById(R.id.event_time)).setText(date);
+        else
+            ((TextView) findViewById(R.id.event_time)).setVisibility(View.GONE);
 
         if (!venue.equals("-1"))
             ((TextView) findViewById(R.id.event_venue)).setText(venue);

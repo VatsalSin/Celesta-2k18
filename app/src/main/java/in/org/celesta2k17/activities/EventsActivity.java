@@ -1,5 +1,4 @@
 package in.org.celesta2k17.activities;
-
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;

@@ -58,8 +58,9 @@ public class ClubsRecyclerViewAdapter extends RecyclerView.Adapter<ClubsRecycler
 
         holder.textViewHeader.setText(eventHeader[position]);
 
-        if (!eventText[position].equals("-1"))
+        if (!eventText[position].equals("-1")) {
             holder.textViewData.setText(eventText[position]);
+        }
         else {
             holder.textViewData.setVisibility(View.GONE);
             holder.textViewHeader.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
