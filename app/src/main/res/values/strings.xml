@@ -112,4 +112,11 @@
     <string name="this_was_a_whole_new_level_of_race_foe_jkdjfd_dfjdidfd_fdf_dd_fdkfdjfkdjfdfdfd_fdfd_fdfdfdfldfjdlfjdldjfdlfdjdljdldjdlfjddldjf">This was a whole new level of race foe jkdjfd dfjdidfd fdf dd fdkfdjfkdjfdfdfd fdfd fdfdfdfldfjdlfjdldjfdlfdjdljdldjdlfjddldjf</string>
     <string name="log_in">Log In</string>
     <string name="log_out">Log Out</string>
+    <string name="faq">FAQ</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="answer">Answer</string>
+    <string name="default_rating">100</string>
+    <string name="question">Question</string>
+    <string name="rating_imageView">rating_imageView</string>
 </resources>
