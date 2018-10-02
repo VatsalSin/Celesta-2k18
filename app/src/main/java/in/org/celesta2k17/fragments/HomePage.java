@@ -1,5 +1,4 @@
 package in.org.celesta2k17.fragments;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,12 +10,13 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import in.org.celesta2k17.activities.ActivityPronite;
+import in.org.celesta2k17.activities.LecturesActivity;
+import in.org.celesta2k17.activities.WorkshopsActivity;
 import in.org.celesta2k17.activities.ScheduleActivity;
 import in.org.celesta2k17.activities.SocialActivity;
-
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.activities.DevelopersActivity;
 import in.org.celesta2k17.activities.EventsActivity;
@@ -24,8 +24,6 @@ import in.org.celesta2k17.activities.TeamActivity;
 import in.org.celesta2k17.activities.FaqActivity;
 import in.org.celesta2k17.adapters.EventsAdapter;
 import in.org.celesta2k17.listeners.ViewPagerCustomDuration;
-
-
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -38,16 +36,16 @@ public class HomePage extends android.support.v4.app.Fragment {
 
     final long DELAY_MS = 500;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 2000; // time in milliseconds between successive task executions.
-    LinearLayout eventsLinearLayout;
+    View eventsLinearLayout;
     //    LinearLayout galleryLinearLayout;
-    LinearLayout aboutFrameLayout;
-    LinearLayout scheduleLinearLayout;
-    LinearLayout sponsorsLinearLayout;
-    LinearLayout teamLinearLayout;
-    LinearLayout devLinearLayout;
-    LinearLayout faqLinearLayout;
 
-    LinearLayout socialLinearLayout ;
+    View aboutFrameLayout;
+    View scheduleLinearLayout;
+    View sponsorsLinearLayout;
+    View teamLinearLayout;
+    View devLinearLayout;
+    View proniteLinearLayout;
+    View socialLinearLayout ;
     Toast comingSoonToast;
 
     private int currentPage = 0;
@@ -119,28 +117,37 @@ public class HomePage extends android.support.v4.app.Fragment {
 
         });
 
-        aboutFrameLayout = rootView.findViewById(R.id.about);
+        /*aboutFrameLayout = rootView.findViewById(R.id.about);
         aboutFrameLayout.setOnClickListener(v -> {
 //                Intent intent = new Intent(rootView.getContext(), AboutActivity.class);
 //                startActivity(intent);
             comingSoonToast.show();
-        });
+        });*/
 
         scheduleLinearLayout = rootView.findViewById(R.id.schedule);
         scheduleLinearLayout.setOnClickListener(v -> {
 //                comingSoonToast.show();
-            Intent intent = new Intent(rootView.getContext(), ScheduleActivity.class);
+    
+
+            //Intent intent = new Intent(rootView.getContext(), ScheduleActivity.class);
+            Intent intent = new Intent(rootView.getContext(), LecturesActivity.class);
             startActivity(intent);
         });
 
-        devLinearLayout = rootView.findViewById(R.id.developers);
+        /*devLinearLayout = rootView.findViewById(R.id.developers);
         devLinearLayout.setOnClickListener(v -> {
-            Intent intent = new Intent(rootView.getContext(), DevelopersActivity.class);
+            Intent intent = new Intent(rootView.getContext(), WorkshopsActivity.class);
+            startActivity(intent);
+        });*/
+         proniteLinearLayout = rootView.findViewById(R.id.pronites);
+        proniteLinearLayout.setOnClickListener(v -> {
+            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
             startActivity(intent);
         });
 
-        sponsorsLinearLayout = rootView.findViewById(R.id.sponsors_menu_item);
+       /* sponsorsLinearLayout = rootView.findViewById(R.id.sponsors_menu_item);
         sponsorsLinearLayout.setOnClickListener(view -> comingSoonToast.show());
+
 
         teamLinearLayout = rootView.findViewById(R.id.team);
         teamLinearLayout.setOnClickListener(v -> {
@@ -152,14 +159,14 @@ public class HomePage extends android.support.v4.app.Fragment {
         socialLinearLayout.setOnClickListener(v -> {
             Intent intent= new Intent(rootView.getContext(), SocialActivity.class) ;
             startActivity(intent);
-        });
 
         faqLinearLayout = rootView.findViewById(R.id.faq);
         faqLinearLayout.setOnClickListener(v -> {
            Intent intent = new Intent(rootView.getContext() ,FaqActivity.class);
            startActivity(intent);
 
-        });
+        });*/
+
         return rootView;
     }
 }

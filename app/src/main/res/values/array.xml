@@ -8,6 +8,14 @@
         <item>@drawable/electro_exquizite</item>
         <item>@drawable/mind_benders</item>
     </integer-array>
+    <integer-array name="array_pronite_slide_show">
+        <item>@drawable/capture_the_flag</item>
+        <item>@drawable/robowars</item>
+        <item>@drawable/tech_exhibition</item>
+        <item>@drawable/static_rush2</item>
+        <item>@drawable/electro_exquizite</item>
+        <item>@drawable/mind_benders</item>
+    </integer-array>
     <string-array name="array_event_headers">
         <item>Lets Code!!</item>
         <item>Robotics</item>
@@ -22,6 +30,124 @@
         <item>Management</item>
     </string-array>
 
+    <string-array name="array_lec_headers">
+        <item>Prof. Walter Lewtin</item>
+        <item>Prof. Walter Lewtin</item>
+        <item>Prof. Walter Lewtin</item>
+    </string-array>
+
+    <string-array name="array_lec_topics">
+        <item>Modern physics and Astroparticles</item>
+        <item>Modern physics and Astroparticles</item>
+        <item>Modern physics and Astroparticles</item>
+    </string-array>
+
+    <string-array name="array_lec_date">
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+    </string-array>
+
+    <string-array name="array_lec_time">
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+    </string-array>
+
+    <string-array name="array_lec_venue">
+        <item>Senate Hall</item>
+        <item>Senate Hall</item>
+        <item>Senate Hall</item>
+    </string-array>
+    <string-array name="array_lec_organiser">
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+    </string-array>
+    <string-array name="array_lec_contacts">
+        <item>9989898999</item>
+        <item>9989898999</item>
+        <item>9989898999</item>
+    </string-array>
+    <string-array name="array_lec_intro">
+    <item>Prof at MIT and noble prize winner in physics</item>
+    <item>Prof at MIT and noble prize winner in physics</item>
+    <item>Prof at MIT and noble prize winner in physics</item>
+    </string-array>
+    <string-array name="array_lec_images">
+        <item>@drawable/abhishekjaiswal</item>
+        <item>@drawable/abhishekjaiswal</item>
+        <item>@drawable/abhishekjaiswal</item>
+    </string-array>
+    <string-array name="array_lec_description">
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics..Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.git status</item>
+    </string-array>
+
+    <string-array name="array_workshop_headers">
+        <item>Prof. Walter Lewtin</item>
+        <item>Prof. Walter Lewtin</item>
+        <item>Prof. Walter Lewtin</item>
+    </string-array>
+
+    <string-array name="array_workshop_topics">
+        <item>Modern physics and Astroparticles</item>
+        <item>Modern physics and Astroparticles</item>
+        <item>Modern physics and Astroparticles</item>
+    </string-array>
+    <string-array name="array_workshop_organiser">
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+        <item>mk yadav</item>
+    </string-array>
+    <string-array name="array_workshop_contacts">
+        <item>9989898999</item>
+        <item>9989898999</item>
+        <item>9989898999</item>
+    </string-array>
+    <string-array name="array_workshop_date">
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+    </string-array>
+
+    <string-array name="array_workshop_time">
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+        <item>October 28 2018</item>
+    </string-array>
+
+    <string-array name="array_workshop_venue">
+        <item>Senate Hall</item>
+        <item>Senate Hall</item>
+        <item>Senate Hall</item>
+    </string-array>
+    <string-array name="array_lec_intent">
+        <item>in.org.celesta2k17.activities.CodingEvents</item>
+        <item>in.org.celesta2k17.activities.RoboticsEvents</item>
+        <item>in.org.celesta2k17.activities.ExpoEvents</item>
+    </string-array>
+    <string-array name="array_workshop_intent">
+        <item>in.org.celesta2k17.activities.CodingEvents</item>
+        <item>in.org.celesta2k17.activities.RoboticsEvents</item>
+        <item>in.org.celesta2k17.activities.ExpoEvents</item>
+    </string-array>
+    <string-array name="array_workshop_intro">
+        <item>Prof at MIT and noble prize winner in physics</item>
+        <item>Prof at MIT and noble prize winner in physics</item>
+        <item>Prof at MIT and noble prize winner in physics</item>
+    </string-array>
+    <string-array name="array_workshop_images">
+        <item>@drawable/abhishekjaiswal</item>
+        <item>@drawable/abhishekjaiswal</item>
+        <item>@drawable/abhishekjaiswal</item>
+    </string-array>
+    <string-array name="array_workshop_description">
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics</item>
+        <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics</item>
+    </string-array>
     <string-array name="array_event_text">
         <item>Not Just Another Computer Klub</item>
         <item>The Electrical Engineering Club</item>
