@@ -160,7 +160,13 @@ public class HomePage extends android.support.v4.app.Fragment {
             Intent intent= new Intent(rootView.getContext(), SocialActivity.class) ;
             startActivity(intent);
 
+        faqLinearLayout = rootView.findViewById(R.id.faq);
+        faqLinearLayout.setOnClickListener(v -> {
+           Intent intent = new Intent(rootView.getContext() ,FaqActivity.class);
+           startActivity(intent);
+
         });*/
+
         return rootView;
     }
 }
