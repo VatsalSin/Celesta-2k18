@@ -6,7 +6,9 @@
     <dimen name="appbar_padding_top">8dp</dimen>
     <item name="match_parent" format="integer" type="dimen">-1</item>
     <item name="wrap_content" format="integer" type="dimen">-2</item>
-
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
     <dimen name="auth_page_margin">24dp</dimen>
     <dimen name="folded_size">20sp</dimen>
     <dimen name="unfolded_size">40sp</dimen>
