@@ -1,35 +1,32 @@
 package in.org.celesta2k17.activities;
-import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+
 import android.content.Intent;
 import android.content.res.Resources;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.text.method.LinkMovementMethod;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-
-
+import android.view.View;
+import android.view.Window;
+import android.view.animation.AlphaAnimation;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import com.bumptech.glide.Glide;
-
+import java.util.Timer;
+import java.util.TimerTask;
 import in.org.celesta2k17.R;
-
-public class EventInfoActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
-
+import in.org.celesta2k17.adapters.EventsAdapter;
+import in.org.celesta2k17.listeners.ViewPagerCustomDuration;
+import static in.org.celesta2k17.activities.landwInfoActivity.startAlphaAnimation;
+public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
     private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR  = 0.9f;
     private static final float PERCENTAGE_TO_HIDE_TITLE_DETAILS     = 0.3f;
     private static final int ALPHA_ANIMATIONS_DURATION              = 200;
-
     private boolean mIsTheTitleVisible          = false;
     private boolean mIsTheTitleContainerVisible = true;
 
@@ -37,15 +34,12 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
     private TextView mTitle;
     private AppBarLayout mAppBarLayout;
     private Toolbar mToolbar;
-    public static final String EXTRA_HEADER = "Header",
-            EXTRA_DESCRIPTION = "Text",
-            EXTRA_RULES = "Rules",
-            EXTRA_VENUE = "Venue",
-            EXTRA_DATE_TIME = "DateTime",
-            EXTRA_IMAGE_ID = "ImageId",
-            EXTRA_ORGANIZERS = "Organizers",
-            EXTRA_CONTACTS = "Contacts";
 
+    final long DELAY_MS = 500;//delay in milliseconds before task is to be executed
+    final long PERIOD_MS = 2000; // time in milliseconds between successive task executions.
+    private int currentPage = 0;
+    Timer timer ;
+    private int NUM_PAGES = 6;
     @Override
     public void onLowMemory() {
         super.onLowMemory();
@@ -53,82 +47,52 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         Glide.get(getApplicationContext()).trimMemory(TRIM_MEMORY_COMPLETE);
         System.gc();
     }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_info);
+
+        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+        setContentView(R.layout.activity_pronite);
         mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
         mTitle          = (TextView) findViewById(R.id.main_textview_title);
         mTitleContainer = (LinearLayout) findViewById(R.id.main_linearlayout_title);
         mAppBarLayout   = (AppBarLayout) findViewById(R.id.main_appbar);
         mAppBarLayout.addOnOffsetChangedListener(this);
         startAlphaAnimation(mTitle, 0, View.INVISIBLE);
-        // Get the Intent that started this activity and extract the strings needed
-        Intent intent = getIntent();
-        final String header = intent.getStringExtra(EXTRA_HEADER);
-        String text = intent.getStringExtra(EXTRA_DESCRIPTION);
-        String rules = intent.getStringExtra(EXTRA_RULES);
-        final String dateTime = intent.getStringExtra(EXTRA_DATE_TIME);
-        String venue = intent.getStringExtra(EXTRA_VENUE);
-        final int imageId = intent.getIntExtra(EXTRA_IMAGE_ID, -1);
 
+        final ViewPagerCustomDuration viewPagerCustomDuration = findViewById(R.id.events_pager);
+        viewPagerCustomDuration.setScrollDuration(900);
+        EventsAdapter eventsAdapter = new EventsAdapter(this,
+                getResources().obtainTypedArray(R.array.array_pronite_slide_show));
 
+        viewPagerCustomDuration.setAdapter(eventsAdapter);
+        viewPagerCustomDuration.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-        ((TextView) findViewById(R.id.event_info_name)).setText(header);
-        mTitle.setText(header);
-        if (imageId != -1)
-            Glide.with(this)
-                    .load(imageId)
-                    .into((ImageView) findViewById(R.id.event_info_imageview));
+            }
 
-        if (text.equals("-1"))
-            findViewById(R.id.event_info_textview).setVisibility(View.GONE);
-        else {
-            ((TextView) findViewById(R.id.event_info_textview)).setText(text);
-        }
+            @Override
+            public void onPageSelected(int position) {
+                currentPage = position;
+            }
 
-        ((TextView)findViewById(R.id.event_info_textview)).setMovementMethod(LinkMovementMethod.getInstance());
-        final String finalText = text.equals("-1") ? "Keep checking the app and website for updates." : text;
+            @Override
+            public void onPageScrollStateChanged(int state) {
 
-        TextView rulesTextView = findViewById(R.id.event_rules_textview);
-        if (rules.equals("-1")) {
-            rulesTextView.setVisibility(View.GONE);
-            (findViewById(R.id.rules_header)).setVisibility(View.GONE);
-        } else {
-            rulesTextView.setText(rules);
-        }
-        String organizers = intent.getStringExtra(EXTRA_ORGANIZERS);
-        final String contacts = intent.getStringExtra(EXTRA_CONTACTS);
-        if (organizers.equals("-1"))
-            ((TextView) findViewById(R.id.event_organizers)).setVisibility(View.GONE);
-        else
-            ((TextView) findViewById(R.id.event_organizers)).setText(organizers);
-
-        if (contacts.equals("-1"))
-            ((TextView) findViewById(R.id.event_contact)).setVisibility(View.GONE);
-        else
-            ((TextView) findViewById(R.id.event_contact)).setText(contacts);
-
-        if (!dateTime.equals("-1"))
-            ((TextView) findViewById(R.id.event_date_time)).setText(dateTime);
-        else
-            ((TextView) findViewById(R.id.event_date_time)).setVisibility(View.GONE);
-
-        if (!venue.equals("-1"))
-            ((TextView) findViewById(R.id.event_venue)).setText(venue);
-        else
-            ((TextView) findViewById(R.id.event_venue)).setVisibility(View.GONE);
-
+            }
+        });
+        /*Adding automatic swap to the images
+        * */
         FloatingActionButton fab = findViewById(R.id.fab_share_event);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Resources resources = getResources();
-                String shareString = resources.getText(R.string.share_message) + "\n"
-                        + resources.getText(R.string.name) + ": " + header + "\n"
-                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
-                        + finalText;
+                String shareString = "temp";
+                // resources.getText(R.string.share_message) + "\n"
+//                        + resources.getText(R.string.name) + ": " + header + "\n"
+//                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
+//                        + finalText;
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
@@ -136,9 +100,24 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
                 startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
             }
         });
-    }
+        final Handler handler = new Handler();
+        final Runnable Update = () -> {
+            if (currentPage == NUM_PAGES) {
+                currentPage = 0;
+            }
+            viewPagerCustomDuration.setCurrentItem(currentPage++, true);
+        };
 
-    @Override
+        timer = new Timer(); // This will create a new Thread
+        timer.schedule(new TimerTask() { // task to be scheduled
+
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, DELAY_MS, PERIOD_MS);
+
+    }
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
@@ -201,4 +180,3 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         v.startAnimation(alphaAnimation);
     }
 }
-
