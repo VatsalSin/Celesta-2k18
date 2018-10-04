@@ -83,6 +83,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
+        <activity
+        android:name=".activities.FaqActivity"
+        android:label="@string/faq">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activities.MainActivity" />
+    </activity>
         <!-- <activity -->
         <!-- android:name=".fragments.GalleryFragment" -->
         <!-- android:label="@string/gallery"> -->

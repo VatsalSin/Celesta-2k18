@@ -4,9 +4,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -23,14 +28,49 @@ import in.org.celesta2k17.adapters.PageFragmentAdapter;
 public class MainActivity extends AppCompatActivity {
 
     private Menu menu = null;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        drawerLayout = findViewById(R.id.home);
+        navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.menu_item_sponsors:
+                        Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.menu_item_faq:
+                        startActivity( new Intent(MainActivity.this, FaqActivity.class));
+                        break;
+                    case R.id.menu_item_about:
+                        Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.menu_item_profile:
+                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                                                break;
+                    case R.id.menu_item_logout:
+                        Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
+
+                        break;
+                    case R.id.menu_item_schedule:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+
+                }
+                item.setChecked(true);
+                drawerLayout.closeDrawers();
+
+                return true;
+            }
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         /*
@@ -59,6 +99,11 @@ public class MainActivity extends AppCompatActivity {
 
         for (int i = 0; i < mPageFragmentAdapter.getCount(); i++)
             Objects.requireNonNull(tabLayout.getTabAt(i)).setIcon(tabIcons[i]);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
     }
 
 
@@ -92,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if (id == android.R.id.home) {
+            drawerLayout.openDrawer(GravityCompat.START);
+            return true;
+        }
         if (id == R.id.action_log_out) {
             SharedPreferences.Editor sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this).edit();
             sharedPreferences.putBoolean(getString(R.string.login_status), false);
@@ -120,8 +169,7 @@ public class MainActivity extends AppCompatActivity {
         if (!sharedPreferences.getBoolean(getString(R.string.login_status), false)) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
-        }
-        else{
+        } else {
             setContentView(R.layout.activity_register_signup_or_signin);
             TextView fullNameTextView = findViewById(R.id.fullName);
             TextView nameTextView = findViewById(R.id.nameTextView);
@@ -148,4 +196,5 @@ public class MainActivity extends AppCompatActivity {
             refreshMenu();
         }
     }
+
 }

@@ -30,6 +30,8 @@
     <string name="event_participated">event_participated</string>
     <string name="first_name_hint">First Name</string>
     <string name="last_name_hint">Last Name</string>
+    <string name="map">Map</string>
+    <string name="exhibitions">Exhibitions</string>
     <string name="college_hint">College</string>
     <string name="email_id_hint">Email ID</string>
     <string name="password_hint">Password</string>
@@ -112,4 +114,11 @@
     <string name="this_was_a_whole_new_level_of_race_foe_jkdjfd_dfjdidfd_fdf_dd_fdkfdjfkdjfdfdfd_fdfd_fdfdfdfldfjdlfjdldjfdlfdjdljdldjdlfjddldjf">This was a whole new level of race foe jkdjfd dfjdidfd fdf dd fdkfdjfkdjfdfdfd fdfd fdfdfdfldfjdlfjdldjfdlfdjdljdldjdlfjddldjf</string>
     <string name="log_in">Log In</string>
     <string name="log_out">Log Out</string>
+    <string name="faq">FAQ</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="answer">Answer</string>
+    <string name="default_rating">100</string>
+    <string name="question">Question</string>
+    <string name="rating_imageView">rating_imageView</string>
 </resources>
