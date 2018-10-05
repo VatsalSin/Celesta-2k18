@@ -14,9 +14,7 @@ import android.widget.Toast;
 
 import in.org.celesta2k17.activities.ActivityPronite;
 import in.org.celesta2k17.activities.LecturesActivity;
-import in.org.celesta2k17.activities.WorkshopsActivity;
-import in.org.celesta2k17.activities.ScheduleActivity;
-import in.org.celesta2k17.activities.SocialActivity;
+
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.activities.DevelopersActivity;
 import in.org.celesta2k17.activities.EventsActivity;

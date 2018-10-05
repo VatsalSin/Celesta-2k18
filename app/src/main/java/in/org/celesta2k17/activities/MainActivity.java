@@ -49,19 +49,38 @@ public class MainActivity extends AppCompatActivity {
                         startActivity( new Intent(MainActivity.this, FaqActivity.class));
                         break;
                     case R.id.menu_item_about:
-                        Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                        startActivity( new Intent(MainActivity.this, AboutActivity.class));
                         break;
                     case R.id.menu_item_profile:
                         startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                                                break;
+                        break;
                     case R.id.menu_item_logout:
                         Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
-
                         break;
                     case R.id.menu_item_schedule:
                         startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
                         break;
-
+                    case R.id.menu_item_lectures:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+                    case R.id.menu_item_workshops:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+                    case R.id.menu_item_exhibitions:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+                    case R.id.menu_item_team:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+                    case R.id.menu_item_developers:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+                    case R.id.menu_item_events:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
+                    case R.id.menu_item_map:
+                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        break;
                 }
                 item.setChecked(true);
                 drawerLayout.closeDrawers();
