@@ -13,5 +13,5 @@ Celesta-2k18 includes various features like
 - Participants can login from their account and check the upcoming events as well as their progress.
 
 ## Developers 
-Created by a group of students of IIT Patna
+Created by a group of students of IIT Patna.
 
