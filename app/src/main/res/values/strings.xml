@@ -30,6 +30,8 @@
     <string name="event_participated">event_participated</string>
     <string name="first_name_hint">First Name</string>
     <string name="last_name_hint">Last Name</string>
+    <string name="map">Map</string>
+    <string name="exhibitions">Exhibitions</string>
     <string name="college_hint">College</string>
     <string name="email_id_hint">Email ID</string>
     <string name="password_hint">Password</string>
