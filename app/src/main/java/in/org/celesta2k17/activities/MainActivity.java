@@ -61,25 +61,27 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
                         break;
                     case R.id.menu_item_lectures:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        startActivity(new Intent(MainActivity.this, LecturesActivity.class));
                         break;
                     case R.id.menu_item_workshops:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        startActivity(new Intent(MainActivity.this, WorkshopsActivity.class));
                         break;
                     case R.id.menu_item_exhibitions:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        startActivity(new Intent(MainActivity.this, ExpoEvents.class));
                         break;
                     case R.id.menu_item_team:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        startActivity(new Intent(MainActivity.this, TeamActivity.class));
                         break;
                     case R.id.menu_item_developers:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        startActivity(new Intent(MainActivity.this, DevelopersActivity.class));
                         break;
                     case R.id.menu_item_events:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        startActivity(new Intent(MainActivity.this, EventsActivity.class));
                         break;
                     case R.id.menu_item_map:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                        String uri="https://www.google.com/maps/d/viewer?mid=1Tub6_KM_0Tv8UHkh97SP9Tehv78HBv1e&usp=sharingax&basemap=satellite";
+                        Intent intent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(uri));
+                        Objects.requireNonNull(MainActivity.this).startActivity(intent);
                         break;
                 }
                 item.setChecked(true);
