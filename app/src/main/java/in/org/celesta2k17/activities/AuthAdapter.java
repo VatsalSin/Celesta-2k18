@@ -11,10 +11,8 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
-
 import java.util.List;
 import java.util.Objects;
-
 import in.org.celesta2k17.R;
 
 public class AuthAdapter extends FragmentStatePagerAdapter
