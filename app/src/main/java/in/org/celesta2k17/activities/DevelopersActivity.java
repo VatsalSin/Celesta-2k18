@@ -20,7 +20,7 @@ public class DevelopersActivity extends AppCompatActivity {
         ImageView github_mayank = findViewById(R.id.github_mayank);
         ImageView github_manish = findViewById(R.id.github_manish);
         ImageView fb_muks = findViewById(R.id.fb_muks);
-sta        ImageView fb_mayank = findViewById(R.id.fb_mayank);
+        ImageView fb_mayank = findViewById(R.id.fb_mayank);
         ImageView fb_manish = findViewById(R.id.fb_manish);
 
         String urls[] = {

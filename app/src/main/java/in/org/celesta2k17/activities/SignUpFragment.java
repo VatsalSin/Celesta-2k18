@@ -10,22 +10,19 @@ import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.content.ContextCompat;
 import android.text.Editable;
+import android.widget.EditText;
 import android.util.TypedValue;
 import android.view.View;
-
 import com.transitionseverywhere.ChangeBounds;
 import com.transitionseverywhere.Transition;
 import com.transitionseverywhere.TransitionManager;
 import com.transitionseverywhere.TransitionSet;
-
 import java.util.List;
 import java.util.Objects;
-
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import in.org.celesta2k17.R;
-//import in.org.celesta2k17.R;
-
+import android.widget.Toast;
 
 public class SignUpFragment extends AuthFragment{
 
@@ -36,6 +33,9 @@ public class SignUpFragment extends AuthFragment{
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        EditText password1 = (EditText)view.findViewById(R.id.password_input_edit);
+        EditText password2 = (EditText)view.findViewById(R.id.confirm_password_edit);
+        EditText emailHolder = (EditText)view.findViewById(R.id.email_input_edit);
         super.onViewCreated(view, savedInstanceState);
         view.setBackgroundColor(ContextCompat.getColor(Objects.requireNonNull(getContext()), R.color.color_sign_up));
         caption.setText(getString(R.string.sign_up_label));
@@ -60,6 +60,31 @@ public class SignUpFragment extends AuthFragment{
                 }
             });
         }
+        Toast  errorPassToast = android.widget.Toast.makeText(getContext(), getResources().getString(R.string.PasswordMismatch), Toast.LENGTH_LONG);
+        Toast  errorEmptyToast = android.widget.Toast.makeText(getContext(), getResources().getString(R.string.EmptyFields), Toast.LENGTH_LONG);
+        caption.setOnClickListener(v -> {
+            String pass1 = password1.getText().toString();
+            String pass2 = password2.getText().toString();
+            String email = emailHolder.getText().toString();
+            if(pass1.equals("") && pass2.equals("") && email.equals(""))
+            {
+
+            }
+            else if(pass1.equals("") || pass2.equals("") || email.equals(""))
+            {
+                errorEmptyToast.show();
+            }
+            else if(pass1.equals(pass2))
+            {
+                android.content.Intent intent = new android.content.Intent(getContext(), RegisterActivity.class);
+                startActivity(intent);
+            }
+            else if(!pass1.equals(pass2) && !pass2.equals(""))
+            {
+
+                errorPassToast.show();
+            }
+        });
         caption.setVerticalText(true);
         foldStuff();
         caption.setTranslationX(getTextPadding());

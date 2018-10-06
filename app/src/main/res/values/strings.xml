@@ -8,9 +8,11 @@
     <string name="lectures">Lectures</string>
     <string name="workshops">Workshops</string>
     <string name="schedule">Schedule</string>
+    <string name="PasswordMismatch">Password Mismatch</string>
     <string name="pronite">Pro Nite</string>
     <string name="team">Team</string>
     <string name="developers">App Developers</string>
+    <string name="EmptyFields">Please fill all the fields</string>
     <string name="sponsors">Sponsors</string>
     <string name="about">About</string>
     <string name="gallery">Gallery</string>
