@@ -8,12 +8,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
+import android.content.Intent;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
+import android.widget.EditText;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -34,6 +34,8 @@ public class RegisterActivity extends AppCompatActivity {
     TextInputLayout collegeNameWrapper;
     TextInputLayout emailIDWrapper;
     TextInputLayout passwordWrapper;
+    EditText emailText;
+    EditText password;
     TextInputLayout confirmPasswordWrapper;
     TextInputLayout mobileNoWrapper;
     String mName;
@@ -50,18 +52,30 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
 
         mUrl = getString(R.string.register_url);
         mQueue = Volley.newRequestQueue(this);
         buttonRegister = findViewById(R.id.button_register);
         firstNameWrapper = findViewById(R.id.first_name_wrapper);
         lastNameWrapper = findViewById(R.id.last_name_wrapper);
+        emailText = (EditText)findViewById(R.id.email_id);
+        password = (EditText)findViewById(R.id.password);
         collegeNameWrapper = findViewById(R.id.college_name_wrapper);
         emailIDWrapper = findViewById(R.id.email_id_wrapper);
         passwordWrapper = findViewById(R.id.password_wrapper);
         confirmPasswordWrapper = findViewById(R.id.confirm_password_wrapper);
         mobileNoWrapper = findViewById(R.id.mobile_no_wrapper);
-
+         if(!bundle.isEmpty())
+        {
+            mEmail = bundle.getString("email");
+            mPassword = bundle.getString("pass");
+            emailIDWrapper.setHintAnimationEnabled(false);
+            passwordWrapper.setHintAnimationEnabled(false);
+            emailText.setText(mEmail);
+            password.setText(mPassword);
+        }
         setHints();
         buttonRegister.setOnClickListener(v -> {
             clearErrors();

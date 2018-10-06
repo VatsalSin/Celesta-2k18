@@ -77,11 +77,14 @@ public class SignUpFragment extends AuthFragment{
             else if(pass1.equals(pass2))
             {
                 android.content.Intent intent = new android.content.Intent(getContext(), RegisterActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("email",email);
+                bundle.putString("pass",pass1);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
             else if(!pass1.equals(pass2) && !pass2.equals(""))
             {
-
                 errorPassToast.show();
             }
         });
