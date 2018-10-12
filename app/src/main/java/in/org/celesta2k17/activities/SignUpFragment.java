@@ -30,7 +30,7 @@ public class SignUpFragment extends AuthFragment{
             R.id.password_input_edit,
             R.id.confirm_password_edit})
     protected List<TextInputEditText> views;
-
+    Bundle bundle;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         EditText password1 = (EditText)view.findViewById(R.id.password_input_edit);
@@ -77,11 +77,14 @@ public class SignUpFragment extends AuthFragment{
             else if(pass1.equals(pass2))
             {
                 android.content.Intent intent = new android.content.Intent(getContext(), RegisterActivity.class);
+                bundle = new Bundle();
+                bundle.putString("email",email);
+                bundle.putString("password",pass1);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
             else if(!pass1.equals(pass2) && !pass2.equals(""))
             {
-
                 errorPassToast.show();
             }
         });
