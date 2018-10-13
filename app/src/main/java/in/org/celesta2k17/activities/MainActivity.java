@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
     private Menu menu = null;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         drawerLayout = findViewById(R.id.home);
         navigationView = findViewById(R.id.navigation_view);
+
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -138,8 +138,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void refreshMenu() {
+
         if (menu != null) {
+            Menu menu1 = navigationView.getMenu();
+            MenuItem profileItem = menu1.findItem(R.id.menu_item_profile);
+            MenuItem logOutItem = menu1.findItem(R.id.menu_item_logout);
             SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+            if (!sharedPreferences.getBoolean(getString(R.string.login_status), false)) {
+                profileItem.setTitle(R.string.log_in);
+                logOutItem.setVisible(false);
+            } else {
+                profileItem.setTitle(R.string.profile);
+                logOutItem.setVisible(true);
+            }
             if (!sharedPreferences.getBoolean(getString(R.string.login_status), false)) {
                 menu.findItem(R.id.action_log_out).setVisible(false);
                 menu.findItem(R.id.action_log_in).setVisible(true);
