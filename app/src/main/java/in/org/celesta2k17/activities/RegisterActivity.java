@@ -1,5 +1,6 @@
 package in.org.celesta2k17.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -29,6 +31,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     private static final String EMAIL_PATTERN = "^[a-zA-Z0-9#_~!$&'()*+,;=:.\"(),:;<>@\\[\\]\\\\]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*$";
     Button buttonRegister;
+    EditText emailIdEditText;
+    EditText passwordEditText;
+    EditText confirmPasswordEditText;
     TextInputLayout firstNameWrapper;
     TextInputLayout lastNameWrapper;
     TextInputLayout collegeNameWrapper;
@@ -45,12 +50,16 @@ public class RegisterActivity extends AppCompatActivity {
     RequestQueue mQueue;
     private String mUrl;
     private Pattern pattern = Pattern.compile(EMAIL_PATTERN);
-
+    Intent intent;
+    Bundle bundle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        intent = getIntent();
+        bundle = intent.getExtras();
+        mEmail = bundle.getString("email");
+        mPassword = bundle.getString("password");
         mUrl = getString(R.string.register_url);
         mQueue = Volley.newRequestQueue(this);
         buttonRegister = findViewById(R.id.button_register);
@@ -61,6 +70,13 @@ public class RegisterActivity extends AppCompatActivity {
         passwordWrapper = findViewById(R.id.password_wrapper);
         confirmPasswordWrapper = findViewById(R.id.confirm_password_wrapper);
         mobileNoWrapper = findViewById(R.id.mobile_no_wrapper);
+        emailIdEditText = findViewById(R.id.email_id);
+        passwordEditText = findViewById(R.id.password);
+        confirmPasswordEditText = findViewById(R.id.password_confirm);
+
+        emailIdEditText.setText(mEmail);
+        passwordEditText.setText(mPassword);
+        confirmPasswordEditText.setText(mPassword);
 
         setHints();
         buttonRegister.setOnClickListener(v -> {
