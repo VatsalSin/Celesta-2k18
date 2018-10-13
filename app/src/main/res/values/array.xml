@@ -22,9 +22,8 @@
         <item>Expo</item>
         <item>Build It!!</item>
         <item>Debate</item>
-        <item>Social</item>
         <item>Design</item>
-        <item>Photography</item>
+        <item>Non Tech</item>
         <item>Treasure Hunt</item>
         <item>Quiz-wiz</item>
         <item>Management</item>
@@ -168,7 +167,6 @@
         <item>in.org.celesta2k17.activities.ExpoEvents</item>
         <item>in.org.celesta2k17.activities.BuildItEvents</item>
         <item>in.org.celesta2k17.activities.DebateEvents</item>
-        <item>in.org.celesta2k17.activities.SocialEvents</item>
         <item>in.org.celesta2k17.activities.DesignEvents</item>
         <item>in.org.celesta2k17.activities.PhotographyEvents</item>
         <item>in.org.celesta2k17.activities.TreasureHunt</item>
@@ -182,7 +180,6 @@
         <item>@drawable/expo</item>
         <item>@drawable/build_it</item>
         <item>@drawable/debate</item>
-        <item>@drawable/social</item>
         <item>@drawable/design</item>
         <item>@drawable/photography</item>
         <item>@drawable/treasure_hunt</item>
