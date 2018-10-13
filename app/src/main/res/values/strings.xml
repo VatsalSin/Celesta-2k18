@@ -72,7 +72,7 @@
     <string name="follow_us">Follow us </string>
     <string name="official_website">Our official website</string>
     <string name="coming_soon">Coming Soon</string>
-    <string name="url_login">https://celesta.org.in/api/login</string>
+    <string name="url_login">http://celesta.org.in/apiLe/login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="url_forgot_password">http://celesta.org.in/reset</string>
     <string name="username">User Name </string>
