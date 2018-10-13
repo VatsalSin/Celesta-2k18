@@ -37,6 +37,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         drawerLayout = findViewById(R.id.home);
         navigationView = findViewById(R.id.navigation_view);
+        Menu menu = navigationView.getMenu();
+        MenuItem profileItem = menu.findItem(R.id.menu_item_profile);
+        MenuItem logOutItem = menu.findItem(R.id.menu_item_logout);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        if (!sharedPreferences.getBoolean(getString(R.string.login_status), false)) {
+            profileItem.setTitle(R.string.log_in);
+            logOutItem.setVisible(false);
+        } else {
+            profileItem.setTitle(R.string.profile);
+            logOutItem.setVisible(true);
+        }
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
