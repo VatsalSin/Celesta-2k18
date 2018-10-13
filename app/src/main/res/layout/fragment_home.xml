@@ -30,10 +30,8 @@
                 android:layout_marginBottom="0dp" />
             </android.support.v7.widget.CardView>
             <LinearLayout
-                android:id="@+id/social"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:orientation="vertical"
@@ -48,13 +46,15 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <android.support.v7.widget.CardView
+                            android:id="@+id/myProfile"
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
                             card_view:cardElevation="20dp"
                             android:padding="0dp"
                             android:layout_margin="4dp"
                             app:cardBackgroundColor="@color/colorMyProfile"
-                            android:onClick="toMyProfile">
+                            android:onClick="toMyProfile"
+                            >
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
