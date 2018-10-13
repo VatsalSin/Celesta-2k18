@@ -517,68 +517,107 @@
         <item>Tutorial Block - Room No. 107</item>
     </string-array>
 
-    <!--Photography Events-->
-    <string-array name="array_photography_event_headers">
-        <item>LENSART</item>
+    <!--nontech Events-->
+    <string-array name="array_nontech_event_headers">
+        <item>FIFA-CSGO-DOTA2-PUBG Mobile</item>
+        <item>Tech Photography</item>
+        <item>Tech Sketching</item>
+        <item>Graffiti</item>
+        <item>HERO NO BATTLE ROYALE</item>
     </string-array>
 
-    <string-array name="array_photography_event_text">
-        <item>Photography is a tool by which we can freeze the time and have a look back in the past. ACE brings you a chance of showing your photography skills! ACE brings you a chance of showing your photography skills!</item>
+    <string-array name="array_nontech_event_text">
+        <item>For every winner, a loser and for every triumph, a defeat. A story that doesn’t end on the pitch, a smoke that refuses to fade, the ancients that are yet to fall. The dust hasn’t settled yet, wounds still fresh, and the dying embers still flicker. We are once again at a new juncture, a chance for redemption, a chance to prove worthy, a chance to rise up once again and battle your way against all odds to promiseland. The time has come once again. Come be a part of this glorious battle and put your skills to test in FIFA, CSGO and DOTA2 and fight all the way to top. Show no mercy, make most of the moment, clutch it, score it, and be God-like!!!</item>
+        <item>“Click!” The only prerequisite to be a photographer, is to be able to see the world differently. And while the camera lens offers you only a small and restricted view, it encompasses a thousand emotions and voices, that sing the tale of what lies beyond the entirety. Celesta presents Tech-Photography, where you have the camera, you have the view, and all you need to do is just find the right angle! Tech-Photography will have you scoping for the technical events running live in Celesta, and your best shot will be your best chance at winning the prize. The best pictures taken by you will be uploaded on Facebook where the viewers will have the chance to vote for their favorites. More the number of points on your post, more will be the chances of you emerging victorious! So what are you waiting for? Pack your gear, and let your Instagrammer spirit loose!</item>
+        <item>Carve your brain in the papers plane!! An artist is the one who can sketch storm of emotions from stress, revolutions from war and peace from struggle. Your sketch can convey more than reality! and your shades can design the universe out of a single piece of paper. Celesta 'Tech-sketching' brings in the opportunity to portrait the real artist in you.So pack your instruments and get ready to breath out your imagination and enliven the canvas!</item>
+        <item>It’s time to bend the rules and let your creativity flow unbridled! Let the walls that remain unscathed by the flow of time be reminded that they do not limit oneself and that we create our own fate, we are the owners of our own design. And to scale these walls, we don’t always need our might, for our greatest weapon is our imagination! This year, Celesta brings you Graffiti, an event where you get to break the normal traditions of drawing and painting and try your own free style to win exciting prizes that await your arrival! The spray cans will be provided during the event itself. The interested can participate in a team of 3-4 members. Revolt against your inner demons and let the artist in yourself free from the cages of your desire!</item>
+        <item>Isn't life boring.... Cuz everything is so plain and normal.... But when you enter a realm where everything is possible. Where you can do whatever your imagination allows you to do. That's where your fantasy lies. All of us, at some point of time, have invested our previous time in tv series, movies, animes, video games. But have you ever wondered where this huge reservior of knowledge can be used? This event is the best place to use your sci fi knowledge. All you have to do is decipher a set of riddles. But there's more....You can also gain special power ups, handpicked from various sci-fi reserviors, that can help you steal points from other teams.... So are you ready..... To dive into the multiverse..... Cuz there is one thing that we can assure you.... YOU WON'T BE DISAPPOINTED!</item>
     </string-array>
 
-    <string-array name="array_photography_event_rules">
-        <item>Phase 1 :\nHere the paticipant has to click a photo and mail it to ace@iitp.ac.in with the\nsubject “Entry for Lensart” with a description. Also the participant has to\nsend the snapshot of the EXIF data of the picture. The theme and the\ndeadline will be uploaded on the our page weekly. Participants have to\ncheck the page regularly.\nhttps://www.facebook.com/CelestaIITP/\n\nNote : The participant can get the EXIF data of the picture on the following link :\nhttp://exifdata.com/\nPhase 2 :\nIn this phase, photos will be uploaded on the following page weekly.\nhttps://www.facebook.com/CelestaIITP/\nThe participants need to comment a caption for the picture.</item>
+    <string-array name="array_nontech_event_rules">
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
     </string-array>
 
-    <string-array name="array_photography_event_date_time">
+    <string-array name="array_nontech_event_date_time">
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
         <item>-1</item>
     </string-array>
 
-    <string-array name="array_photography_event_venue">
-        <item>Online Event</item>
+    <string-array name="array_nontech_event_venue">
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
-    <integer-array name="array_photography_event_images">
+    <integer-array name="array_nontech_event_images">
+        <item>@drawable/lensart_final</item>
+        <item>@drawable/lensart_final</item>
+        <item>@drawable/lensart_final</item>
+        <item>@drawable/lensart_final</item>
         <item>@drawable/lensart_final</item>
     </integer-array>
 
-    <string-array name="array_photography_organizers">
-        <item>Rohit\nAbhinav Gyan</item>
+    <string-array name="array_nontech_organizers">
+        <item>Harshit Singh(FIFA)\n Pranil(CSGO)\n Anshul Koshiyari(DOTA2)\n Kshitij Jain(PUBG Mobile)</item>
+        <item>Rakshit Maheshwari</item>
+        <item>Rakshit Maheshwari</item>
+        <item>Rakshit Maheshwari</item>
+        <item>Yuvi Dhelawat\n Arohan Panda\n Maurya Bhatt\n Atul Gupta</item>
     </string-array>
 
-    <string-array name="array_photography_contacts">
-        <item> - 8409560519\n</item>
+    <string-array name="array_nontech_contacts">
+        <item>- 7355674747\n - 6201169731\n - 8356975835\n - 9131604185</item>
+    </string-array>
+
+    <string-array name="array_nontech_links">
+        <item>https://celesta.org.in/event_.php?eveID=10301</item>
+        <item>https://celesta.org.in/event_.php?eveID=10302</item>
+        <item>https://celesta.org.in/event_.php?eveID=10303</item>
+        <item>https://celesta.org.in/event_.php?eveID=10304</item>
+        <item>https://celesta.org.in/event_.php?eveID=10305</item>
+    </string-array>
+
+    <string-array name="array_nontech_rule_links">
+        <item>https://drive.google.com/open?id=15A0IKGJv5887PJFmf6B6veQgq13Lca3s</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>https://docs.google.com/document/d/1Ux4HWrhmzmN2aAf-8x0ezfVRj3oomHpczedU_dUoj_o/edit?usp=sharing</item>
     </string-array>
 
     <!--Treasure Hunt Events-->
     <string-array name="array_treasure_event_headers">
-        <item>Chem-o-quest</item>
-        <item>Spark Fun</item>
+        <item>NJATH</item>
         <item>Static Rush</item>
     </string-array>
 
     <string-array name="array_treasure_event_text">
-        <item>"Chemoquest is a theme based treasure hunt. The competition comprises of a multi-level hunt for chemical compounds and then perform a chemical reaction with those compounds. The event will start from the given venue where the first riddle will be given. The contestants must have to solve the riddle to reach the next spot where they will get the next riddle . After collecting all the chemical compounds, the team has to perform the chemical reaction. The team that takes the minimum time to complete the whole task will be declared as winner."</item>
-        <item>This online contest will be a 2 day contest. Each day there will be 10 problems to solve. The questions will be completely IQ- based with a minimal amount of knowledge from science required. </item>
-        <item>This event require participation in teams . It’s  a theme based event which involves reaching various checkpoints with the help of clues they collect and complete the task if allotted.The rush stops after completion of circuit.</item>
+        <item>NJATH, aptly the acronym for Not Just Another Treasure Hunt is an unconventional online gaming event, wherein participants from all over the world take part to solve nerve-racking questions for 51 hours, in an attempt to outwit everyone else and top the coveted NJATH leaderboard. IIT Patna's very own online crypt hunt that, just like fine wine, only gets better with time, the standard being increased by leaps and bounds each year. The best of brains compete and lock horns with each other, in this seemingly simple game, to procure the answer from the hints provided. The answer, may appear to be right in front of the beholder, but may require a series of steps before actually reaching the correct way out. Or, it may just be the other way round. Slack off comfortably on your couches and rejoice yourself in the ecstasy of suspense and thrill as the wings of your imagination flatter unceasingly in the quest of finding the right answer. NJATH, apart from being an experience to be cherished forever, also proves propitious in enhancing one's aptitude, reasoning and the ability to think out of the box.</item>
+        <item>This event require participation in teams . It’s a theme based event which involves reaching various checkpoints with the help of clues they collect and complete the task if allotted.The rush stops after completion of circuit.</item>
     </string-array>
 
     <string-array name="array_treasure_event_rules">
-        <item>1. Maximum 3 members in a team.\n2. Members can be of any year and any branch.\n3. Teams have to report to the spot before 15 minutes of the scheduled time.\n4. All team members have to be collectively present at the checkpoint with their previous clue to receive the compounds.\n5. Explanation of the clue may be required.\n*Rules are flexible as per the organizers discretion.</item>
-        <item>1. Student will compete in groups of 2\n2. All the questions on\n1st day = 10 pts\n2nd day = 20 pts\n3. The time frame for answering the questions will be 12pm – 12 am every day. You can start and end during this window time.\n4. Points and end-time of play from each day will be recorded and will cumulated for final tally of points. \n5. Questions will be completely IQ based with some knowledge from Electrical Curriculum as a prerequisite.\n6. You are allowed internet and textual reference for solving the problems but spreading, buying or selling of answers is offence enough to disqualify your team.\n7. You can answer any question infinite number of times.\n8. Answers are case-insensitive.\n9. Winning team will be decided by the highest total tally of points. In case there is a tie, the team answering more questions on 2nd day  will be the winner. If the situation persists, ending time average of 2 days will decide the results.</item>
-        <item>1.After Registration, Every team will be provided with a copy of Snakes and ladders and a clue.\n2.The Clue will guide them to the next hotspot.\n3. There they will  throw a dice which will guide their position on the game of Snakes and ladders.\n4.In the game of Snakes and Ladders, if they encounter a snake they should perform a special task as penalty .\n5.If the team encounter a ladder , a bonus will be awarded which will help in reducing the total time of team in static rush.\n6.They will have to complete the task (if they encounter a snake ) correctly at each hotspot to move further.\n7.At the final hotspot they will be given a Simple Electronic Circuit which they have to build on the spot and Submit.\n8.The team that completes static rush in the minimum time,  will be the winner of Static Rush 2017.\n9.The task at each hotspot along with next clue will be given randomly by checking the number of the people they have already reached by checking their signatures at the backside of the page.\n10.Also their last position in the game of Snakes and Ladders will be written on the backside of the page so that the person on the next hotspot can determine the position.\n11. Total number of members in a team should not exceed 3.\n\nImportant declaration : \n1)Please keep checking the Celesta app, website and Celesta, IIT Patna facebook page for any future updates.\n2)The rules can change without prior notification.\n3)In case of any dispute, the decisions made by the organising committee and judges are final and binding.\n</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_treasure_event_date_time">
-        <item>Day 2 – 2pm to 5pm</item>
         <item>-1</item>
-        <item>Day 1 – 2pm to 5pm</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_treasure_event_venue">
-        <item>Boys Hostel: Front Side</item>
-        <item>Online Event</item>
-        <item>Boys Hostel: Front Side</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <integer-array name="array_treasure_event_images">
@@ -588,15 +627,22 @@
     </integer-array>
 
     <string-array name="array_treasure_organizers">
-        <item>Parth Patel\nNishant Kulshrestha\nDheeraj Kalani</item>
-        <item>Nilendu Shubham\nPratiyush Pushkar\nAman Jha</item>
-        <item>Gaurav Kataria\nPraneet Kumar\nAyush Singh</item>
+        <item>Piyush Chauhan\n Bhavani Sushmita</item>
+        <item>Umang Jain\n Prateek Rai</item>
     </string-array>
 
     <string-array name="array_treasure_contacts">
-        <item> - 8140989334\n - 9958724205\n - 8239393924</item>
-        <item> - 8292508959\n - 9801476409\n - 8871999727</item>
-        <item> - 9479965760\n - 8017979133\n - 8586869318</item>
+        <item> - 9673582517\n - 9123519137</item>
+        <item> - 6394708415\n - 7222998383</item>
+    </string-array>
+    <string-array name="array_treasure_links">
+        <item>https://celesta.org.in/event_.php?eveID=10201</item>
+        <item>https://celesta.org.in/event_.php?eveID=10202</item>
+    </string-array>
+
+    <string-array name="array_treasure_rule_links">
+        <item>https://docs.google.com/document/d/1wnlUEkTxDXuRShy3hDABQhWs6a7yywAlrU1EcHIM8mk/edit?usp=sharing</item>
+        <item>https://docs.google.com/document/d/1US8ZWNSTFJTQZFdMC8VXXRX0pY2mXcfAHtVa7MooHDM/edit</item>
     </string-array>
 
     <!-- Story Writing Events -->
@@ -635,45 +681,44 @@
 
     <!--Coding Events-->
     <string-array name="array_coding_event_headers">
-        <item>CAPTURE THE FLAG</item>
         <item>BYTE RACE</item>
     </string-array>
 
     <string-array name="array_coding_event_text">
-        <item>Capture the Flag is hacking challenge where you can prove your hacking skills. This challenge will test your basic understanding of various fields of Computer Science.</item>
-        <item>ByteRace is a challenge for minds that have honed the art of problem solving. This competition presents challenges for you to solve using code. So if you get the adrenaline rush when you see a difficult problem in front of you then this is definitely for you.</item>
+        <item>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. -- Rick Osborne \n ByteRace provides thrilling challenge for the brilliant minds that have honed the art of problem solving. This competition presents challenges for you to show your exceptional coding skills. So if you get the adrenaline rush when you see a difficult problem, then this is definitely for you. Speed, Accuracy and Efficiency matters at last.</item>
     </string-array>
 
     <string-array name="array_coding_event_rules">
-        <item>1.Team can have maximum 3 members.\n2.Participants must bring their own laptops.\n3.Use of Internet is allowed.\n4.Each problem will have different points according to its difficulty level</item>
-        <item>1.This is an Online event, which will be held on HackerRank/Codechef platform.\n2.This is an individual event and any form of violation of platform rules will lead to disqualification.\n3.Competition consists of 5 algorithmic puzzles to quench your thirst for the unsolvable.\n4.The judgement of the organizers will be final.\n5.Participants can participate from their room or from the CC.They need to have a HackerRank/CodeChef handler.</item>
+        <item>1. This is an online event and will be held on HackerEarth platform. /n 2. This is an individual event and any form of violation of platform rules will lead to disqualification.\n 3. Competition consists of 5 algorithmic puzzles to quench your thirst for the unsolvable. \n 4. Participants can participate from their room or from the CC. They need to have a HackerEarth account. \n 5. In case of any dispute, the decisions made by the organising committee will be considered final.</item>
     </string-array>
 
     <string-array name="array_coding_event_date_time">
-        <item>-1</item>
         <item>-1</item>
     </string-array>
 
     <string-array name="array_coding_event_venue">
         <item>Online Event</item>
-        <item>Online Event</item>
     </string-array>
 
     <integer-array name="array_coding_event_images">
-        <item>@drawable/capture_the_flag</item>
         <item>@drawable/byte_race</item>
     </integer-array>
 
     <string-array name="array_coding_organizers">
-        <item>Tameesh Biswas</item>
-        <item>Fazle\nSaraansh Chopra\nShaurya Gupta</item>
+        <item>Vatsal Singhal \n Diksha Bansal</item>
     </string-array>
 
     <string-array name="array_coding_contacts">
-        <item> - 9920126830</item>
-        <item> - 7503390245\n - 7678004252\n - 9955530580</item>
+        <item> - 8585992062\n - 9304633963</item>
     </string-array>
 
+    <string-array name="array_coding_links">
+    <item>https://celesta.org.in/event_.php?eveID=10401</item>
+    </string-array>
+
+    <string-array name="array_coding_rule_links">
+    <item></item>
+    </string-array>
 
     <!--Expo Events-->
     <string-array name="array_expo_event_headers">
@@ -720,35 +765,38 @@
     <!--Robotics Events-->
 
     <string-array name="array_robotics_event_headers">
-        <item>Aqua Soccer</item>
-        <item>Robowars</item>
-        <item>Maze Solver</item>
+        <item>Drone Tussle</item>
+        <item>Flight To Future</item>
+        <item>Roborace</item>
+        <item>Line Follower</item>
     </string-array>
 
     <string-array name="array_robotics_event_text">
-        <item>Problem Statement:\nThere will be a tub partially filled with water. \nFew balls of different sizes will be floating and there are two goal posts at two opposite sides.\nTwo teams will simultaneously play against each other through their bot.\n Aim of both is to put the balls inside the respective goal post .\nTeam with maximum score at the end of match will be declared as the winner of that match.</item>
-        <item>THIS IS THE MOST POPULAR EVENT OF IIT PATNA.AFTER FEELING THE ADRENALINE RUSH OF DEATH RACE ITS TIME TO SHOW POWER OF YOUR BOT AND YOUR  STRATEGY IN THE BATTLEFIELD..THIS EVENT WILL TEST THE CO-ORDINATION BETWEEN SPEED ,POWER AND STRATEGY.</item>
-        <item>There will be a maze designed symmetrically for two sides. The maze will have dead-ends, alternate paths etc. Both teams will have a starting point where they will put their bots. The bots have to reach the end point of the maze from the starting point.</item>
+        <item>Humans love to fly, and flying machines have always given them Goosebumps. You have to design a quadcopter, that will manoeuvre through hurdles to make you win the show.\n Cash prize for winner worth:Rs. 25,000</item>
+        <item>Problem statement: \n Participants have to design a RC Plane that can Take off and land at the specified areas. It could be a electric plane or engine powered plane. PNP RC planes are allowed, and we are expecting to see a great flying skill by you. \n Winning amount worth Rs. 20,000</item>
+        <item>To Be Updated</item>
+        <item>Problem statement : \n The challenge of the competition is to make a robot that can move on black lines on a white background and reach the finish as soon as possible. The competition area has is a special place defined for the robot's operation (hereafter COMPETITION FIELD). The participants must create an autonomous vehicle (hereafter ROBOT), that will move on the COMPETITION FIELD and do certain tasks. The ROBOT which will start on the START tile and reach the FINISH tile block by following the black lines in the shortest time will be nominated the winner.</item>
     </string-array>
 
     <string-array name="array_robotics_event_rules">
-        <item>A team can have a maximum of 4 Members.\nDimension of the tank will be 10 ft. X 6 ft. X 1.5ft. (approx.)\nThe bot may be wired or wireless depending upon your convenience.\nAll the electronic circuits or equipments must be protected from water. Any damage to the bot due to this reason will not be our responsibility.\n Balls will have varying dimensions ranging from table tennis balls to normal size plastic cricket balls.\nDifferent color balls will carry different points.\nPoints corresponding to each ball will be told on the spot.\nSome bonus points will also be awarded during the course of competition if a bot collects more than one ball at a time and make it to the goal post.\nDimension of goal post is 1 ft. X 1 ft. X 1 ft.\nAim of each team is to put the balls in respective goal posts.\nDimension of the bot should not exceed 1.5 ft. X 1 ft., however there is no restriction on minimum size of the bot.\nThere should be no pointed protrusions in the bot like nails which can damage the pool.\nIf a ball anyhow enters the goal post corresponding to Team X (in which Team X is supposed to put the ball) then points corresponding to that ball will be awarded to Team X.\nIf someone is using electric power supply, they must bring your own circuit equipment, adapter etc. Voltage across motors should not exceed 24 V.\nThe final decision will be in the hands of the organizers. No debating is allowed with the organizers.</item>
-        <item>TOURNAMENT WOULD BE IN FORM OF A LEAGUE WHICH WILL LEAD TO SEMI-FINALS AND FINALS.\nEACH MATCH CONSISTS OF 2 ROUNDS\n\n1ST ROUND----DURATION 3 MINUTES\nTHERE WILL BE 4 BALLOONS IN EACH TEAM’S STATE.BOTH TEAMS WILL START FROM THEIR STATE AND WILL ATTACK THE OPPOSITION TEAM’S BALLOONS. BY THE END OF THREE MINUTES IF ANY TEAM GOT SUCCESS IN PRICKING ALL THE 4 BALLOONS OF OPPOSITION AND MANAGES TO SAVE ITS AT LEAST ONE FROM THE OPPOSITION TEAM THEN THAT TEAM WILL BE DECLARED AS WINNER AND MATCH WILL END HERE.FOR PRICKING OPPOSITION TEAM’S BALLOONS 15 POINTS WILL BE PROVIDED.\nIF NONE OF THE TEAM MANAGES TO WIN IN THIS ROUND THEN MATCH WOULD PASS INTO THE SECOND ROUND AND WINNER WILL BE DECIDED ON THE BASIS OF POINTS SCORED.
-\n2ND  ROUND DURATION---- 2 MINUTES\nHERE THE MAIN GOAL OF THE TEAM WOULD BE TO HIT AND DAMAGE THE OPPOSITION TEAM AS MUCH AS POSSIBLE.\nFOR EACH HIT IN THE SECOND ROUND 5 POINTS WOULD BE PROVIDED.\nIF A TEAM MANAGES TO THROW OPPOSITION TEAM’S BOT OUT OF ARENA THAN 30 POINTS WOULD BE PROVIDED TO THAT TEAM.\nAT THE END OF SECOND ROUND TEAM HAVING HIGHER SCORE WILL BE DECLARED AS WINNER.
-</item>
-        <item>The bots should be autonomous.\nThe team which finishes first wins.\nThere will be a maximum time limit of 5 minutes after which the race ends.\nIn case the time exceeds the limit, the team with the highest score wins that particular match.\nThere will be checkpoints and each checkpoint adds a score 50.\nTeams can either use batteries or power chords. One supply point( AC 220V-240V 50 Hz) will be provided per team if required.\nIf their bot goes in the wrong way, they can reposition it to the last checkpoint crossed. But after repositioning it 3 times, there will be a penalty of 25 points.\nThe maximum dimensions of the bot are 15cmX18cm. The height of the wall of the maze is 25cm.\nThis is a knockout event. The winners will proceed to subsequent rounds.\nThe teams can have a maximum of 5 people.</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_robotics_event_date_time">
-        <item>(Group)Day 1 – 12pm to 3pm\n(Finals)Day 1 – 5pm to 6pm</item>
-        <item>(Group)Day 2 – 9am to 2pm\n(Finals)Day 2 – 5pm to 6pm</item>
-        <item>Day 1 – 4pm to 7pm</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_robotics_event_venue">
-        <item>Civil Workshop</item>
-        <item>Boys Hostel Front Side</item>
-        <item>Tutorial Block R.303</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
 
@@ -756,139 +804,150 @@
         <item>@drawable/aqua_soccer</item>
         <item>@drawable/robowars</item>
         <item>@drawable/maze_solver</item>
+        <item>@drawable/maze_solver</item>
     </integer-array>
 
     <string-array name="array_robotics_organizers">
-        <item>Navin Kumar\nAkshat Rahul\nLahu Gujarkar\nSrijan Sumant\nAryan Kumar</item>
-        <item>Rahul Kumar\nVivek Raj\nReddi Sai Vamsi\nVijay Sharma\nSohid Ture</item>
-        <item>Bharat Shah\nKundan Kumar\nMd Hilal Choudhary\nShivesh Yadav\nDeepak Meena</item>
+        <item>Vivekanand Prasad</item>
+        <item>Vivekanand Prasad</item>
+        <item>Vivekanand Prasad</item>
+        <item>Vivekanand Prasad</item>
     </string-array>
 
     <string-array name="array_robotics_contacts">
-        <item> - 9955530570\n - 7020906945\n - 829471162\n - 7633058278\n - 8540912206</item>
-        <item> - 9560643680\n - 8329843720\n - 9491916025\n - 9955539108</item>
-        <item> - 9955524114\n - 867498699\n - 9055045351\n - 9531610498\n - 9461541237</item>
+        <item>- 8568985531</item>
+        <item>- 8568985531</item>
+        <item>- 8568985531</item>
+        <item>- 8568985531</item>
+    </string-array>
+    <string-array name="array_robotics_links">
+        <item>https://celesta.org.in/event_.php?eveID=10701</item>
+        <item>https://celesta.org.in/event_.php?eveID=10702</item>
+        <item>https://celesta.org.in/event_.php?eveID=10703</item>
+        <item>https://celesta.org.in/event_.php?eveID=10704</item>
+    </string-array>
+
+    <string-array name="array_robotics_rule_links">
+        <item>https://drive.google.com/file/d/1pkKIwPLcuB2hx6LVwYJNe8JVa6NmaeK1/view?usp=sharing</item>
+        <item>https://docs.google.com/document/d/1KWrPz_6JYh5DHG3FFzVvCIfWKCPjczWDrhtX9-GtjIg/edit?usp=sharing</item>
+        <item></item>
+        <item>https://drive.google.com/file/d/1qaMxf9W3JDRv3YaiCZnkzZBdw8SOC-k9/view?usp=sharing</item>
     </string-array>
     <!-- Robotics end -->
 
 
     <!--Quiz Wiz events-->
     <string-array name="array_quizwiz_event_headers">
-        <item>ELECTRO-EXQUIZITE</item>
         <item>ASTRO-PARTICLE VOYAGE</item>
-        <item>MIND-BENDERS</item>
+        <item>ELECTRO-EXQUIZITE</item>
     </string-array>
 
     <string-array name="array_quizwiz_event_text">
-        <item>This is a Celesta Event. In this event there will be three rounds. The participants can either be a single person or a team with members up to 2 at max.</item>
         <item>Enthusiastic about Astronomy? Passionate about Particle-Physics? Think you know your stuff? Then this is your journey through the realm of the big and the small, on the scales ranging from a quark to the entire observable universe. This is the AstroParticle Voyage, a quiz which tests your knowledge thoroughly, and brings out the best of your abilities.</item>
-        <item>Mind-Benders is a test of wits and logic. The event involves no syllabus or pre-requisite knowledge. The event will solely test the student’s logical reasoning, analytical thinking abilities , problem-solving capabilities and co-ordination skills.\nGet ready to knock your brains and prove the genius in you in this mind bending rendezvous.</item>
+        <item>If you can’t resist yourself from taking a reading whenever you see some electronics stuff. If everyone around you feels shorted by your capacitance to speak about electronic gadgets. If you think your intelligence gets forward biased every time an electronic question is induced to you, then this is the event for you. ElectroExquizite consists of 3 rounds each having it’s own twists and turns. In each round some teams will be eliminated and others will move on to the next round.</item>
     </string-array>
 
     <string-array name="array_quizwiz_event_rules">
-        <item>First round is the Preliminary. Where you will be given a questionnaire consisting of questions. The participants have to solve the questions to earn points or SPARKOINS. Either top 25 percentile or Top 10 Contestant teams (Whichever is highest) will be selected for the second round, Qualifiers.\nIn Qualifiers, the contestant teams have to use the Sparkoins to buy electronic components and provide a solution by making a circuit in breadboard by using the components bought components. The problem to be solved will be provided by a lucky draw. The team with the highest Sparkoins will be the first to draw. Here there will be points for the circuit and also for the timings. The counting of the clock begins from the time you get the problem. There will be a COMPO-STORE where you can buy electronic components. 5 teams with a highest score in Qualifiers will be selected for the third round, Finale. The amount of Sparkoins left after the qualifier will be a deciding factor.\nThe third round will have three levels, first being what happens if the given thing is altered in the circuit. In one you will have to guess the photo and in another there\'ll be jumbled words. All rounds will be buzzer rounds.\nThe one with the maximum number of points in the final round will be declared winner.\n\nImportant declaration : \n1)Please keep checking the Celesta app, website and Celesta, IIT Patna facebook page for any future updates.\n2)The rules can change without prior notification.\n3)In case of any dispute, the decisions made by the organising committee and judges are final and binding.\n</item>
-        <item>1)AstroParticle Voyage is a three levelled competition.\n2)Participants can participate in a team of maximum two.\n3)First level is a paper-pen round consisting of five subcategories: Theoretical Astronomy, Observational Astronomy, Theoretical Particle Physics, Observational Particle Physics and Mathematics. Intermediate level questions regarding each would be asked.\n4)Second Level is a quiz round where questions would be asked in a round table arrangement. \n5)Third level is a simulation round where simulations would be shown of some phenomenon and a problem would be given based on it.\n6)Points would be given for each round and the team with maximum cumulative score in the end wins.\n7)No reference except the ones given by us can be used during the entirety of the competition.\n8)All decisions taken by the organisers would be final in case of any discrepancy or issue.</item>
-        <item>1)This is a team event. Students should participate in teams of two members of same squad.2)Students of different institutions can form a team but of same squad.3)There are two squads\nJUNIOR SQUAD - for students of class 7 to 10.\nSENIOR SQUAD - for student of class 11 and above including college student.\n3)The event will be in form of pen-paper quiz. The question will have various sections like maths, puzzles, reasoning etc. It will consist of single choice correct, multiple choice correct, paragraph and a very few subjective questions.\n4)Each section has its own marking scheme.\n5)Use of any type of electronic gadgets are strictly prohibited during the test.\n\nQUESTIONS - 30\tTIME – 1 HOUR\nImportant declaration :\n1)Please keep checking the Celesta website and Celesta, IIT Patna facebook page for any future updates.\n2)The rules can change without prior notification.\n3)In case of any dispute, the decisions made by the organising committee and judges are final and binding.\n</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_quizwiz_event_venue">
-
-        <item>Tutorial Block R.104</item>
-        <item>Tutorial Block R.104</item>
-        <item>Tutorial Block R.107</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_quizwiz_event_date_time">
-
-        <item>Day 2 – 10am to 1pm</item>
-        <item>Day 1 – 11am to 2pm\n(Finals)Day 1 – 4pm to 5pm</item>
-        <item>Day 2 – 2pm to 3pm</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <integer-array name="array_quizwiz_event_images">
-        <item>@drawable/electro_exquizite</item>
         <item>@drawable/astro_particle_voyage</item>
-        <item>@drawable/mind_benders</item>
+        <item>@drawable/electro_exquizite</item>
     </integer-array>
 
     <string-array name="array_quizwiz_organizers">
-        <item>Harpreet Kumar\nRahul Kumar\nDhanush S Ravikumar</item>
-        <item>Parth Kulkarni</item>
-        <item>Ritesh Singh Rathour</item>
+        <item>Aftab Mohideen\n Arya Das</item>
+        <item>Manoj Kumar\n Aditya Ranjan</item>
     </string-array>
 
     <string-array name="array_quizwiz_contacts">
-        <item> - 9041083838\n - 7761937143\n - 9955534759</item>
-        <item> - 7303069559</item>
-        <item> - 7023460310</item>
+        <item> - 7977676639\n - 8420233990</item>
+        <item> - 8328864643\n - 8271572990</item>
+    </string-array>
+
+    <string-array name="array_quizwiz_links">
+        <item>https://celesta.org.in/event_.php?eveID=10601</item>
+        <item>https://celesta.org.in/event_.php?eveID=10602</item>
+    </string-array>
+
+    <string-array name="array_quizwiz_rule_links">
+        <item>https://drive.google.com/open?id=1Fnqba-6FxIyFQMzwEQZ-o_LdaH6mY8cD</item>
+        <item>https://docs.google.com/document/d/1US8ZWNSTFJTQZFdMC8VXXRX0pY2mXcfAHtVa7MooHDM/edit</item>
     </string-array>
     <!--Quiz Wiz events end -->
 
     <!--Management Events-->
     <string-array name="array_management_event_headers">
-        <item>MONOPOLY</item>
-        <item>B-QUIZ</item>
-        <item>IPL AUCTION</item>
-        <item>E-DEBATE</item>
-        <item>STOCKMART</item>
+       <item>IPL Auction</item>
+        <item>Stockmart</item>
+        <item>Pitch Your Idea</item>
     </string-array>
 
     <string-array name="array_management_event_text">
-        <item>There is a haggler, manager, entrepreneur inside every person. To reminiscence you to your childhood, to bring forth your talent and to introduce you to real business world, Celesta\'17 in association with Entrepreneurship Club, IIT Patna presents Monopoly.</item>
-        <item>The opportunity to show your skills and knowledge in the field of business is knocking your door.We have a variety of question to satisfy everyone from a hardcore business enthusiast to an enthusiastic newcomer. So brush up your grey cells, hone your business skills and get ready for yet another edition of business quiz.</item>
-        <item><![CDATA[Ever thought what you would do if you got a chance to build your own IPL team. To use your knowledge of the ‘Big Game’ and your sixth sense to create the perfect team that goes on to lift the coveted Trophy. To use permutation and combination and make the best choice keeping in mind the huge investment that goes into putting together a winning team. To learn Strategizing, Resource management, Entrepreneurship, all at the same time in a fun-filled Cricketing event. It has been truly said “The biggest risk is not taking any risk… In a world that is changing really quickly, the only strategy that is guaranteed to fail is not taking risks”.Therefore be ready to take risks while bidding on the players. \n“Being busy does not always mean real work. The object of all work is production or accomplishment and to either of these ends there must be forethought, system, planning, intelligence, and honest purpose, as well as perspiration. Seeming to do is not doing”.Hence strategize with your team members before you bid for a player. This Celesta its going to be a lot of fun so fasten your seat belts and be ready to grab the opportunity of building your very own IPL team!]]></item>
-        <item>E-Club has come up with the golden opportunity to brush up your debating skills with the help of entrepreneurial knowledge. The event will test your speaking style, resiliency, innovation quotient, focus, etc. with other debating skills like clarity, fluency and diction in speech.</item>
-        <item>"No price is too low for a bear OR too high for a bull.”\nStockmart is a virtual stock exchange competition organised by  Entrepreneurship Club. One of the most electrifying events of eclub where many users can buy and share virtual shares and experience all nuances of a real stock market. Stockmart gives you a chance to showcase your calculated risk taking skills to enhance on a virtual level. It is a 2 hour event where you can register with your email ids and be a part of the stimulating environment of Stockmart.</item>
+        <item>Ever thought what you would do if you got a chance to build your own IPL team. To use your knowledge of the ‘Big Game’ and your sixth sense to create the perfect team that goes on to lift the coveted Trophy. To use permutation and combination and make the best choice keeping in mind the huge investment that goes into putting together a winning team. To learn Strategizing, Resource management, Entrepreneurship, all at the same time in Fun-filled Cricketing event.</item>
+        <item>Stockmart is a virtual stock exchange competition organised by Entrepreneurship Club. One of the most electrifying events of eclub where many users can buy and share virtual shares and experience all nuances of a real stock market. Stockmart gives you a chance to showcase your calculated risk taking skills to enhance on a virtual level. It is a 2 hour event where you can register with your email ids and be a part of the stimulating environment of Stockmart.</item>
+        <item>To Be Updated</item>
     </string-array>
 
     <string-array name="array_management_event_rules">
-        <item>1.It\'s an individual 3D gaming event.\n2. Computerized output will come. You have to move\nto corresponding position accordingly.\n3. After moving to a particular position , You have three options:-\n(a) Buy that location.\n(b) Pay tax corresponding to that location.\n(c) Go for mutual settlement with current location owner. In case owner is bank , then mutual settlement is not applicable.\n4. At the end of game you will get one chance to transfer account balance to someone else\'s account if you want else you can ignore it.\n5. Registrations would be done on the spot.\n6. Player with maximum property(Balance + Assets) at the end will be the winner.</item>
-        <item>1.The quiz will be conducted in two rounds- Prelims and Mains.\nPrelims will contain 20 Questions about the current corporate world and the history of Entrepreneurship and Business making.\n2. All the participants should be participating in a team of two.\nThe participants selected from the Prelims will get to play the Final Mains Round</item>
-        <item>1.It is a team game where each team comprises of 5 members.\n2.There will be two rounds-Quiz and Auction.\n3.First round will be a quiz regarding your cricket knowledge(IPL/Game stats).\n4.Selected teams from the first round will advance to the second round.\n5.In the second round , each team will be given a fixed budget with which they’ll have to buy an ipl team in the Auction.</item>
-        <item>Participants will be required to register with a team of two members. A topic will be given beforehand which will be common for all the teams for the first round. The teams selected for the second round will be given one hour to prepare for the new topic. So embrace yourself for the challenge and bring out the Orator in you !!</item>
-        <item>-1</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_management_event_venue">
-        <item>Boys Hostel: Front Side</item>
-        <item>Tutorial Block R.107</item>
-        <item>Tutorial Block R.109</item>
-        <item>Senate Hall</item>
-        <item>Online Event</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_management_event_date_time">
-        <item>Day 1 – 9pm to 11pm</item>
-        <item>Day 1 – 3pm to 6pm</item>
-        <item>Day 1 – 4pm to 8pm</item>
-        <item>Day 2 – 9am to 12pm</item>
-        <item>Day 2 – 10pm to 11pm</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <integer-array name="array_management_event_images">
         <item>@drawable/monopoly</item>
         <item>@drawable/bquiz</item>
         <item>@drawable/ipl_auction</item>
-        <item>@drawable/e_debate</item>
-        <item>@drawable/stockmart</item>
     </integer-array>
 
     <string-array name="array_management_organizers">
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
+        <item>Niranjan\n Sahil</item>
+        <item>Vrushank Verma\n Badrinath</item>
+        <item>Amandeep</item>
     </string-array>
 
     <string-array name="array_management_contacts">
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
+        <item>- 8686179888\n - 9523264162</item>
+        <item>- 8297809999\n - 9949477376</item>
+        <item>- 7568932715</item>
     </string-array>
-    <!--Quiz Wiz events end -->
+    <string-array name="array_management_links">
+        <item>https://celesta.org.in/event_.php?eveID=10501</item>
+        <item>https://celesta.org.in/event_.php?eveID=10503</item>
+        <item>https://celesta.org.in/event_.php?eveID=10504</item>
+    </string-array>
+
+    <string-array name="array_management_rule_links">
+        <item>https://drive.google.com/open?id=1YVpFv7HBTINKkpMhcSLcg-Rky6PhpX0f</item>
+        <item></item>
+        <item>https://drive.google.com/file/d/17mjxknbrSUWRGnpz-HBpQFQsXgATHwbW/view</item>
+    </string-array>
+    <!--Management events end -->
 
     <string-array name="array_team_names">
         <item>Tarun Garg</item>
@@ -1297,34 +1356,43 @@
 
     <!--Debate events-->
     <string-array name="array_debate_event_headers">
-        <item>Parliamentary debate</item>
+        <item>Parliamentary Debate</item>
     </string-array>
 
     <string-array name="array_debate_event_text">
-        <item>Your voice becomes your expression, which reflects in your actions. So be ready to lead the nation with your voice. Come be a part of Parliamentary Debate.\nRegistration Link->\n<a href="https://goo.gl/eLEQWM">https://goo.gl/eLEQWM</a></item>
+        <item>Do you want to explicit your philosophy, your feelings about any political issues raised in this world. From simple Government policy to as much as controversial as Section 377. Here we present Parliamentary Debate in a different avtar where you could explore yourself by learning U.S. legislation and expressing yourself by raising your opinion instead of your voice about the political issues and agendas</item>
     </string-array>
 
     <string-array name="array_debate_event_rules">
-        <item>1)The team will consist of 3 members.\n2) The Government team (the side in favour) shall sit on the right hand side of the Speaker. The Opposition (the side against) shall sit on the left.\n3)The motion/agenda will be  provided 15 minutes before the start of any bebate to the respective teams.  \n4) The speaking order will be as follows:\ni) the Prime Minister(3 minutes).\nii)The Leader of Opposition(3 minutes)\niii) The Minister of the Crown (second Government speaker) (2 minutes)\niv)the Leader of the Opposition (second Opposition speaker). (2 minutes)\nv)Third Government speaker will give closing statement .(1 minute  30 seconds)\nvi)Third Opposition  speaker will give closing statement .(1 minute 30 seconds)\nvii)Finally the Prime Minister will deliver the Government rebuttal.(2 minutes)\n5) During the rebuttal, Members (debaters) may not bring up any new arguments or new evidence except in direct refutation of material which has already been presented.\n6) Points of Information are raised while another Member has the floor (i.e. is speaking). If a Member wishes to raise a Point of Information, he/she should stand and with one hand on their head and another pointing forward (in teapot-style) and say: “On that point”. The person who is speaking may refuse to take the point saying: “Not at this time.” Alternatively, they may to choose to take the point. If the speaker refuses the point, the Member raising the POI must sit down. Otherwise, they should deliver their point as succinctly as possible (in less than 15 seconds) Often the point is phrased as a question. All speakers should attempt to both deliver at least one POI and to accept one POI during the course of the debate.\n7) All remarks must be addressed to the Speaker of the House and not to anyone else, e.g. say “Mr. Speaker” not “Mr. Speaker, honourable judges”. The Member must address Mr. Speaker in his/her first sentence.\n8) The Government must define the resolution. Their definition must be accepted unless it is undebatable or unreasonable. If the Opposition wishes to challenge the definition they must do so prior to the start of the debate by appealing to the tournament organizer. The Opposition must show that the Government’s definition is unacceptable and then substitute their own. Definitions may not be challenged during the debate.\n9) The Government may introduce a plan for implementing the resolution if they wish to, but they are not required to do so. If they do propose a plan, they must fully explain it during the Prime Minister’s speech.\n10) If, and only if, the Government introduces a plan, the Opposition may introduce a counterplan, but it is not required to do so. A counterplan is an alternative method of implementing the resolution which is significantly different from the Government plan and is demonstrably better than the Government plan. If the Opposition wants to introduce a counterplan, they must fully explain it during the address of their first speaker.\n11 ) Props (e.g. drawings, models) may not be used. \n12) Debaters should treat each other with respect and judges will penalize debaters guilty of flippancy, discourtesy, or any attempt to belittle another debater.\n13)Use of internet is allowed.\n</item>
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_debate_event_venue">
-        <item>Senate Hall</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_debate_event_date_time">
-        <item>Day 2 – 1pm to 6pm</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_debate_organizers">
-        <item>Prakash Kumar\nAkshay Rajput</item>
+        <item>Priyansh Singh Rao \n Vibhor Upadhyaya</item>
     </string-array>
 
     <integer-array name="array_debate_event_images">
         <item>@drawable/parliamentary_debatenew</item>
     </integer-array>
+
     <string-array name="array_debate_contacts">
-        <item> - 8409147859\n - 9466273458</item>
+        <item> - 9511593732\n - 7738923336</item>
+    </string-array>
+
+    <string-array name="array_debate_links">
+        <item>https://celesta.org.in/event_.php?eveID=10502</item>
+    </string-array>
+
+    <string-array name="array_debate_rule_links">
+       <item>https://docs.google.com/document/d/1ta1VQoYFuxksPEpGOdcIjsaeXBFl-4mKf0kI8NtX5eE/edit</item>
     </string-array>
     <!--Debate events end -->
 
@@ -1383,13 +1451,11 @@
     </string-array>
 
     <string-array name="array_design_event_text">
-    <item>Use the power of our global online community to apply thousands of engineering minds to your design problem for less than the price of one.Whether you have a brand new invention on the back of an envelope and you need to turn it into reality, an old part that has stubbornly never worked quite right, an aesthetic challenge you\'d like the design world\'s opinion on, or you\'d just like to inject some fresh ideas into your current in-house design department, a CAD Master Challenge is the most effective way to get the engineering world working on your problem.\nA CAD master challenge is also a great way to let the tech community know about your exciting new designs and your passion for optimum design.
- </item>
+        <item>Think your designing skills are unmatched? Think that you can design better than others? Then here's a event to prove your claim. Celesta presents CAD Maestro, the design event wherein you will have to design a CAD drawing of proposed problem and send it to us. The best design wins! Problem statement will be released soon, please follow our Facebook page, Twitter handle, official website and app for further updates.</item>
     </string-array>
 
     <string-array name="array_design_event_rules">
-        <item>1.Make each of the drawings in separate .dwg files.\n2.The units for all the drawings must be set appropriately (Proper scaling factors).\n3.Put all the .dwg files in a .zip file named "\u003CYour Name _ YourInstitution>” and mail it to \n4.ace@iitp.ac.in with the subject “Drawings-Civil Maestro”.\n5.Each drawing must contain a title block containing your name, the question number and Institution Name.\n6.Violation of any of the above rules will lead to deduction of marks.\n7.In case of a tie during evaluation the person who had sent the earliest received mail would be considered the winner.\n8.All mails sent after 3.5hrs of starting will NOT be considered for evaluation.\n9.If any of the submitted drawings are partially complete then partial marks would be awarded.\n10. If any of the dimensions are not specified the participant is expected to use their judgement to use an appropriate dimension as per the drawings given.</item>
-
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_design_event_venue">
@@ -1397,77 +1463,87 @@
     </string-array>
 
     <string-array name="array_design_event_date_time">
-
         <item>-1</item>
     </string-array>
 
     <string-array name="array_design_organizers">
-        <item>G Sahi Darsini \n Satyaki</item>
+        <item>Shivam\n Rakesh Raushan\n Pranav Shirke</item>
     </string-array>
 
     <integer-array name="array_design_event_images">
         <item>@drawable/cad_mastro</item>
     </integer-array>
     <string-array name="array_design_contacts">
-        <item> - 9100917428\n - 9051951401</item>
+        <item> - 7261038443\n - 9102703654</item>
     </string-array>
+    <string-array name="array_design_links">
+        <item>https://celesta.org.in/event_.php?eveID=10402</item>
+    </string-array>
+
+    <string-array name="array_design_rule_links">
+        <item>https://drive.google.com/open?id=1VV7e56uwqawqIBAcq2cMU21Pn3oftg8D</item>
+    </string-array>
+
     <!--Design events end -->
 
 
     <!--Build it  events-->
     <string-array name="array_buildit_event_headers">
-        <item>Spageridge</item>
-        <item>House of Cards</item>
+        <item>Aqua Soccer</item>
+        <item>Robowars</item>
         <item>Chem-e-switch</item>
-        <item>Rocket Propulsion</item>
     </string-array>
 
     <string-array name="array_buildit_event_text">
-        <item>The first bridges built by humans were probably just wooden planks or boulders placed on a flowing stream. But today, engineers have built bridges to cross vast stretches of rivers. Before actually constructing a bridge, we need to model it and test its performance in the lab. Celesta brings you a chance of showing your engineering skills with noodles! So, get innovative and build your bridge model with this unconventional construction material.</item>
-        <item>Ever wondered what holds up monstrous skyscrapers, beautiful monuments or one’s own house ??\nCONCRETE,PILLARS……\nwell not really, the right answer is PASSION. Passion to create, passion to build, passion to design.If one has the passion then even cards can behold the structures.\nCelesta brings you a chance of showing your engineering skills with cards and passion! So, get innovative and build your own house with CARDS.\n\nEVENT STRUCTURE-\nThe event  comprises of TWO rounds, of varying difficulty levels. Teams shortlisted from round 1 will compete in round 2.\n\nTEAM SIZE-\nEach team should be of 2 members.</item>
-        <item>Are you that budding engineer who gets super-excited while tinkering with chemicals? Are you amazed by the variety and versatility of reactions that happen to matter around us? Then this is the right platform for you to experiment with your ideas. Come and reproduce a mechanism with the help of your knowledge in chemistry and engineering skills in order to automate the switch of an electric circuit we\'ve got ready for you. The aim is to make the mechanism turn off the switch of the circuit within the specified time. So bounce those exemplary ideas off your brain, \'coz the stage is set for Chem-e-switch.</item>
-        <item>You need to convert a simple plastic bottle into a rocket which can be fired through the rocket launcher (which will be provided) into the sky reaching weapon of mass destruction.The plastic bottle is filled with alcohol vapour and secured on the rocket launcher. It blasts off as soon as an electric spark is produced by Rocket launcher. ( Cheat Codes : For better control of the range of rocket, the concepts of Centre of Mass -Centre of Pressure should be applied while making the rocket.)</item>
+        <item>Football and water fits well during rain how will it fit while doing the same on the water surface with little bit of a technical touch. There will be a tub partially filled with water. Few balls of different sizes will be floating and there are two goal posts at two opposite sides. Two teams will simultaneously play against each other through their bot. Aim of both is to put the balls inside the respective goal post .Team with maximum score at the end of match will be declared as the winner of that match.</item>
+        <item>This is the most popular event of IIT Patna. After feeling the adrenaline rush of Death-Race, it’s time to show the power of your bot and your strategy in the battlefield. This event will test the co-ordination between speed, power and strategy.</item>
+        <item>Are you that budding engineer who gets super-excited while tinkering with chemicals? Are you amazed by the variety and versatility of reactions that happen to matter around us? Then this is the right platform for you to experiment with your ideas. Come and reproduce a mechanism with the help of your knowledge in chemistry and engineering skills in order to automate the switch of an electric circuit we've got ready for you. The aim is to make the mechanism turn off the switch of the circuit within the specified time. So bounce those exemplary ideas off your brain, 'coz the stage is set for Chem-e- switch.</item>
     </string-array>
 
     <string-array name="array_buildit_event_rules">
-        <item>· Round 1: The teams shall mail a zip file containing the abstract of their design to ace@iitp.ac.in . The abstract should contain the following:\n· Drawings of the design (isometric and orthographic views) with proper dimensioning on AutoCAD or clear pictures of handmade sketches. Clearly state the specifications and advantages of your design and any innovative idea that you have.\n· Analysis of the design according to the dimensions specified in the problem statement in a simulation software namely Bridge Designer 2017. The analysis is mandatory. The teams will be shortlisted for Round 2 on the basis of their abstracts.\n· Round 2: The shortlisted teams shall construct their bridge under the surveillance of the organising team at IIT Patna.\n· Round 3: The model built by each team will be tested till failure (yielding) by applying an incremental static load.</item>
-        <item>1) Each team will be provided with a certain number of deck of cards and some papertapes.\n2) Participants will be given a problem statement under which they have to replicate a given 3-d structure with the help of given cards.\n3) For first round participants will be given &quot;45 minutes&quot; to complete the task.\n4) For second round  participants will be given &quot;60 minutes&quot; to complete the task.\n5) In case none of the team is able to complete the task in the allotted time then the team which is most close to the to completion will be declared as winners.\n/nJUDGING CRITERIA-\nParticipants will be judged on the basis of STABILITY, ACCURACY &amp; AESTHETICS of the model. In case of any dispute final call will be taken by the ORGANISING COMMITTEE.</item>
-        <item>1)The participants will form teams of maximum three members.\n2)There will be only a single round.\n3)The chemical reaction and mechanism(along with the type of switch to be used) should be submitted to the organizers prior to the fest date (on or before 30th September 2017). The mechanism should be set up at the venue of the event only, but you must come with preparation.\n4)The electrical circuit(excluding the switch) and necessary chemicals will be provided by the organizers but other materials should be brought by the participants.\n4)The participants must be present at the venue on time.\n5)From the start of the reaction, the switch must be broken within a time of 2 minutes.\n6)No damage to be done to the circuit. No tampering to be done with any components of the circuit. The mechanism should be fully external to the circuit.\n7)There is no limitation on the size of the mechanism.\n8)No human intervention is allowed once the mechanism is made and reaction is fully triggered. It should automatically complete the task.\n9)No spilling of chemicals or leaving residues on surroundings is allowed.</item>
-        <item>1) A team can have at most 2 members.\n2) Each team needs to bring a modified bottle rocket with them. The alcohol will be provided.\n3) Inner diameter of mouth of the bottle should be slightly greater than the nozzle.</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
+        <item>Coming Soon</item>
     </string-array>
 
     <string-array name="array_buildit_event_venue">
-        <item>Tutorial Block - Room No. 102</item>
-        <item>Tutorial Block - Room No. 107</item>
-        <item>CST Lab 2</item>
-        <item>Boys Hostel: North Side</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_buildit_event_date_time">
-        <item>Day 1 – 11am to 9pm\nDay 2 – 8am to 6pm</item>
-        <item>Day 1 – 12pm to 2pm</item>
-        <item>Day 2 – 3pm to 5pm</item>
-        <item>Day 1 – 11am to 1pm</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_buildit_organizers">
-        <item>Suraj\nAnkit Rai</item>
-        <item>Abhinav Sharma\nAshutosh</item>
-        <item>Aswin krishna\nYash Choudhary\nRajat Gupta</item>
-        <item>Dewansh Jaiswal\nAshish Singh</item>
+        <item>BANSAL KUMAR \n AMAN DEEP \n PRATEEK GUPTA \n SUJIT JUSTINE BARWA</item>
+        <item>Amandeep</item>
+        <item>Vivek Garg \n Yashwanth \n Saurodeep</item>
     </string-array>
 
     <integer-array name="array_buildit_event_images">
         <item>@drawable/spageridge_final</item>
         <item>@drawable/the_hoc</item>
         <item>@drawable/chem_e_switch</item>
-        <item>@drawable/rocket_propulsion</item>
     </integer-array>
     <string-array name="array_buildit_contacts">
-        <item> - 7493835335\n - 7541051888</item>
-        <item> - 9410866066\n - 9470330296</item>
-        <item> - 8129450246\n - 7509116834\n - 9955529931</item>
-        <item> - 8765113312\n - 7634880080</item>
+        <item> - 9631650805\n - 7568932715\n - 9455931749\n - 7978909310</item>
+        <item> - 7568932715</item>
+        <item> - 9521399541\n - 9182994302\n - 7607791681</item>
+    </string-array>
+    <string-array name="array_buildit_links">
+        <item>https://celesta.org.in/event_.php?eveID=10101</item>
+        <item>https://celesta.org.in/event_.php?eveID=10102</item>
+        <item>https://celesta.org.in/event_.php?eveID=10103</item>
+    </string-array>
+
+    <string-array name="array_buildit_rule_links">
+        <item>https://drive.google.com/open?id=1yqVWgXLyY98isbbbuAzC5ipmB-l-xbsE</item>
+        <item>https://drive.google.com/open?id=1NHTz9eAXLQY5RSVsOgNIUWS2Nyn5Nr2L</item>
+        <item>https://docs.google.com/document/d/1y3cpbxUOCpq74IFsp68HK57_wHjyNoWTSKn7cq-bQz8/edit?usp=sharing</item>
     </string-array>
     <!--Build it  events end -->
 </resources>
