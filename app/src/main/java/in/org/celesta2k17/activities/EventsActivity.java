@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Window;
+import android.view.WindowManager;
 
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.adapters.ClubsRecyclerViewAdapter;
@@ -22,6 +23,11 @@ public class EventsActivity extends AppCompatActivity implements ClubsRecyclerVi
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         setContentView(R.layout.activity_events);
+
+        Window window = getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(EventsActivity.this,R.color.eventsStatusBar));
 
         recyclerView = findViewById(R.id.rv_events);
         GridLayoutManager linearLayoutManager = new GridLayoutManager(this, 2);
