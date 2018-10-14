@@ -32,6 +32,7 @@ public class HomePage extends android.support.v4.app.Fragment {
     final long PERIOD_MS = 2000; // time in milliseconds between successive task executions.
     View eventsLinearLayout;
     View scheduleLinearLayout;
+    View charityLinearLayout;
     View proniteLinearLayout;
     Toast comingSoonToast;
     private int currentPage = 0;
@@ -99,37 +100,27 @@ public class HomePage extends android.support.v4.app.Fragment {
         eventsLinearLayout.setOnClickListener(v -> {
             Intent intent = new Intent(rootView.getContext(), EventsActivity.class);
             startActivity(intent);
-
         });
 
-        /*aboutFrameLayout = rootView.findViewById(R.id.about);
-        aboutFrameLayout.setOnClickListener(v -> {
-//                Intent intent = new Intent(rootView.getContext(), AboutActivity.class);
-//                startActivity(intent);
-            comingSoonToast.show();
-        });*/
+
 
         scheduleLinearLayout = rootView.findViewById(R.id.schedule);
-//        scheduleLinearLayout.setOnClickListener(v -> {
-////                comingSoonToast.show();
-//
-//
-//            //Intent intent = new Intent(rootView.getContext(), ScheduleActivity.class);
-//
-//
-//        });
+        scheduleLinearLayout.setOnClickListener(v -> {
+                comingSoonToast.show();
+           });
 
-        /*devLinearLayout = rootView.findViewById(R.id.developers);
-        devLinearLayout.setOnClickListener(v -> {
-            Intent intent = new Intent(rootView.getContext(), WorkshopsActivity.class);
-            startActivity(intent);
-        });*/
          proniteLinearLayout = rootView.findViewById(R.id.pronites);
         proniteLinearLayout.setOnClickListener(v -> {
-            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
-            startActivity(intent);
+                comingSoonToast.show();
+//            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
+//            startActivity(intent);
         });
-
+        charityLinearLayout = rootView.findViewById(R.id.charity);
+        charityLinearLayout.setOnClickListener(v -> {
+            comingSoonToast.show();
+//            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
+//            startActivity(intent);
+        });
        /* sponsorsLinearLayout = rootView.findViewById(R.id.sponsors_menu_item);
         sponsorsLinearLayout.setOnClickListener(view -> comingSoonToast.show());
 

@@ -717,56 +717,56 @@
     </string-array>
 
     <string-array name="array_coding_rule_links">
-        <item></item>
+        <item>-1</item>
     </string-array>
 
     <!--Expo Events-->
     <string-array name="array_expo_event_headers">
         <item>School Exhibition</item>
-        <item>Engineer's</item>
+        <item>Engineers Conclave</item>
     </string-array>
 
     <string-array name="array_expo_event_text">
-        <item>Focussed on ingraining a scientific and creative attitude in our young students to make them comprehend the interdependence of science, technology and society by a hands- on experience. The exhibition seeks to engage children  to synergise experiences and motivate each other to design and develop something novel.\n\nProblem Statement:\nStudents of schools are invited to come up and present a science project/ model &amp; showcase their young ,creative &amp; innovative minds.(*This event creates a culture that promotes the application of theoretical knowledge to the practical obstacles which promotes the implementation of scientific ideas into the routine activities.)\n\n\n-A few exemplar ideas pertaining to  themes for development of exhibits are: Energy,Health,Nutrition &amp; Cleanliness(E.g:Demonstration of models/ projects to create awareness among children about rules of safety inappropriate hazardous situation to avoid accidents and injuries;Demonstration of models/ projects to show the effect of junk food items, adulterated food items on our body and its preventive measures;Model to demonstrate importance of balanced diet and nutritional values of various food items)</item>
-        <item>This is an event for all the automobile enthusiasts.</item>
+        <item>Are you searching for a platform where you could show your ideas, explicit your creativity, show your innovation ? Here Celesta Remastered presents you a series of exhibition for your schools and colleges where you will represent your ideas, your innovation and most importantly yourself. The Ares is yours, you just need to showcase your talent to each and every person coming to you. So get ready to make people see your innovations.</item>
+        <item>An event where participants showcase their projects and research so that students get exposure to the state of the art technologies developed around the globe. The aim of this event is to inspire students to build new technologies and exploit them for the benefit of all.</item>
     </string-array>
 
     <string-array name="array_expo_event_rules">
         <item>-Scoring will be done based on participant\'s ability to &quot;working &amp; explanation&quot;, &quot; concept clarity &amp; demonstration&quot; &amp; &quot;creativity &quot;.\n-Participants are allowed to select language for presenting their model/project as per their level of comfort.\n-Certificates for participation will be given to All the participants. \n-Winners will be awarded with exciting  prizes.!\n-In case of any discrepancy, the decision of the organisers will be final.</item>
-        <item>Make a presentation (ppt) on any one of your favorite cars (even an ATV/ formula one) of any company. You have to act as a representative trying to sell your product.\nPresentation must contain the following points:\n1. Car Features (including photos)\n2. Cost\n3. Why people would buy your product?\n4. Any extra thing which you want to add.\nExtra points if you include a small video (1 min max) on that car in the presentation.\nMaximum time for presentation: 6 minutes.\nYou can participate individually or in a team of two.\n\nJudging criteria:\n1. Presentation Skills\n2. Content of the ppt\n3. Are you able to convince the costumer (judges in this case) to buy your product\n4. How much good is your product\n5. How much knowledge you have about your product</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_expo_event_date_time">
-        <item>Day 1 – 10am to 2pm</item>
-        <item>Day 1 – 5pm to 8pm</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
     <string-array name="array_expo_event_links">
-        <item>School Exhibition</item>
-        <item>Virtual Auto Expo</item>
+        <item>https://celesta.org.in/event_.php?eveID=30101</item>
+        <item>https://celesta.org.in/event_.php?eveID=30201</item>
     </string-array>
     <string-array name="array_expo_event_ruleLinks">
-        <item>School Exhibition</item>
-        <item>Virtual Auto Expo</item>
+        <item>-1</item>
+        <item>https://docs.google.com/document/d/1Aw4rEsZFRbdrpALWQ9kvC8b_RatN5DPTolcctMPfY7I/edit?usp=sharing</item>
     </string-array>
 
     <string-array name="array_expo_event_venue">
-        <item>Tutorial Block - Room No. 503</item>
-        <item>Tutorial Block - Room Nos. 304, 305</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <integer-array name="array_expo_event_images">
         <item>@drawable/tech_exhibition</item>
-        <item>@drawable/vautoexpo</item>
+        <item>@drawable/comingsoon</item>
     </integer-array>
 
     <string-array name="array_expo_organizers">
-        <item>Anushree Jain\nSunil Kumar Yadav\nSatyaki Barman</item>
-        <item>Suraj Jha\nSampoorna Kashyap</item>
+        <item>Priyansh Singh Rao(School)\n Amit Priyankar(College)</item>
+        <item>Piyush Chauhan</item>
     </string-array>
 
     <string-array name="array_expo_contacts">
-        <item> - 9955525433\n - 9955542806\n - 9473543503</item>
-        <item> - 7493835335\n - 7541051888</item>
+        <item> - 9511593732\n - 7877772040</item>
+        <item> - 9673582517 </item>
     </string-array>
 
 
