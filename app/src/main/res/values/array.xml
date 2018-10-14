@@ -556,11 +556,11 @@
     </string-array>
 
     <integer-array name="array_photography_event_images">
-        <item>@drawable/lensart_final</item>
-        <item>@drawable/lensart_final</item>
-        <item>@drawable/lensart_final</item>
-        <item>@drawable/lensart_final</item>
-        <item>@drawable/lensart_final</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
     </integer-array>
 
     <string-array name="array_photography_organizers">
@@ -723,7 +723,7 @@
     <!--Expo Events-->
     <string-array name="array_expo_event_headers">
         <item>School Exhibition</item>
-        <item>Virtual Auto Expo</item>
+        <item>Engineer's</item>
     </string-array>
 
     <string-array name="array_expo_event_text">
@@ -771,7 +771,6 @@
 
 
     <!--Robotics Events-->
-
     <string-array name="array_robotics_event_headers">
         <item>Drone Tussle</item>
         <item>Flight To Future</item>
@@ -809,10 +808,10 @@
 
 
     <integer-array name="array_robotics_event_images">
-        <item>@drawable/aqua_soccer</item>
-        <item>@drawable/robowars</item>
-        <item>@drawable/maze_solver</item>
-        <item>@drawable/maze_solver</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
+        <item>@drawable/comingsoon</item>
     </integer-array>
 
     <string-array name="array_robotics_organizers">
