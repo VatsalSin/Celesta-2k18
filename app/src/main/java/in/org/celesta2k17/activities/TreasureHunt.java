@@ -26,6 +26,7 @@ import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_HEADER;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_IMAGE_ID;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_ORGANIZERS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_VENUE;
 
 public class TreasureHunt extends AppCompatActivity implements EventsRecyclerViewAdapter.ListCardClick {
@@ -57,7 +58,10 @@ public class TreasureHunt extends AppCompatActivity implements EventsRecyclerVie
                 resources.getStringArray(R.array.array_treasure_event_venue),
                 resources.obtainTypedArray(R.array.array_treasure_event_images),
                 resources.getStringArray(R.array.array_treasure_organizers),
-                resources.getStringArray(R.array.array_treasure_contacts));
+                resources.getStringArray(R.array.array_treasure_contacts),
+                resources.getStringArray(R.array.array_treasure_links),
+                resources.getStringArray(R.array.array_treasure_rule_links)
+                );
         recyclerView.setAdapter(eventsRecyclerViewAdapter);
     }
 
@@ -81,6 +85,8 @@ public class TreasureHunt extends AppCompatActivity implements EventsRecyclerVie
         intentNew.putExtra(EXTRA_IMAGE_ID, eventsData.getImageId());
         intentNew.putExtra(EXTRA_ORGANIZERS, eventsData.getOrganizers());
         intentNew.putExtra(EXTRA_CONTACTS, eventsData.getContacts());
+        intentNew.putExtra(EXTRA_CONTACTS, eventsData.getContacts());
+        intentNew.putExtra(EXTRA_RULES_LINKS, eventsData.getRuleLink());
         startActivity(intentNew, options.toBundle());
     }
 }

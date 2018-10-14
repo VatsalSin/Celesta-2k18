@@ -740,6 +740,14 @@
         <item>Day 1 – 10am to 2pm</item>
         <item>Day 1 – 5pm to 8pm</item>
     </string-array>
+    <string-array name="array_expo_event_links">
+        <item>School Exhibition</item>
+        <item>Virtual Auto Expo</item>
+    </string-array>
+    <string-array name="array_expo_event_ruleLinks">
+        <item>School Exhibition</item>
+        <item>Virtual Auto Expo</item>
+    </string-array>
 
     <string-array name="array_expo_event_venue">
         <item>Tutorial Block - Room No. 503</item>
@@ -1400,7 +1408,16 @@
         <item>Tech chronicles</item>
         <item>Samadhaan</item>
     </string-array>
-
+    <string-array name="array_social_rules_link">
+        <item>Adhyayan Video Recording</item>
+        <item>Tech chronicles</item>
+        <item>Samadhaan</item>
+    </string-array>
+    <string-array name="array_social_links">
+        <item>Adhyayan Video Recording</item>
+        <item>Tech chronicles</item>
+        <item>Samadhaan</item>
+    </string-array>
     <string-array name="array_social_event_text">
         <item>"Future of a nation lies in the hands of its youth" – Asuma Sarutobi ‪Adhyayan: The video lecture making competition.India is one of the top five nations for out–of–school children of primary school age. Mainly due to the lack of teachers or/and lack of quality education. Celesta’17 along with RTDC IIT Patna brings you Adhyayan, an opportunity to share your knowledge and to help the students to rise.The event have been introduced to improve the educational situation in the Rural India and to brighten the future of the nation to its maximum potential.\nOnline Round:\nA team of maximum 2 students have to record a short video  lecture (5–15min)\nYou have to upload this video on your facebook account with #Lets_Teach_India and #Adhyayan\nTeams will be shortlisted depending on facebook likes and judges reviews.\nIt is preferred that you record an interactive video lecture.\nFINAL Round:\nShortlisted teams will be called to record a 30 minute lecture in the IIT Patna’s lecture recording studio or they can send their videos to rtdc.iitp@gmail.com.\nClips of the recorded lectures will be judged to decide the winners.</item>
         <item>This pre-celesta event gives the prolific writer in you a chance, a chance to cross the horizons of imagination, to expand the field of one’s view and plot a sci-fi story. It will be your story so it can be anything, literally anything - Alien invasion to humans going to another planet or time-travelling and what not!\n\nSo just think outside the box, use your imagination, bend the scope of view and write a thriller!\nWhat to do : You are expected to write this story and then share it on facebook with the following hastags -\n#TechChronicles\n#Celesta2k17\nAlso you have to mail the story to us at rtdc@iitp.ac.in with the subject : Entry for TechChronicles</item>

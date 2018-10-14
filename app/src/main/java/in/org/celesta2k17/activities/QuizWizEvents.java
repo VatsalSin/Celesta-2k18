@@ -24,8 +24,10 @@ import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_DATE_TIME;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_DESCRIPTION;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_HEADER;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_IMAGE_ID;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_ORGANIZERS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_VENUE;
 
 public class QuizWizEvents extends AppCompatActivity implements EventsRecyclerViewAdapter.ListCardClick {
@@ -58,7 +60,9 @@ public class QuizWizEvents extends AppCompatActivity implements EventsRecyclerVi
                 resources.getStringArray(R.array.array_quizwiz_event_venue),
                 resources.obtainTypedArray(R.array.array_quizwiz_event_images),
                 resources.getStringArray(R.array.array_quizwiz_organizers),
-                resources.getStringArray(R.array.array_quizwiz_contacts));
+                resources.getStringArray(R.array.array_quizwiz_contacts),
+                resources.getStringArray(R.array.array_quizwiz_links),
+                resources.getStringArray(R.array.array_quizwiz_rule_links));
         recyclerView.setAdapter(eventsRecyclerViewAdapter);
     }
 
@@ -82,6 +86,8 @@ public class QuizWizEvents extends AppCompatActivity implements EventsRecyclerVi
         intentNew.putExtra(EXTRA_IMAGE_ID, eventsData.getImageId());
         intentNew.putExtra(EXTRA_ORGANIZERS, eventsData.getOrganizers());
         intentNew.putExtra(EXTRA_CONTACTS, eventsData.getContacts());
+        intentNew.putExtra(EXTRA_RULES_LINKS, eventsData.getRuleLink());
+        intentNew.putExtra(EXTRA_LINKS, eventsData.getLink());
         startActivity(intentNew, options.toBundle());
     }
 }
