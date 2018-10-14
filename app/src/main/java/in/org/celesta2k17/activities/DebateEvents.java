@@ -20,7 +20,9 @@ import in.org.celesta2k17.adapters.EventsRecyclerViewAdapter;
 import in.org.celesta2k17.data.EventsData;
 
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_CONTACTS;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_ORGANIZERS;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES_LINKS;
 
 public class DebateEvents extends AppCompatActivity implements EventsRecyclerViewAdapter.ListCardClick {
 
@@ -53,7 +55,10 @@ public class DebateEvents extends AppCompatActivity implements EventsRecyclerVie
                 resources.getStringArray(R.array.array_debate_event_venue),
                 resources.obtainTypedArray(R.array.array_debate_event_images),
                 resources.getStringArray(R.array.array_debate_organizers),
-                resources.getStringArray(R.array.array_debate_contacts));
+                resources.getStringArray(R.array.array_debate_contacts),
+                resources.getStringArray(R.array.array_debate_links),
+                resources.getStringArray(R.array.array_debate_rule_links)
+                );
         recyclerView.setAdapter(eventsRecyclerViewAdapter);
     }
 
@@ -77,6 +82,8 @@ public class DebateEvents extends AppCompatActivity implements EventsRecyclerVie
         intentNew.putExtra(EventInfoActivity.EXTRA_IMAGE_ID, eventsData.getImageId());
         intentNew.putExtra(EXTRA_ORGANIZERS, eventsData.getOrganizers());
         intentNew.putExtra(EXTRA_CONTACTS, eventsData.getContacts());
+        intentNew.putExtra(EXTRA_RULES_LINKS, eventsData.getRuleLink());
+        intentNew.putExtra(EXTRA_LINKS, eventsData.getLink());
         startActivity(intentNew, options.toBundle());
     }
 }

@@ -20,7 +20,9 @@ import in.org.celesta2k17.adapters.EventsRecyclerViewAdapter;
 import in.org.celesta2k17.data.EventsData;
 
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_CONTACTS;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_ORGANIZERS;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES_LINKS;
 
 public class RoboticsEvents extends AppCompatActivity implements EventsRecyclerViewAdapter.ListCardClick {
 
@@ -52,7 +54,10 @@ public class RoboticsEvents extends AppCompatActivity implements EventsRecyclerV
                 resources.getStringArray(R.array.array_robotics_event_venue),
                 resources.obtainTypedArray(R.array.array_robotics_event_images),
                 resources.getStringArray(R.array.array_robotics_organizers),
-                resources.getStringArray(R.array.array_robotics_contacts));
+                resources.getStringArray(R.array.array_robotics_contacts),
+                resources.getStringArray(R.array.array_robotics_links),
+                resources.getStringArray(R.array.array_robotics_rule_links)
+                );
         recyclerView.setAdapter(eventsRecyclerViewAdapter);
     }
 
@@ -76,6 +81,8 @@ public class RoboticsEvents extends AppCompatActivity implements EventsRecyclerV
         intentNew.putExtra(EventInfoActivity.EXTRA_IMAGE_ID, eventsData.getImageId());
         intentNew.putExtra(EXTRA_ORGANIZERS, eventsData.getOrganizers());
         intentNew.putExtra(EXTRA_CONTACTS, eventsData.getContacts());
+        intentNew.putExtra(EXTRA_RULES_LINKS, eventsData.getRuleLink());
+        intentNew.putExtra(EXTRA_LINKS, eventsData.getLink());
         startActivity(intentNew, options.toBundle());
     }
 }

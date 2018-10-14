@@ -24,8 +24,10 @@ import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_DATE_TIME;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_DESCRIPTION;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_HEADER;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_IMAGE_ID;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_ORGANIZERS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES;
+import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_RULES_LINKS;
 import static in.org.celesta2k17.activities.EventInfoActivity.EXTRA_VENUE;
 
 public class ExpoEvents extends AppCompatActivity implements EventsRecyclerViewAdapter.ListCardClick {
@@ -58,7 +60,10 @@ public class ExpoEvents extends AppCompatActivity implements EventsRecyclerViewA
                 resources.getStringArray(R.array.array_expo_event_venue),
                 resources.obtainTypedArray(R.array.array_expo_event_images),
                 resources.getStringArray(R.array.array_expo_organizers),
-                resources.getStringArray(R.array.array_expo_contacts));
+                resources.getStringArray(R.array.array_expo_contacts),
+                resources.getStringArray(R.array.array_expo_event_links),
+                resources.getStringArray(R.array.array_expo_event_ruleLinks)
+                );
         recyclerView.setAdapter(eventsRecyclerViewAdapter);
     }
 
@@ -82,6 +87,8 @@ public class ExpoEvents extends AppCompatActivity implements EventsRecyclerViewA
         intentNew.putExtra(EXTRA_IMAGE_ID, eventsData.getImageId());
         intentNew.putExtra(EXTRA_ORGANIZERS, eventsData.getOrganizers());
         intentNew.putExtra(EXTRA_CONTACTS, eventsData.getContacts());
+        intentNew.putExtra(EXTRA_RULES_LINKS, eventsData.getRuleLink());
+        intentNew.putExtra(EXTRA_LINKS, eventsData.getLink());
         startActivity(intentNew, options.toBundle());
     }
 }
