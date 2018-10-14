@@ -21,23 +21,29 @@ import java.util.ArrayList;
 
 public class EventsRecyclerViewAdapter extends RecyclerView.Adapter<EventsRecyclerViewAdapter.EventViewHolder> {
     private final ListCardClick mOnClickListener;
-    private ArrayList<EventsData> dataList = new ArrayList<>();
-    private String eventHeader[];
-    private String eventText[];
-    private String eventRules[];
-    private String dateTime[];
-    private String organizers[];
-    private String contacts[];
-    private String venue[];
-    private TypedArray images;
+
+    ArrayList<EventsData> dataList = new ArrayList<>();
+    String eventHeader[];
+    String eventText[];
+    String eventRules[];
+    String dateTime[];
+    String organizers[];
+    String contacts[];
+    String venue[];
+    String links[];
+    String ruleLinks[];
+    TypedArray images;
+
     Context context;
 
-    public EventsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventHeader[], String eventText[], String eventRules[], String dateTime[], String venue[], TypedArray img, String organizers[], String contacts[]) {
+    public EventsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventHeader[], String eventText[], String eventRules[], String dateTime[], String venue[], TypedArray img, String organizers[], String contacts[], String links[], String ruleLinks[]) {
         this.eventHeader = eventHeader;
         this.eventText = eventText;
         this.eventRules = eventRules;
         this.dateTime = dateTime;
         this.venue = venue;
+        this.links = links;
+        this.ruleLinks = ruleLinks;
         mOnClickListener = listCardClick;
         images = img;
         this.organizers = organizers;
@@ -65,7 +71,8 @@ public class EventsRecyclerViewAdapter extends RecyclerView.Adapter<EventsRecycl
         eventsData.setImageId(images.getResourceId(position, -1));
         eventsData.setOrganizers(organizers[position]);
         eventsData.setContacts(contacts[position]);
-
+        eventsData.setLink(links[position]);
+        eventsData.setRuleLink(ruleLinks[position]);
         dataList.add(eventsData);
 
         holder.textViewHeader.setText(eventHeader[position]);

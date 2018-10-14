@@ -1,6 +1,8 @@
 package in.org.celesta2k17.activities;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
+
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +12,8 @@ import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -26,7 +30,7 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
 
     private boolean mIsTheTitleVisible          = false;
     private boolean mIsTheTitleContainerVisible = true;
-
+    public  Button rulesButton,registerButton;
     private LinearLayout mTitleContainer;
     private TextView mTitle;
     private AppBarLayout mAppBarLayout;
@@ -38,7 +42,9 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
             EXTRA_DATE_TIME = "DateTime",
             EXTRA_IMAGE_ID = "ImageId",
             EXTRA_ORGANIZERS = "Organizers",
-            EXTRA_CONTACTS = "Contacts";
+            EXTRA_CONTACTS = "Contacts",
+            EXTRA_LINKS = "links",
+            EXTRA_RULES_LINKS = "rulesLinks";
 
     @Override
     public void onLowMemory() {
@@ -52,10 +58,13 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_info);
-        mToolbar        = findViewById(R.id.main_toolbar);
-        mTitle          = findViewById(R.id.main_textview_title);
-        mTitleContainer = findViewById(R.id.main_linearlayout_title);
-        mAppBarLayout   = findViewById(R.id.main_appbar);
+
+        registerButton = (Button)findViewById(R.id.registerButton);
+        rulesButton = (Button)findViewById(R.id.rulesButton);;
+        mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
+        mTitle          = (TextView) findViewById(R.id.main_textview_title);
+        mTitleContainer = (LinearLayout) findViewById(R.id.main_linearlayout_title);
+        mAppBarLayout   = (AppBarLayout) findViewById(R.id.main_appbar);
         mAppBarLayout.addOnOffsetChangedListener(this);
         startAlphaAnimation(mTitle, 0, View.INVISIBLE);
         // Get the Intent that started this activity and extract the strings needed
@@ -66,8 +75,8 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         final String dateTime = intent.getStringExtra(EXTRA_DATE_TIME);
         String venue = intent.getStringExtra(EXTRA_VENUE);
         final int imageId = intent.getIntExtra(EXTRA_IMAGE_ID, -1);
-
-
+        final String link = intent.getStringExtra(EXTRA_LINKS);
+        final String ruleLink = intent.getStringExtra(EXTRA_RULES_LINKS);
 
         ((TextView) findViewById(R.id.event_info_name)).setText(header);
         mTitle.setText(header);
@@ -114,6 +123,30 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         else
             findViewById(R.id.event_venue).setVisibility(View.GONE);
 
+        registerButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+                public void onClick(View view) {
+                Uri webpage = Uri.parse(EXTRA_LINKS);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
+                }
+            });
+        registerButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Uri webpage = Uri.parse(link);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
+            }
+        });
+        rulesButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Uri webpage = Uri.parse(ruleLink);
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
+            }
+        });
         FloatingActionButton fab = findViewById(R.id.fab_share_event);
         fab.setOnClickListener(view -> {
             Resources resources = getResources();

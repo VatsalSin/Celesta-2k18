@@ -13,7 +13,8 @@ public class EventsData {
     private String organizers;
     private String contacts;
     private int imageId;
-
+    private String link;
+    private String ruleLink;
     public EventsData()
 
     {
@@ -47,7 +48,8 @@ public class EventsData {
     public String getDateTime() {
         return dateTime;
     }
-
+    public String getLink() {return link;}
+    public String getRuleLink() {return ruleLink;}
     public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
@@ -83,5 +85,11 @@ public class EventsData {
 
     public void setContacts(String contacts) {
         this.contacts = contacts;
+    }
+    public void setLink(String link) {
+        this.link = link;
+    }
+    public void setRuleLink(String RuleLink) {
+        this.ruleLink = RuleLink;
     }
 }
