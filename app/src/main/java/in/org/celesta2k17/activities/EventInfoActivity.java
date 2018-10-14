@@ -1,24 +1,18 @@
 package in.org.celesta2k17.activities;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.text.method.LinkMovementMethod;
-import android.view.MenuItem;
-
 
 import com.bumptech.glide.Glide;
 
@@ -58,10 +52,10 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_info);
-        mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
-        mTitle          = (TextView) findViewById(R.id.main_textview_title);
-        mTitleContainer = (LinearLayout) findViewById(R.id.main_linearlayout_title);
-        mAppBarLayout   = (AppBarLayout) findViewById(R.id.main_appbar);
+        mToolbar        = findViewById(R.id.main_toolbar);
+        mTitle          = findViewById(R.id.main_textview_title);
+        mTitleContainer = findViewById(R.id.main_linearlayout_title);
+        mAppBarLayout   = findViewById(R.id.main_appbar);
         mAppBarLayout.addOnOffsetChangedListener(this);
         startAlphaAnimation(mTitle, 0, View.INVISIBLE);
         // Get the Intent that started this activity and extract the strings needed
@@ -101,40 +95,37 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         String organizers = intent.getStringExtra(EXTRA_ORGANIZERS);
         final String contacts = intent.getStringExtra(EXTRA_CONTACTS);
         if (organizers.equals("-1"))
-            ((TextView) findViewById(R.id.event_organizers)).setVisibility(View.GONE);
+            findViewById(R.id.event_organizers).setVisibility(View.GONE);
         else
             ((TextView) findViewById(R.id.event_organizers)).setText(organizers);
 
         if (contacts.equals("-1"))
-            ((TextView) findViewById(R.id.event_contact)).setVisibility(View.GONE);
+            findViewById(R.id.event_contact).setVisibility(View.GONE);
         else
             ((TextView) findViewById(R.id.event_contact)).setText(contacts);
 
         if (!dateTime.equals("-1"))
             ((TextView) findViewById(R.id.event_date_time)).setText(dateTime);
         else
-            ((TextView) findViewById(R.id.event_date_time)).setVisibility(View.GONE);
+            findViewById(R.id.event_date_time).setVisibility(View.GONE);
 
         if (!venue.equals("-1"))
             ((TextView) findViewById(R.id.event_venue)).setText(venue);
         else
-            ((TextView) findViewById(R.id.event_venue)).setVisibility(View.GONE);
+            findViewById(R.id.event_venue).setVisibility(View.GONE);
 
         FloatingActionButton fab = findViewById(R.id.fab_share_event);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Resources resources = getResources();
-                String shareString = resources.getText(R.string.share_message) + "\n"
-                        + resources.getText(R.string.name) + ": " + header + "\n"
-                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
-                        + finalText;
-                Intent shareIntent = new Intent();
-                shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
-                shareIntent.setType("text/plain");
-                startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
-            }
+        fab.setOnClickListener(view -> {
+            Resources resources = getResources();
+            String shareString = resources.getText(R.string.share_message) + "\n"
+                    + resources.getText(R.string.name) + ": " + header + "\n"
+                    + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
+                    + finalText;
+            Intent shareIntent = new Intent();
+            shareIntent.setAction(Intent.ACTION_SEND);
+            shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
+            shareIntent.setType("text/plain");
+            startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
         });
     }
 

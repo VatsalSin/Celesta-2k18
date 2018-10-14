@@ -2,6 +2,7 @@ package in.org.celesta2k17.adapters;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -20,15 +21,15 @@ import java.util.ArrayList;
 
 public class EventsRecyclerViewAdapter extends RecyclerView.Adapter<EventsRecyclerViewAdapter.EventViewHolder> {
     private final ListCardClick mOnClickListener;
-    ArrayList<EventsData> dataList = new ArrayList<>();
-    String eventHeader[];
-    String eventText[];
-    String eventRules[];
-    String dateTime[];
-    String organizers[];
-    String contacts[];
-    String venue[];
-    TypedArray images;
+    private ArrayList<EventsData> dataList = new ArrayList<>();
+    private String eventHeader[];
+    private String eventText[];
+    private String eventRules[];
+    private String dateTime[];
+    private String organizers[];
+    private String contacts[];
+    private String venue[];
+    private TypedArray images;
     Context context;
 
     public EventsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventHeader[], String eventText[], String eventRules[], String dateTime[], String venue[], TypedArray img, String organizers[], String contacts[]) {
@@ -44,18 +45,17 @@ public class EventsRecyclerViewAdapter extends RecyclerView.Adapter<EventsRecycl
         this.context = context;
     }
 
+    @NonNull
     @Override
-    public EventViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public EventViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater layoutInflater = LayoutInflater.from(context);
-        boolean attachToParent = false;
-        View view = layoutInflater.inflate(R.layout.card_view, parent, attachToParent);
-        EventViewHolder eventViewHolder = new EventViewHolder(view);
-        return eventViewHolder;
+        View view = layoutInflater.inflate(R.layout.card_view, parent, false);
+        return new EventViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(EventViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull EventViewHolder holder, int position) {
         EventsData eventsData = new EventsData();
         eventsData.setHeader(eventHeader[position]);
         eventsData.setText(eventText[position]);
@@ -99,9 +99,9 @@ public class EventsRecyclerViewAdapter extends RecyclerView.Adapter<EventsRecycl
 
         public EventViewHolder(View itemView) {
             super(itemView);
-            textViewHeader = (TextView) itemView.findViewById(R.id.card_header);
-            textViewData = (TextView) itemView.findViewById(R.id.card_text);
-            imageView = (ImageView) itemView.findViewById(R.id.card_cardimage);
+            textViewHeader = itemView.findViewById(R.id.card_header);
+            textViewData = itemView.findViewById(R.id.card_text);
+            imageView = itemView.findViewById(R.id.card_cardimage);
             itemView.setOnClickListener(this);
             imageView.setTransitionName("event_image_view_transition");
             textViewHeader.setTransitionName("event_text_header_transition");
