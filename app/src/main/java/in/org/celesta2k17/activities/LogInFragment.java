@@ -239,13 +239,24 @@ public class LogInFragment extends AuthFragment{
 
     private boolean isAnyFieldEmpty() {
         boolean flag = false;
-        if (TextUtils.isEmpty(Objects.requireNonNull(emailIDWrapper.getEditText()).getText().toString())) {
+        if(TextUtils.isEmpty(Objects.requireNonNull(emailIDWrapper.getEditText()).getText().toString()) && TextUtils.isEmpty(Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString()))
+        {
             flag = true;
-            emailIDWrapper.setError(getString(R.string.error_empty_field));
+            Toast.makeText(getContext(), "Required fields", Toast.LENGTH_SHORT).show();
+
         }
-        if (TextUtils.isEmpty(Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString())) {
-            flag = true;
-            passwordWrapper.setError(getString(R.string.error_empty_field));
+        else {
+            if (TextUtils.isEmpty(Objects.requireNonNull(emailIDWrapper.getEditText()).getText().toString())) {
+                flag = true;
+                Toast.makeText(getContext(), "Required field Email", Toast.LENGTH_SHORT).show();
+//            emailIDWrapper.setError(getString(R.string.error_empty_field));
+            }
+            if (TextUtils.isEmpty(Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString())) {
+                flag = true;
+                Toast.makeText(getContext(), "Required field Password", Toast.LENGTH_SHORT).show();
+
+//            passwordWrapper.setError(getString(R.string.error_empty_field));
+            }
         }
         return flag;
     }

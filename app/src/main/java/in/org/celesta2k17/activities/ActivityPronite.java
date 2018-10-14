@@ -16,18 +16,21 @@ import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
+
 import java.util.Timer;
 import java.util.TimerTask;
+
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.adapters.EventsAdapter;
 import in.org.celesta2k17.listeners.ViewPagerCustomDuration;
-import static in.org.celesta2k17.activities.landwInfoActivity.startAlphaAnimation;
-public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
-    private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR  = 0.9f;
-    private static final float PERCENTAGE_TO_HIDE_TITLE_DETAILS     = 0.3f;
-    private static final int ALPHA_ANIMATIONS_DURATION              = 200;
-    private boolean mIsTheTitleVisible          = false;
+
+public class ActivityPronite extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
+    private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR = 0.9f;
+    private static final float PERCENTAGE_TO_HIDE_TITLE_DETAILS = 0.3f;
+    private static final int ALPHA_ANIMATIONS_DURATION = 200;
+    private boolean mIsTheTitleVisible = false;
     private boolean mIsTheTitleContainerVisible = true;
 
     private LinearLayout mTitleContainer;
@@ -38,8 +41,9 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
     final long DELAY_MS = 500;//delay in milliseconds before task is to be executed
     final long PERIOD_MS = 2000; // time in milliseconds between successive task executions.
     private int currentPage = 0;
-    Timer timer ;
+    Timer timer;
     private int NUM_PAGES = 6;
+
     @Override
     public void onLowMemory() {
         super.onLowMemory();
@@ -47,15 +51,16 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
         Glide.get(getApplicationContext()).trimMemory(TRIM_MEMORY_COMPLETE);
         System.gc();
     }
-    protected void onCreate(@Nullable Bundle savedInstanceState)  {
+
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         setContentView(R.layout.activity_pronite);
-        mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
-        mTitle          = (TextView) findViewById(R.id.main_textview_title);
-        mTitleContainer = (LinearLayout) findViewById(R.id.main_linearlayout_title);
-        mAppBarLayout   = (AppBarLayout) findViewById(R.id.main_appbar);
+        mToolbar = findViewById(R.id.main_toolbar);
+        mTitle = findViewById(R.id.main_textview_title);
+        mTitleContainer = findViewById(R.id.main_linearlayout_title);
+        mAppBarLayout = findViewById(R.id.main_appbar);
         mAppBarLayout.addOnOffsetChangedListener(this);
         startAlphaAnimation(mTitle, 0, View.INVISIBLE);
 
@@ -82,23 +87,20 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
             }
         });
         /*Adding automatic swap to the images
-        * */
+         * */
         FloatingActionButton fab = findViewById(R.id.fab_share_event);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Resources resources = getResources();
-                String shareString = "temp";
-                // resources.getText(R.string.share_message) + "\n"
+        fab.setOnClickListener(view -> {
+            Resources resources = getResources();
+            String shareString = "temp";
+            // resources.getText(R.string.share_message) + "\n"
 //                        + resources.getText(R.string.name) + ": " + header + "\n"
 //                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
 //                        + finalText;
-                Intent shareIntent = new Intent();
-                shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
-                shareIntent.setType("text/plain");
-                startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
-            }
+            Intent shareIntent = new Intent();
+            shareIntent.setAction(Intent.ACTION_SEND);
+            shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
+            shareIntent.setType("text/plain");
+            startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
         });
         final Handler handler = new Handler();
         final Runnable Update = () -> {
@@ -118,6 +120,7 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
         }, DELAY_MS, PERIOD_MS);
 
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
@@ -137,10 +140,11 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
         handleAlphaOnTitle(percentage);
         handleToolbarTitleVisibility(percentage);
     }
+
     private void handleToolbarTitleVisibility(float percentage) {
         if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
 
-            if(!mIsTheTitleVisible) {
+            if (!mIsTheTitleVisible) {
                 startAlphaAnimation(mTitle, ALPHA_ANIMATIONS_DURATION, View.VISIBLE);
                 mIsTheTitleVisible = true;
             }
@@ -156,7 +160,7 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
 
     private void handleAlphaOnTitle(float percentage) {
         if (percentage >= PERCENTAGE_TO_HIDE_TITLE_DETAILS) {
-            if(mIsTheTitleContainerVisible) {
+            if (mIsTheTitleContainerVisible) {
                 startAlphaAnimation(mTitleContainer, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
                 mIsTheTitleContainerVisible = false;
             }
@@ -170,7 +174,7 @@ public class ActivityPronite  extends AppCompatActivity implements AppBarLayout.
         }
     }
 
-    public static void startAlphaAnimation (View v, long duration, int visibility) {
+    public static void startAlphaAnimation(View v, long duration, int visibility) {
         AlphaAnimation alphaAnimation = (visibility == View.VISIBLE)
                 ? new AlphaAnimation(0f, 1f)
                 : new AlphaAnimation(1f, 0f);

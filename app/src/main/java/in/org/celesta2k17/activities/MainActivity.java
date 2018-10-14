@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -17,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Menu menu = null;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,58 +40,60 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.home);
         navigationView = findViewById(R.id.navigation_view);
 
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Window window = getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(MainActivity.this,R.color.dark));
 
-                switch (item.getItemId()) {
-                    case R.id.menu_item_sponsors:
-                        Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.menu_item_faq:
-                        startActivity( new Intent(MainActivity.this, FaqActivity.class));
-                        break;
-                    case R.id.menu_item_about:
-                        startActivity( new Intent(MainActivity.this, AboutActivity.class));
-                        break;
-                    case R.id.menu_item_profile:
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                        break;
-                    case R.id.menu_item_logout:
-                        Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.menu_item_schedule:
-                        startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
-                        break;
-                    case R.id.menu_item_lectures:
-                        startActivity(new Intent(MainActivity.this, LecturesActivity.class));
-                        break;
-                    case R.id.menu_item_workshops:
-                        startActivity(new Intent(MainActivity.this, WorkshopsActivity.class));
-                        break;
-                    case R.id.menu_item_exhibitions:
-                        startActivity(new Intent(MainActivity.this, ExpoEvents.class));
-                        break;
-                    case R.id.menu_item_team:
-                        startActivity(new Intent(MainActivity.this, TeamActivity.class));
-                        break;
-                    case R.id.menu_item_developers:
-                        startActivity(new Intent(MainActivity.this, DevelopersActivity.class));
-                        break;
-                    case R.id.menu_item_events:
-                        startActivity(new Intent(MainActivity.this, EventsActivity.class));
-                        break;
-                    case R.id.menu_item_map:
-                        String uri="https://www.google.com/maps/d/viewer?mid=1Tub6_KM_0Tv8UHkh97SP9Tehv78HBv1e&usp=sharingax&basemap=satellite";
-                        Intent intent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(uri));
-                        Objects.requireNonNull(MainActivity.this).startActivity(intent);
-                        break;
-                }
-                item.setChecked(true);
-                drawerLayout.closeDrawers();
+        navigationView.setNavigationItemSelectedListener(item -> {
 
-                return true;
+            switch (item.getItemId()) {
+                case R.id.menu_item_sponsors:
+                    Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.menu_item_faq:
+                    startActivity(new Intent(MainActivity.this, FaqActivity.class));
+                    break;
+                case R.id.menu_item_about:
+                    startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                    break;
+                case R.id.menu_item_profile:
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    break;
+                case R.id.menu_item_logout:
+                    Toast.makeText(MainActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.menu_item_schedule:
+                    startActivity(new Intent(MainActivity.this, ScheduleActivity.class));
+                    break;
+                case R.id.menu_item_lectures:
+                    startActivity(new Intent(MainActivity.this, LecturesActivity.class));
+                    break;
+                case R.id.menu_item_workshops:
+                    startActivity(new Intent(MainActivity.this, WorkshopsActivity.class));
+                    break;
+                case R.id.menu_item_exhibitions:
+                    startActivity(new Intent(MainActivity.this, ExpoEvents.class));
+                    break;
+                case R.id.menu_item_team:
+                    startActivity(new Intent(MainActivity.this, TeamActivity.class));
+                    break;
+                case R.id.menu_item_developers:
+                    startActivity(new Intent(MainActivity.this, DevelopersActivity.class));
+                    break;
+                case R.id.menu_item_events:
+                    startActivity(new Intent(MainActivity.this, EventsActivity.class));
+                    break;
+                case R.id.menu_item_map:
+                    String uri = "https://www.google.com/maps/d/viewer?mid=1Tub6_KM_0Tv8UHkh97SP9Tehv78HBv1e&usp=sharingax&basemap=satellite";
+                    Intent intent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(uri));
+                    Objects.requireNonNull(MainActivity.this).startActivity(intent);
+                    break;
             }
+            item.setChecked(true);
+            drawerLayout.closeDrawers();
+
+            return true;
         });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
