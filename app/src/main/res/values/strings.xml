@@ -123,4 +123,6 @@
     <string name="default_rating">100</string>
     <string name="question">Question</string>
     <string name="rating_imageView">rating_imageView</string>
+    <string name="vatsal">Vatsal Singhal</string>
+    <string name="sheetal">Sheetal Gupta</string>
 </resources>
