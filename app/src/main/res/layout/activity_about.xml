@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -24,7 +30,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/about"
                 android:textColor="@color/colorPrimaryLight"
-                android:textSize="26sp" />
+               git android:textSize="26sp" />
 
             <View
                 android:layout_width="95dp"
@@ -43,70 +49,7 @@
                 android:layout_marginTop="16sp"
                 android:fontFamily="sans-serif"
                 android:lineSpacingExtra="4sp"
-                android:text="@string/LoremIpsum"
-                android:textColor="@color/colorPrimaryLight"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:layout_marginTop="16sp"
-                android:fontFamily="sans-serif-medium"
-                android:text="@string/Clubs"
-                android:textColor="@color/colorPrimaryLight"
-                android:textSize="26sp" />
-
-            <View
-                android:layout_width="85dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="16sp"
-                android:layout_marginTop="6sp"
-                android:background="@color/colorPrimaryLight">
-
-            </View>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16sp"
-                android:layout_marginRight="16sp"
-                android:layout_marginTop="16sp"
-                android:fontFamily="sans-serif"
-                android:lineSpacingExtra="4sp"
-                android:text="@string/LoremIpsum"
-                android:textColor="@color/colorPrimaryLight"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:layout_marginTop="16sp"
-                android:fontFamily="sans-serif-medium"
-                android:text="@string/Clubs"
-                android:textColor="@color/colorPrimaryLight"
-                android:textSize="26sp" />
-
-            <View
-                android:layout_width="85dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="16sp"
-                android:layout_marginTop="6sp"
-                android:background="@color/colorPrimaryLight">
-
-            </View>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16sp"
-                android:layout_marginLeft="16sp"
-                android:layout_marginRight="16sp"
-                android:layout_marginTop="16sp"
-                android:fontFamily="sans-serif"
-                android:lineSpacingExtra="4sp"
-                android:text="@string/LoremIpsum"
+                android:text="@string/aboutus"
                 android:textColor="@color/colorPrimaryLight"
                 android:textSize="18sp" />
 
@@ -115,3 +58,4 @@
 
     </FrameLayout>
 </ScrollView>
+</LinearLayout>
