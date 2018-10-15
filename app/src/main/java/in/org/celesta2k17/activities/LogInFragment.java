@@ -130,7 +130,7 @@ public class LogInFragment extends AuthFragment{
 //                                        String events = jsonObject.getString("events");
                                         sharedPreferences.putBoolean(getString(R.string.login_status), true);
                                         sharedPreferences.putString(getString(R.string.full_name), name);
-                                        sharedPreferences.putString(getString(R.string.id), userID + "");
+                                        sharedPreferences.putString(getString(R.string.id),"CLST"+userID);
                                         sharedPreferences.putString(getString(R.string.college_name), college);
 //                                                sharedPreferences.putString(getString(R.string.event_participated) , events);
                                         sharedPreferences.apply();
