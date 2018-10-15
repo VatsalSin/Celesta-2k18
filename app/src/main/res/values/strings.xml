@@ -3,6 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="my_profile">My Profile</string>
+    <string name="aboutus">Celesta is the annual Techno-Management Fest of IIT Patna. To promote technical and managerial enthusiasm amongst young and bright minds of our nation and to provide a platform to transform their innovative ideas into a meaningful reality.</string>
     <string name="events">Events</string>
     <string name="charity">Charitiy</string>
     <string name="lectures">Lectures</string>
