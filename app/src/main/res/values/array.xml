@@ -622,7 +622,7 @@
     </string-array>
 
     <integer-array name="array_treasure_event_images">
-        <item>@drawable/chemoquest</item>
+        <item>@drawable/njath</item>
         <item>@drawable/static_rush2</item>
     </integer-array>
 
