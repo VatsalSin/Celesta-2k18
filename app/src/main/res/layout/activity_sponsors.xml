@@ -10,26 +10,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--android:background="#96777777"-->
-        <!--android:gravity="center"-->
-        <!--android:text="Title Sponsor"-->
-        <!--android:textColor="#FFF"-->
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#96777777"
+        android:gravity="center"
+        android:text="Title Sponsor"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
 
-        <!--android:textSize="20dp" />-->
-
-        <!--<ImageView-->
-        <!--android:id="@+id/anshul_homes"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:layout_margin="10dp"-->
-        <!--android:layout_marginTop="5dp"-->
-        <!--android:scaleType="centerInside"-->
-        <!--android:src="@drawable/anshulhomes" />-->
+        <ImageView
+        android:id="@+id/anshul_homes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/beltron" />
 
         <TextView
             android:layout_width="match_parent"
@@ -37,7 +36,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Powered By"
+            android:text="Power Sponsor"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -47,99 +46,42 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:layout_margin="10dp"-->
-                <!--android:layout_marginRight="10dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/airtel" />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/startupbihar" />
 
         </LinearLayout>
-
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginBottom="20dp"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--android:background="#96777777"-->
-        <!--android:gravity="center"-->
-        <!--android:text="Innovation Partner"-->
-        <!--android:textColor="#FFF"-->
-        <!--android:textSize="20dp" />-->
-
-        <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginBottom="20dp"-->
-        <!--android:orientation="horizontal">-->
-
-        <!--<ImageView-->
-        <!--android:layout_width="150dp"-->
-        <!--android:layout_height="150dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:padding="5dp"-->
-        <!--android:scaleType="centerInside"-->
-        <!--android:src="@drawable/s_incubation" />-->
-
-        <!--</LinearLayout>-->
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#96777777"
-            android:gravity="center"
-            android:text="In Association With"
-            android:textColor="#FFF"
-
-            android:textSize="20dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/ascspons1" />-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/sbi" />-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/ntpc" />-->
-
-        </LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#96777777"
+        android:gravity="center"
+        android:text="Associate Sponsor"
+        android:textColor="#FFF"
+        android:textSize="20dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/ruban" />-->
+        <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bihartourism" />
 
         </LinearLayout>
 
@@ -149,9 +91,57 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Strategic Partners"
+            android:text="Beverage Sponsor"
             android:textColor="#FFF"
+            android:textSize="20dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/coca" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Event Sponsor"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icetl" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Coding Partners"
+            android:textColor="#FFF"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -160,45 +150,44 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/bihar_tour" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/hackerearth" />
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/canara" />-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/beltron" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/codingninjas" />
 
         </LinearLayout>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Health Partners"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/stdcrt" />-->
-
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ruban" />
         </LinearLayout>
 
         <TextView
@@ -208,7 +197,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Events Partners"
+            android:text="Stationary Partners"
             android:textColor="#FFF"
             android:textSize="20dp" />
 
@@ -218,45 +207,13 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/spykar" />-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/boi" />-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/axis" />-->
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
-
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/ic" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/classmate2" />
 
         </LinearLayout>
 
@@ -267,7 +224,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Beverage Partners"
+            android:text="Electronics Partner"
             android:textColor="#FFF"
             android:textSize="20dp" />
 
@@ -277,13 +234,13 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/coke" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/zebronics" />
 
         </LinearLayout>
 
@@ -294,7 +251,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Pizza Partner"
+            android:text="Radio Partner"
             android:textColor="#FFF"
             android:textSize="20dp" />
 
@@ -304,13 +261,13 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/domino" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/radiomirchi" />
 
         </LinearLayout>
 
@@ -321,7 +278,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Dairy Partners"
+            android:text="Food Partners"
             android:textColor="#FFF"
             android:textSize="20dp" />
 
@@ -331,13 +288,27 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/amul" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/jainfoodstall" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/chicken" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/jainfoodstall" />
 
         </LinearLayout>
 
@@ -348,7 +319,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Web Partner"
+            android:text="Training Partner"
             android:textColor="#FFF"
             android:textSize="20dp" />
 
@@ -358,15 +329,74 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/web" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/certstore" />
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Implementation Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/youthindiafoundation" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/techprolabz" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Web and SMS Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/asap" />
+
+        </LinearLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -383,13 +413,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/can" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/awestruck" />
 
         </LinearLayout>
 
@@ -399,7 +429,7 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Photography Partner"
+            android:text="Workshop Partner"
             android:textColor="#FFF"
             android:textSize="20dp" />
 
@@ -408,13 +438,222 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!--<ImageView-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_weight="1"-->
-                <!--android:padding="5dp"-->
-                <!--android:scaleType="centerInside"-->
-                <!--android:src="@drawable/eye" />-->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/whataftercollege" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Blogger Outreach Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/blogadda2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Magazine Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/scientificindia" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Online Media Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/festpav" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ntdindia" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/thecollegefever" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/igniteengineers" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/knowafest" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Printing Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/blogadda2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Gifting Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/thesouledstore" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Online Learning Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/learncodeonline" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:gravity="center"
+            android:text="Official Savings Partner"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/grabon" />
 
         </LinearLayout>
     </LinearLayout>
