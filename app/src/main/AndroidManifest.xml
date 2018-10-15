@@ -54,6 +54,13 @@
                 android:value="in.org.celesta2k17.activities.MainActivity" />
         </activity>
         <activity
+            android:name=".activities.SponsorsActivity"
+            android:label="@string/sponsors">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.org.celesta2k17.activities.MainActivity" />
+        </activity>
+        <activity
             android:name=".activities.landwInfoActivity"
             android:theme="@style/AppTheme.NoActionBar"
             >
