@@ -30,7 +30,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/about"
                 android:textColor="@color/colorPrimaryLight"
-               git android:textSize="26sp" />
+                android:textSize="26sp" />
 
             <View
                 android:layout_width="95dp"
