@@ -5,38 +5,42 @@
     android:layout_height="match_parent"
     android:background="@drawable/about_background"
     tools:context="in.org.celesta2k17.activities.SponsorsActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#96777777"
-        android:gravity="center"
-        android:text="Title Sponsor"
-        android:textColor="#FFF"
-        android:textSize="20dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/title_sponsors"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
         <ImageView
-        android:id="@+id/anshul_homes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:layout_marginTop="5dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/beltron" />
+            android:id="@+id/anshul_homes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/beltron"
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Power Sponsor"
+            android:text="@string/power_sponsors"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -47,11 +51,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:scaleType="centerInside"
                 android:src="@drawable/startupbihar" />
@@ -59,29 +63,30 @@
         </LinearLayout>
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
-        android:background="#96777777"
-        android:gravity="center"
-        android:text="Associate Sponsor"
-        android:textColor="#FFF"
-        android:textSize="20dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#96777777"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/associate_sponsors"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
 
-        <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_weight="1"
-        android:padding="5dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/bihartourism" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bihartourism" />
 
         </LinearLayout>
 
@@ -90,10 +95,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Beverage Sponsor"
+            android:text="@string/beverage_sponsors"
+
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,7 +108,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -114,10 +121,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Event Sponsor"
+            android:text="@string/event_sponsors"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -125,7 +134,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -139,10 +148,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Coding Partners"
+            android:text="@string/coding_partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,22 +177,26 @@
                 android:src="@drawable/codingninjas" />
 
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Health Partners"
+            android:text="@string/health_partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -193,13 +207,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Stationary Partners"
+            android:text="@string/stationary_partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,7 +223,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -220,13 +235,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Electronics Partner"
+            android:text="@string/electronics_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -235,7 +252,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -247,13 +264,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Radio Partner"
+            android:text="@string/radio_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -262,7 +280,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -274,13 +292,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Food Partners"
+            android:text="@string/food_partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -295,13 +314,15 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/jainfoodstall" />
+
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/chicken" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -315,13 +336,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Training Partner"
+            android:text="@string/training_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -330,7 +352,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -344,10 +366,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Implementation Partner"
+            android:text="@string/implementation_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -377,10 +400,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Web and SMS Partner"
+            android:text="@string/web_and_sms_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -388,7 +412,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -403,10 +427,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Merchandise Partner"
+            android:text="@string/merchandise_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -414,7 +439,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -428,10 +453,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Workshop Partner"
+            android:text="@string/workshop_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -439,7 +465,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -454,9 +480,9 @@
             android:layout_marginTop="10dp"
             android:background="#96777777"
             android:gravity="center"
-            android:text="Blogger Outreach Partner"
+            android:text="@string/blogger_outreach_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -464,7 +490,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -478,10 +504,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Magazine Partner"
+            android:text="@string/magazine_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -489,7 +516,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -503,10 +530,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Online Media Partner"
+            android:text="@string/online_media_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -520,6 +548,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/festpav" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -527,6 +556,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ntdindia" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -536,6 +566,7 @@
                 android:src="@drawable/thecollegefever" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -548,6 +579,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/igniteengineers" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -562,10 +594,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Printing Partner"
+            android:text="@string/printing_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -573,7 +606,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -587,10 +620,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Gifting Partner"
+            android:text="@string/gifting_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -598,7 +632,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -612,10 +646,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Online Learning Partner"
+            android:text="@string/online_learning_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -623,7 +658,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -637,10 +672,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="Official Savings Partner"
+            android:text="@string/official_savings_partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -648,7 +684,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="150dp"
+                android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:padding="5dp"
