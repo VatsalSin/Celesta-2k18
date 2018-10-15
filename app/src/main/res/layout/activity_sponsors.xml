@@ -5,36 +5,39 @@
     android:layout_height="match_parent"
     android:background="@drawable/about_background"
     tools:context="in.org.celesta2k17.activities.SponsorsActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#96777777"
-        android:gravity="center"
-        android:text="Title Sponsor"
-        android:textColor="#FFF"
-        android:textSize="20dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Title Sponsor"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
         <ImageView
-        android:id="@+id/anshul_homes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:layout_marginTop="5dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/beltron" />
+            android:id="@+id/anshul_homes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/beltron" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Power Sponsor"
             android:textColor="#FFF"
@@ -59,29 +62,30 @@
         </LinearLayout>
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
-        android:background="#96777777"
-        android:gravity="center"
-        android:text="Associate Sponsor"
-        android:textColor="#FFF"
-        android:textSize="20dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#96777777"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Associate Sponsor"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
 
-        <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_weight="1"
-        android:padding="5dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/bihartourism" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bihartourism" />
 
         </LinearLayout>
 
@@ -90,10 +94,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Beverage Sponsor"
+
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,10 +120,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Event Sponsor"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,10 +147,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Coding Partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,20 +176,24 @@
                 android:src="@drawable/codingninjas" />
 
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Health Partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -193,13 +206,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Stationary Partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -220,13 +234,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Electronics Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -247,13 +263,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Radio Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -274,13 +291,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Food Partners"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -295,6 +313,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/jainfoodstall" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -302,6 +321,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/chicken" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -315,13 +335,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Training Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -344,10 +365,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Implementation Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -377,10 +399,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Web and SMS Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -403,10 +426,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Merchandise Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -428,10 +452,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Workshop Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -478,10 +503,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Magazine Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -503,10 +529,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Online Media Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -520,6 +547,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/festpav" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -527,6 +555,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ntdindia" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -536,6 +565,7 @@
                 android:src="@drawable/thecollegefever" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -548,6 +578,7 @@
                 android:padding="5dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/igniteengineers" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -562,10 +593,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Printing Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -587,10 +619,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Gifting Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -612,10 +645,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Online Learning Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -637,10 +671,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="#96777777"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="Official Savings Partner"
             android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
