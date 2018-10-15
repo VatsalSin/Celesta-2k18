@@ -64,22 +64,8 @@ public class MainActivity extends AppCompatActivity {
                         Intent intentLogin = new Intent(this, LoginActivity.class);
                         startActivity(intentLogin);
                     } else {
-                        setContentView(R.layout.activity_register_signup_or_signin);
-                        TextView fullNameTextView = findViewById(R.id.fullName);
-                        TextView nameTextView = findViewById(R.id.nameTextView);
-                        TextView idTextView = findViewById(R.id.idValue);
-                        TextView collegeTextView = findViewById(R.id.collegeNameValue);
-                        TextView eventTextView = findViewById(R.id.eventsParticipatedValue);
-
-                        String full_name = sharedPreferences.getString(getString(R.string.full_name), "Mayank Vaidya");
-
-                        fullNameTextView.setText(sharedPreferences.getString(getString(R.string.full_name), "Mayank Vaidya"));
-                        String nameViewText = "" + Character.toUpperCase(full_name.charAt(0)) + Character.toUpperCase(full_name.charAt(full_name.indexOf(' ') + 1));
-                        nameTextView.setText(nameViewText);
-                        idTextView.setText(sharedPreferences.getString(getString(R.string.id), "12345"));
-                        collegeTextView.setText(sharedPreferences.getString(getString(R.string.college_name), "IIT Patna"));
-                        eventTextView.setText(sharedPreferences.getString(getString(R.string.event_participated), "-"));
-                        eventTextView.setVisibility(View.GONE);
+                        Intent intentLogin = new Intent(this, MyProfile.class);
+                        startActivity(intentLogin);
                     }
                     break;
                 case R.id.menu_item_logout:
@@ -222,22 +208,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         } else {
-            setContentView(R.layout.activity_register_signup_or_signin);
-            TextView fullNameTextView = findViewById(R.id.fullName);
-            TextView nameTextView = findViewById(R.id.nameTextView);
-            TextView idTextView = findViewById(R.id.idValue);
-            TextView collegeTextView = findViewById(R.id.collegeNameValue);
-            TextView eventTextView = findViewById(R.id.eventsParticipatedValue);
-
-            String full_name = sharedPreferences.getString(getString(R.string.full_name), "Mayank Vaidya");
-
-            fullNameTextView.setText(sharedPreferences.getString(getString(R.string.full_name), "Mayank Vaidya"));
-            String nameViewText = "" + Character.toUpperCase(full_name.charAt(0)) + Character.toUpperCase(full_name.charAt(full_name.indexOf(' ') + 1));
-            nameTextView.setText(nameViewText);
-            idTextView.setText(sharedPreferences.getString(getString(R.string.id), "12345"));
-            collegeTextView.setText(sharedPreferences.getString(getString(R.string.college_name), "IIT Patna"));
-            eventTextView.setText(sharedPreferences.getString(getString(R.string.event_participated), "-"));
-            eventTextView.setVisibility(View.GONE);
+            Intent intent = new Intent(MainActivity.this, MyProfile.class);
+            startActivity(intent);
         }
     }
 

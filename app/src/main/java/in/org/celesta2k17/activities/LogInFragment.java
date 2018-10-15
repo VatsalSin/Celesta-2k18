@@ -33,6 +33,7 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -120,17 +121,32 @@ public class LogInFragment extends AuthFragment{
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
                                 int status = Integer.parseInt(jsonObject.getString(getString(R.string.JSON_status)));
-
+//                                String eventList="";
+//                                int numEvents;
                                 switch (status) {
                                     case 200:
                                         Toast.makeText(getContext(), "Log In Successful", Toast.LENGTH_LONG).show();
                                         int userID = Integer.parseInt(jsonObject.getString("userID"));
                                         String name = jsonObject.getString("name");
                                         String college = jsonObject.getString("college");
+//                                        JSONArray events = jsonObject.getJSONArray("events");
+//                                        numEvents = events.length();
+
+//                                        for(int i=0;i<numEvents;i++)
+//                                        {
+//                                            if(i!=0)
+//                                            {
+//                                                eventList = eventList + ", ";
+//                                            }
+//                                            eventList = eventList + events.get(i);
+//                                        }
+//                                        Log.v("events:", eventList);
 //                                        String events = jsonObject.getString("events");
                                         sharedPreferences.putBoolean(getString(R.string.login_status), true);
                                         sharedPreferences.putString(getString(R.string.full_name), name);
                                         sharedPreferences.putString(getString(R.string.id),"CLST"+userID);
+//                                        sharedPreferences.putInt("numEvents",numEvents);
+//                                        sharedPreferences.putString("eventList",eventList);
                                         sharedPreferences.putString(getString(R.string.college_name), college);
 //                                                sharedPreferences.putString(getString(R.string.event_participated) , events);
                                         sharedPreferences.apply();
