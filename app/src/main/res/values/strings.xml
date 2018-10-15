@@ -126,4 +126,27 @@
     <string name="rating_imageView">rating_imageView</string>
     <string name="vatsal">Vatsal Singhal</string>
     <string name="sheetal">Sheetal Gupta</string>
+    <string name="title_sponsors">Title Sponsor</string>
+    <string name="power_sponsors">Power Sponsor</string>
+    <string name="associate_sponsors">Associate Sponsor</string>
+    <string name="beverage_sponsors">Beverage Sponsor</string>
+    <string name="event_sponsors">Event Sponsor</string>
+    <string name="coding_partners">Coding Partners</string>
+    <string name="health_partners">Health Partners</string>
+    <string name="stationary_partners">Stationary Partners</string>
+    <string name="radio_partner">Radio Partner</string>
+    <string name="food_partners">Food Partners</string>
+    <string name="training_partner">Training Partner</string>
+    <string name="implementation_partner">Implementation Partner</string>
+    <string name="web_and_sms_partner">Web and SMS Partner</string>
+    <string name="merchandise_partner">Merchandise Partner</string>
+    <string name="workshop_partner">Workshop Partner</string>
+    <string name="blogger_outreach_partner">Blogger Outreach Partner</string>
+    <string name="magazine_partner">Magazine Partner</string>
+    <string name="online_media_partner">Online Media Partner</string>
+    <string name="printing_partner">Printing Partner</string>
+    <string name="gifting_partner">Gifting Partner</string>
+    <string name="online_learning_partner">Online Learning Partner</string>
+    <string name="official_savings_partner">Official Savings Partner</string>
+    <string name="electronics_partner">Electronics Partner</string>
 </resources>
