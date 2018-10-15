@@ -33,6 +33,7 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -101,6 +102,14 @@ public class LogInFragment extends AuthFragment{
         });
 
         caption.setOnClickListener(v -> {
+            mEmail = Objects.requireNonNull(emailIDWrapper.getEditText()).getText().toString();
+            mPassword = Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString();
+            if(mEmail.equals("") && mPassword.equals(""))
+            {
+
+            }
+            else
+            {
             clearErrors();
             boolean b = validateInputs();
             if (b) {
@@ -109,37 +118,49 @@ public class LogInFragment extends AuthFragment{
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, mUrl,
                         response -> {
                             Log.v("Response:", response);
-                            Log.v("email:", mPassword);
-                            Log.v("pass:", mEmail);
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
                                 int status = Integer.parseInt(jsonObject.getString(getString(R.string.JSON_status)));
-
+//                                String eventList="";
+//                                int numEvents;
                                 switch (status) {
                                     case 200:
                                         Toast.makeText(getContext(), "Log In Successful", Toast.LENGTH_LONG).show();
                                         int userID = Integer.parseInt(jsonObject.getString("userID"));
                                         String name = jsonObject.getString("name");
                                         String college = jsonObject.getString("college");
+//                                        JSONArray events = jsonObject.getJSONArray("events");
+//                                        numEvents = events.length();
+
+//                                        for(int i=0;i<numEvents;i++)
+//                                        {
+//                                            if(i!=0)
+//                                            {
+//                                                eventList = eventList + ", ";
+//                                            }
+//                                            eventList = eventList + events.get(i);
+//                                        }
+//                                        Log.v("events:", eventList);
 //                                        String events = jsonObject.getString("events");
                                         sharedPreferences.putBoolean(getString(R.string.login_status), true);
                                         sharedPreferences.putString(getString(R.string.full_name), name);
-                                        sharedPreferences.putString(getString(R.string.id), userID + "");
+                                        sharedPreferences.putString(getString(R.string.id),"CLST"+userID);
+//                                        sharedPreferences.putInt("numEvents",numEvents);
+//                                        sharedPreferences.putString("eventList",eventList);
                                         sharedPreferences.putString(getString(R.string.college_name), college);
 //                                                sharedPreferences.putString(getString(R.string.event_participated) , events);
                                         sharedPreferences.apply();
                                         getActivity().finish();
                                         break;
                                     case 400:
-                                        Toast.makeText(getContext(), "Invalid Email Id", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), "Invalid Celesta Id", Toast.LENGTH_SHORT).show();
                                         break;
                                     case 409:
                                         Toast.makeText(getContext(), R.string.message_registration_duplicate, Toast.LENGTH_LONG).show();
                                         getActivity().finish();
                                         break;
                                     case 403:
-                                        Toast.makeText(getContext(), "Invalid Login", Toast.LENGTH_LONG).show();
-                                        getActivity().finish();
+                                        Toast.makeText(getContext(), "Invalid Credentials", Toast.LENGTH_LONG).show();
                                         break;
                                     default:
                                         Toast.makeText(getContext(), "Error logging in. Please try again later", Toast.LENGTH_SHORT).show();
@@ -171,7 +192,7 @@ public class LogInFragment extends AuthFragment{
                 };
                 mQueue.add(stringRequest);
             }
-        });
+        }});
 
     }
 
@@ -248,7 +269,7 @@ public class LogInFragment extends AuthFragment{
         else {
             if (TextUtils.isEmpty(Objects.requireNonNull(emailIDWrapper.getEditText()).getText().toString())) {
                 flag = true;
-                Toast.makeText(getContext(), "Required field Email", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Required field Celesta ID", Toast.LENGTH_SHORT).show();
 //            emailIDWrapper.setError(getString(R.string.error_empty_field));
             }
             if (TextUtils.isEmpty(Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString())) {
@@ -262,7 +283,7 @@ public class LogInFragment extends AuthFragment{
     }
 
     private void setHints() {
-        emailIDWrapper.setHint(getString(R.string.email_id_hint));
+        emailIDWrapper.setHint(getString(R.string.clst_id_hint));
         passwordWrapper.setHint(getString(R.string.password_hint));
     }
 }

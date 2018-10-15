@@ -16,27 +16,27 @@ public class DevelopersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_developers);
 
-        ImageView github_muks = findViewById(R.id.github_muks);
-        ImageView github_mayank = findViewById(R.id.github_mayank);
+        ImageView github_vatsal = findViewById(R.id.github_vatsal);
+        ImageView github_sheetal = findViewById(R.id.github_sheetal);
         ImageView github_manish = findViewById(R.id.github_manish);
-        ImageView fb_muks = findViewById(R.id.fb_muks);
-        ImageView fb_mayank = findViewById(R.id.fb_mayank);
+        ImageView fb_vatsal = findViewById(R.id.fb_vatsal);
+        ImageView fb_sheetal = findViewById(R.id.fb_sheetal);
         ImageView fb_manish = findViewById(R.id.fb_manish);
 
         String urls[] = {
-                "https://github.com/Muks14x",
-                "https://github.com/Mayank8318",
+                "https://github.com/VatsalSin",
+                "https://github.com/BVShe001",
                 "https://github.com/ivary43",
-                "https://www.facebook.com/pesk123",
-                "https://www.facebook.com/mayank.vaidya.9",
-                "https://www.facebook.com/profile.php?id=100009684360848"
+                "https://www.facebook.com/vatsalsinghal1",
+                "https://www.facebook.com/profile.php?id=100021865192488",
+                "https://www.facebook.com/imanishk16"
         };
 
-        github_muks.setOnClickListener(new devOnClickListener(urls[0]));
-        github_mayank.setOnClickListener(new devOnClickListener(urls[1]));
+        github_vatsal.setOnClickListener(new devOnClickListener(urls[0]));
+        github_sheetal.setOnClickListener(new devOnClickListener(urls[1]));
         github_manish.setOnClickListener(new devOnClickListener(urls[2]));
-        fb_muks.setOnClickListener(new devOnClickListener(urls[3]));
-        fb_mayank.setOnClickListener(new devOnClickListener(urls[4]));
+        fb_vatsal.setOnClickListener(new devOnClickListener(urls[3]));
+        fb_sheetal.setOnClickListener(new devOnClickListener(urls[4]));
         fb_manish.setOnClickListener(new devOnClickListener(urls[5]));
     }
 
