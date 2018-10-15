@@ -121,8 +121,6 @@ public class LogInFragment extends AuthFragment{
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
                                 int status = Integer.parseInt(jsonObject.getString(getString(R.string.JSON_status)));
-//                                String eventList="";
-//                                int numEvents;
                                 switch (status) {
                                     case 200:
                                         Toast.makeText(getContext(), "Log In Successful", Toast.LENGTH_LONG).show();
@@ -131,7 +129,6 @@ public class LogInFragment extends AuthFragment{
                                         String college = jsonObject.getString("college");
 //                                        JSONArray events = jsonObject.getJSONArray("events");
 //                                        numEvents = events.length();
-
 //                                        for(int i=0;i<numEvents;i++)
 //                                        {
 //                                            if(i!=0)
@@ -144,11 +141,8 @@ public class LogInFragment extends AuthFragment{
 //                                        String events = jsonObject.getString("events");
                                         sharedPreferences.putBoolean(getString(R.string.login_status), true);
                                         sharedPreferences.putString(getString(R.string.full_name), name);
-                                        sharedPreferences.putString(getString(R.string.id),"CLST"+userID);
-//                                        sharedPreferences.putInt("numEvents",numEvents);
-//                                        sharedPreferences.putString("eventList",eventList);
+                                        sharedPreferences.putString(getString(R.string.id),""+userID);
                                         sharedPreferences.putString(getString(R.string.college_name), college);
-//                                                sharedPreferences.putString(getString(R.string.event_participated) , events);
                                         sharedPreferences.apply();
                                         getActivity().finish();
                                         break;

@@ -7,6 +7,7 @@
     <string name="events">Events</string>
     <string name="charity">Charitiy</string>
     <string name="lectures">Lectures</string>
+    <string name="url_eventinfo">http://celesta.org.in/apiLe/app_regEveList</string>
     <string name="workshops">Workshops</string>
     <string name="schedule">Schedule</string>
     <string name="PasswordMismatch">Password Mismatch</string>
