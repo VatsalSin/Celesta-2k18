@@ -36,6 +36,7 @@
     <string name="exhibitions">Exhibitions</string>
     <string name="college_hint">College</string>
     <string name="email_id_hint">Email ID</string>
+    <string name="clst_id_hint">Celesta ID</string>
     <string name="password_hint">Password</string>
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="register_button">REGISTER</string>
