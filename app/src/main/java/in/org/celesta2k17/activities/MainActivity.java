@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, ExpoEvents.class));
                     break;
                 case R.id.menu_item_team:
-                    Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, TeamActivity.class));
 //                  startActivity(new Intent(MainActivity.this, TeamActivity.class));
                     break;
                 case R.id.menu_item_developers:
@@ -132,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

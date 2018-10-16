@@ -74,9 +74,9 @@
         <item>Prof at MIT and noble prize winner in physics</item>
     </string-array>
     <string-array name="array_lec_images">
-        <item>@drawable/abhishekjaiswal</item>
-        <item>@drawable/abhishekjaiswal</item>
-        <item>@drawable/abhishekjaiswal</item>
+        <item>@drawable/parth</item>
+        <item>@drawable/parth</item>
+        <item>@drawable/parth</item>
     </string-array>
     <string-array name="array_lec_description">
         <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics..Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.</item>
@@ -138,9 +138,9 @@
         <item>Prof at MIT and noble prize winner in physics</item>
     </string-array>
     <string-array name="array_workshop_images">
-        <item>@drawable/abhishekjaiswal</item>
-        <item>@drawable/abhishekjaiswal</item>
-        <item>@drawable/abhishekjaiswal</item>
+        <item>@drawable/parth</item>
+        <item>@drawable/parth</item>
+        <item>@drawable/parth</item>
     </string-array>
     <string-array name="array_workshop_description">
         <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics</item>
@@ -622,7 +622,7 @@
     </string-array>
 
     <integer-array name="array_treasure_event_images">
-        <item>@drawable/chemoquest</item>
+        <item>@drawable/njath</item>
         <item>@drawable/static_rush2</item>
     </integer-array>
 
@@ -955,48 +955,25 @@
     <!--Management events end -->
 
     <string-array name="array_team_names">
-        <item>Tarun Garg</item>
-        <item>Rajneesh Singh</item>
-        <item>Piyush Agarwal</item>
         <item>Parth Kulkarni</item>
-        <item>Abhishek Jaiswal</item>
-        <item>Tarun Garg</item>
-        <item>Parth Kulkarni</item>
-        <item>Anushree Jain</item>
-        <item>Sangeeth Mukundan</item>
         <item>Arunika Yadav</item>
-        <item>Rohang Narain</item>
-        <item>Milan Jolly</item>
+        <item>Sangeeth Mukundan</item>
+        <item>Anushree Jain</item>
+        <item>Parth Kulkarni</item>
         <item>Rishab Katiyar</item>
-        <item>Satwik Aggi</item>
-        <item>Navin Kumar</item>
-        <item>Hariraj Meena</item>
-        <item>Ashutosh Singh</item>
-        <item>Mayank Tripathi</item>
-        <item>Harshika</item>
-        <item>Abhirav Sati</item>
-        <item>Aditya Keshari</item>
-        <item>Shagufta Naaz</item>
-        <item>Srijan Sumant</item>
-        <item>Visnu P Kumarr</item>
-        <item>Harsh Raj</item>
-        <item>Satyaki Barman</item>
-        <item>Prajjwal Arya</item>
-        <item>Umesh Sanu</item>
-        <item>Abhishek Kumar Singh</item>
-        <item>Sahaj Kankotiya</item>
-        <item>Raj</item>
         <item>Tameesh Biswas</item>
         <item>Manish Kumar</item>
-        <item>Mayank Vaidya</item>
-        <item>Mukuntha N S</item>
-        <item>Manish Kumar</item>
-        <item>Parth Kulkarni</item>
-        <item>Abhishek Maurya</item>
-        <item>Fazle Rahman Ejazi</item>
-        <item>Milan Jolly</item>
-        <item>Nookesh Pilli</item>
-        <item>Yash Choudhary</item>
+        <item>Mayank Tripathi</item>
+        <item>Aditya Keshari</item>
+        <item>Harshika</item>
+        <item>Akshat Rahul</item>
+        <item>Visnu P Kumarr</item>
+        <item>Prajjwal Arya</item>
+        <item>Sahil Singh</item>
+        <item>Abhirav Sati</item>
+        <item>Raj</item>
+        <item>Harsh Raj</item>
+        <item>Sohid Ture</item>
     </string-array>
 
     <string-array name="array_team_number">
@@ -1019,100 +996,31 @@
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
     </string-array>
 
     <string-array name="array_team_committees">
-        <item>Head Committee</item>
-        <item>Head Committee</item>
-        <item>Head Committee</item>
-        <item>Head Committee</item>
-        <item>Planning Committee</item>
-        <item>Planning Committee</item>
-        <item>Planning Committee</item>
-        <item>Planning Committee</item>
-        <item>Marketing and Sponsorship</item>
-        <item>Marketing and Sponsorship</item>
-        <item>Marketing and Sponsorship</item>
-        <item>Media and Public Relations</item>
-        <item>Media and Public Relations</item>
-        <item>Media and Public Relations</item>
-        <item>Media and Public Relations</item>
-        <item>Registration</item>
-        <item>Registration</item>
-        <item>Registration</item>
-        <item>Registration</item>
-        <item>Registration</item>
-        <item>Registration</item>
-        <item>Registration</item>
-        <item>Event Management</item>
-        <item>Event Management</item>
-        <item>Event Management</item>
-        <item>Event Management</item>
-        <item>Event Management</item>
-        <item>Finance</item>
-        <item>Finance</item>
-        <item>Finance</item>
-        <item>Finance</item>
-        <item>Web Team</item>
-        <item>Web Team</item>
-        <item>App Team</item>
-        <item>App Team</item>
-        <item>App Team</item>
-        <item>App Team</item>
-        <item>Creatives</item>
-        <item>Creatives</item>
-        <item>Creatives</item>
-        <item>Creatives</item>
-        <item>Creatives</item>
+        <item>Overall Fest Coordinator</item>
+        <item>Sponsorship Coordinator</item>
+        <item>Sponsorship Coordinator</item>
+        <item>Sponsorship Coordinator</item>
+        <item>Media and PR Coordinator</item>
+        <item>Media and PR Coordinator</item>
+        <item>Dev Team Coordinator</item>
+        <item>Dev Team Coordinator</item>
+        <item>Registrations Coordinator</item>
+        <item>Registrations Coordinator</item>
+        <item>Registrations Coordinator</item>
+        <item>Management and Planning Coordinator</item>
+        <item>Management and Planning Coordinator</item>
+        <item>Management and Planning Coordinator</item>
+        <item>Management and Planning Coordinator</item>
+        <item>Hospitality Coordinator</item>
+        <item>Hospitality Coordinator</item>
+        <item>Hospitality Coordinator</item>
+        <item>Creatives Coordinator</item>
     </string-array>
 
     <string-array name="array_team_pors">
-        <item>Fest Coordinator</item>
-        <item>Technical Head</item>
-        <item>Management Head</item>
-        <item>Organising Head</item>
-        <item>General Secretary, Technical Affairs</item>
-        <item>Technical Secretary, Junior Year</item>
-        <item>Technical Secretary, Sophomore Year</item>
-        <item>Technical Secretary, UG Girls</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
@@ -1135,48 +1043,25 @@
     </string-array>
 
     <integer-array name="array_team_images">
-        <item>@drawable/tarungarg</item>
-        <item>@drawable/rajneeshsingh</item>
-        <item>@drawable/piyushagarwal</item>
-        <item>@drawable/parthkulkarni</item>
-        <item>@drawable/abhishekjaiswal</item>
-        <item>@drawable/tarungarg</item>
-        <item>@drawable/parthkulkarni</item>
-        <item>@drawable/anushreejain</item>
-        <item>@drawable/sangeethmukundan</item>
-        <item>@drawable/arunikayadav</item>
-        <item>@drawable/rohangnarain</item>
-        <item>@drawable/milanjolly</item>
-        <item>@drawable/rishabkatiyar</item>
-        <item>@drawable/satwikaggi</item>
-        <item>@drawable/navinkumar</item>
-        <item>@drawable/harirajmeena</item>
-        <item>@drawable/ashutoshsingh</item>
-        <item>@drawable/mayanktripathi</item>
-        <item>@drawable/harshika</item>
-        <item>@drawable/abhiravsati</item>
-        <item>@drawable/adityakeshari</item>
-        <item>@drawable/shaguftanaaz</item>
-        <item>@drawable/srijansumant</item>
-        <item>@drawable/visnupkumarr</item>
-        <item>@drawable/harshraj</item>
-        <item>@drawable/satyakibarman</item>
-        <item>@drawable/prajjwalarya</item>
-        <item>@drawable/umeshsanu</item>
-        <item>@drawable/abhishekkumarsingh</item>
-        <item>@drawable/sahajkankotiya</item>
-        <item>@drawable/raj</item>
-        <item>@drawable/tameeshbiswas</item>
-        <item>@drawable/manishkumar</item>
-        <item>@drawable/mayank</item>
-        <item>@drawable/mukunthans</item>
-        <item>@drawable/manishkumar</item>
-        <item>@drawable/parthkulkarni</item>
-        <item>@drawable/abhishekmaurya</item>
-        <item>@drawable/fazlerahmanejazi</item>
-        <item>@drawable/milanjolly</item>
-        <item>@drawable/nookeshpilli</item>
-        <item>@drawable/yashchoudhary</item>
+        <item>@drawable/parth</item>
+        <item>@drawable/arunika</item>
+        <item>@drawable/sangeeth</item>
+        <item>@drawable/anushree</item>
+        <item>@drawable/parth</item>
+        <item>@drawable/rishabh</item>
+        <item>@drawable/tameesh</item>
+        <item>@drawable/manish1</item>
+        <item>@drawable/mayank1</item>
+        <item>@drawable/aditya</item>
+        <item>@drawable/harshika1</item>
+        <item>@drawable/akshat</item>
+        <item>@drawable/visnu</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/sahil</item>
+        <item>@drawable/abhirav</item>
+        <item>@drawable/raj1</item>
+        <item>@drawable/harsh</item>
+        <item>@drawable/sohid</item>
     </integer-array>
 
 
