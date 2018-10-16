@@ -23,7 +23,7 @@
             android:textSize="20sp" />
 
         <ImageView
-            android:id="@+id/anshul_homes"
+            android:id="@+id/beltron"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -51,6 +51,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/startup_bihar"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
@@ -81,6 +82,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/bihar_tourism"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -108,6 +110,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/coca_cola"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -134,6 +137,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/icetl"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -161,6 +165,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/hacker_earth"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -169,6 +174,7 @@
                 android:src="@drawable/hackerearth" />
 
             <ImageView
+                android:id="@+id/coding_ninjas"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -196,6 +202,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/ruban"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -223,6 +230,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/classmate"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -252,6 +260,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/zebronics"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -280,6 +289,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/radio_mirchi"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -308,6 +318,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/jain_food_stall"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -316,6 +327,7 @@
                 android:src="@drawable/jainfoodstall" />
 
             <ImageView
+                android:id="@+id/chicken"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -324,6 +336,7 @@
                 android:src="@drawable/chicken" />
 
             <ImageView
+                android:id="@+id/jain_food_stall_1"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -352,6 +365,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/cert_store"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -378,6 +392,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/youth_india_foundation"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -386,6 +401,7 @@
                 android:src="@drawable/youthindiafoundation" />
 
             <ImageView
+                android:id="@+id/technoprolabz"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -412,6 +428,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/asap"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -439,6 +456,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/awestuck"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -465,6 +483,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/what_after_college"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -490,6 +509,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/blogadda"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -516,6 +536,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/scientific_india"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -542,6 +563,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/fest_pav"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -550,6 +572,7 @@
                 android:src="@drawable/festpav" />
 
             <ImageView
+                android:id="@+id/ntd_india"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -558,6 +581,7 @@
                 android:src="@drawable/ntdindia" />
 
             <ImageView
+                android:id="@+id/the_college_fever"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -573,6 +597,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/ignite_engineers"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -581,6 +606,7 @@
                 android:src="@drawable/igniteengineers" />
 
             <ImageView
+                android:id="@+id/know_a_fest"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -606,6 +632,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/blog_adda1"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -632,6 +659,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/the_souled_store"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -658,6 +686,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/learn_code_online"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"
@@ -684,6 +713,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/grabon"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_weight="1"

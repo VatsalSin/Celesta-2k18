@@ -63,6 +63,7 @@ dependencies {
     androidTestImplementation 'junit:junit:4.12'
 //    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
 
-
+    //custom Chrome Tabs
+    implementation 'com.android.support:customtabs:27.1.1'
 }
 apply plugin: 'com.google.gms.google-services'
