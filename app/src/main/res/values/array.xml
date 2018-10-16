@@ -955,72 +955,30 @@
     <!--Management events end -->
 
     <string-array name="array_team_names">
-        <item>Tarun Garg</item>
-        <item>Rajneesh Singh</item>
-        <item>Piyush Agarwal</item>
         <item>Parth Kulkarni</item>
-        <item>Abhishek Jaiswal</item>
-        <item>Tarun Garg</item>
+        <item>Arunika Yadav</item>
+        <item>Sangeeth Mukundan</item>
         <item>Parth Kulkarni</item>
         <item>Anushree Jain</item>
-        <item>Sangeeth Mukundan</item>
-        <item>Arunika Yadav</item>
-        <item>Rohang Narain</item>
-        <item>Milan Jolly</item>
+        <item>Parth Kulkarni</item>
         <item>Rishab Katiyar</item>
-        <item>Satwik Aggi</item>
-        <item>Navin Kumar</item>
-        <item>Hariraj Meena</item>
-        <item>Ashutosh Singh</item>
-        <item>Mayank Tripathi</item>
-        <item>Harshika</item>
-        <item>Abhirav Sati</item>
-        <item>Aditya Keshari</item>
-        <item>Shagufta Naaz</item>
-        <item>Srijan Sumant</item>
-        <item>Visnu P Kumarr</item>
-        <item>Harsh Raj</item>
-        <item>Satyaki Barman</item>
-        <item>Prajjwal Arya</item>
-        <item>Umesh Sanu</item>
-        <item>Abhishek Kumar Singh</item>
-        <item>Sahaj Kankotiya</item>
-        <item>Raj</item>
         <item>Tameesh Biswas</item>
         <item>Manish Kumar</item>
-        <item>Mayank Vaidya</item>
-        <item>Mukuntha N S</item>
-        <item>Manish Kumar</item>
-        <item>Parth Kulkarni</item>
-        <item>Abhishek Maurya</item>
-        <item>Fazle Rahman Ejazi</item>
-        <item>Milan Jolly</item>
-        <item>Nookesh Pilli</item>
-        <item>Yash Choudhary</item>
+        <item>Arunika Yadav</item>
+        <item>Mayank Tripathi</item>
+        <item>Aditya Keshari</item>
+        <item>Harshika</item>
+        <item>Akshat Rahul</item>
+        <item>Visnu P Kumarr</item>
+        <item>Prajjwal Arya</item>
+        <item>Sahil Singh</item>
+        <item>Abhirav Sati</item>
+        <item>Raj</item>
+        <item>Harsh Raj</item>
+        <item>Sohid Ture</item>
     </string-array>
 
     <string-array name="array_team_number">
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
-        <item>-1</item>
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>

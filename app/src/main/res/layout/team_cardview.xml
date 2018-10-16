@@ -99,8 +99,6 @@
 
 
             </LinearLayout>
-
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -108,9 +106,7 @@
                 android:layout_marginRight="12dp"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorSignIn">
-
             </View>
-
             <TextView
                 android:id="@+id/team_committee_textview"
                 android:layout_width="match_parent"
@@ -123,9 +119,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryLight"
                 android:textSize="18sp" />
-
         </LinearLayout>
-
     </android.support.v7.widget.CardView>
 
 

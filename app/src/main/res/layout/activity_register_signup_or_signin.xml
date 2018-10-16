@@ -6,232 +6,271 @@
     android:layout_height="match_parent"
     android:background="?attr/colorPrimaryDark"
     android:orientation="vertical">
-
-    <RelativeLayout
-
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:id="@+id/layoutTop"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/cardBackgroundEvents">
+                <RelativeLayout
+                    android:id="@+id/layoutTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/cardBackgroundEvents">
 
-        </RelativeLayout>
+                </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/layoutBottom"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@id/layoutTop"
-            android:background="@color/colorPrimaryDark">
+                <RelativeLayout
+                    android:id="@+id/layoutBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/layoutTop"
+                    android:background="@color/colorPrimaryDark">
 
-        </RelativeLayout>
-        <!--Circle including the initial name -->
-        <RelativeLayout
-            android:id="@+id/overlapImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/layoutBottom"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="-40dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/circle"
-            android:gravity="center_vertical">
+                </RelativeLayout>
+                <!--Circle including the initial name -->
+                <RelativeLayout
+                    android:id="@+id/overlapImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/layoutBottom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-40dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/circle"
+                    android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/nameTextView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:paddingTop="35dp"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textSize="28sp"
-                tools:text="MS" />
-        </RelativeLayout>
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:paddingTop="35dp"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="28sp"
+                        tools:text="MS" />
+                </RelativeLayout>
 
-    </RelativeLayout>
-    <!--Text name and other values -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            </RelativeLayout>
+            <!--Text name and other values -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/fullName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="48dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/manish_kumar"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="48dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/manish_kumar"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="32sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16sp"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/my_profile"
-            android:textColor="#fff"
-            android:textSize="20sp" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16sp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/my_profile"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/Id"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16sp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/Id"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/idValue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginLeft="16sp"
-            android:layout_marginRight="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/celesta_id"
-            android:textAlignment="textEnd"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/idValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/celesta_id"
+                    android:textAlignment="textEnd"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginRight="16sp"
-        android:layout_marginTop="10dp"
-        android:background="#fff">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="10dp"
+                android:background="#fff">
 
-    </View>
+            </View>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/college"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16sp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/college"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/collegeNameValue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginLeft="16sp"
-            android:layout_marginRight="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/iit_patna"
-            android:textAlignment="textEnd"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/collegeNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/iit_patna"
+                    android:textAlignment="textEnd"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginRight="16sp"
-        android:layout_marginTop="10dp"
-        android:background="#fff">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="10dp"
+                android:background="#fff">
 
-    </View>
+            </View>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="24dp"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:text="Events"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:text="Registered Events:- "
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:padding="12dp"
+                    android:id="@+id/eventsParticipated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/njath_cpt"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:text="Events Registered"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="10dp"
+                android:background="#fff">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/eventsParticipatedValue"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:layout_marginLeft="16sp"
-            android:layout_marginRight="16sp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/njath_cpt"
-            android:textAlignment="textEnd"
-            android:textColor="#fff"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginRight="16sp"
-        android:layout_marginTop="10dp"
-        android:background="#fff">
-    </View>
-    <TextView
-        android:id="@+id/eventsParticipated"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="end"
-        android:layout_marginLeft="16sp"
-        android:layout_marginRight="16sp"
-        android:layout_weight="1"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/njath_cpt"
-        android:textAlignment="textEnd"
-        android:textColor="#fff"
-        android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:text="Registered Workshops:- "
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:padding="12dp"
+                    android:id="@+id/workshopsParticipated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textAlignment="center"
+                    android:text="@string/njath_cpt"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginTop="10dp"
+                android:background="#fff">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:text="Registered Exhibitions:- "
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:padding="12dp"
+                    android:id="@+id/exhibitionsParticipated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textAlignment="center"
+                    android:text="@string/njath_cpt"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
 
 

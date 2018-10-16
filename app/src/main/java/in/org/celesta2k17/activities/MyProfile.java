@@ -40,12 +40,13 @@ public class MyProfile extends AppCompatActivity {
     }
 
     private void setView() {
+        setContentView(R.layout.activity_register_signup_or_signin);
         RequestQueue mQueue;
         mQueue = Volley.newRequestQueue(this);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        TextView eventTextView = findViewById(R.id.eventsParticipatedValue);
-        TextView eventAllTextView = findViewById(R.id.eventsParticipated);
-        setContentView(R.layout.activity_register_signup_or_signin);
+        TextView eventParticipated = findViewById(R.id.eventsParticipated);
+        TextView workshopsParticipated = findViewById(R.id.workshopsParticipated);
+        TextView exhibitionsParticipated = findViewById(R.id.exhibitionsParticipated);;
         TextView fullNameTextView = findViewById(R.id.fullName);
         TextView nameTextView = findViewById(R.id.nameTextView);
         TextView idTextView = findViewById(R.id.idValue);
@@ -64,27 +65,41 @@ public class MyProfile extends AppCompatActivity {
                                 Log.v("Response:", response);
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
+                                    JSONObject innerLayer = jsonObject.getJSONObject("events");
                                     int status = Integer.parseInt(jsonObject.getString(getString(R.string.JSON_status)));
                                     switch (status) {
                                         case 200:
                                             Toast.makeText(this, "Fetching Data...", Toast.LENGTH_LONG).show();
 
-                                        JSONArray events = jsonObject.getJSONArray("events");
-                                        int numEvents = events.length();
-                                        String eventList="";
-                                        for(int i=0;i<numEvents;i++)
-                                        {
-                                            if(i!=0)
+                                        JSONArray events = innerLayer.getJSONArray("events");
+                                        JSONArray workshop = innerLayer.getJSONArray("workshop");
+                                        JSONArray exhibition = innerLayer.getJSONArray("exhibition");
+                                        int eventsLen,workshopsLen,exhibitionLen;
+                                            eventsLen=events.length();
+                                            workshopsLen=workshop.length();
+                                            exhibitionLen=exhibition.length();
+                                            String temp="";
+                                            for(int i=0;i<eventsLen;i++)
                                             {
-                                                eventList = eventList + ", ";
+                                                temp = temp + events.get(i);
+                                                temp = temp + "\n";
                                             }
-                                            eventList = eventList + events.get(i);
-                                        }
-                                        eventTextView.setText(""+numEvents);
-                                        eventAllTextView.setText(eventList);
-//                                        Log.v("events:", eventList);
-//                                        String events = jsonObject.getString("events");
-                                            break;
+                                            eventParticipated.setText(temp);
+                                            temp="";
+                                            for(int i=0;i<workshopsLen;i++)
+                                            {
+                                                temp = temp + workshop.get(i);
+                                                temp = temp + "\n";
+                                            }
+                                            workshopsParticipated.setText(temp);
+                                            temp="";
+                                            for(int i=0;i<exhibitionLen;i++)
+                                            {
+                                                temp = temp + exhibition.get(i);
+                                                temp = temp + "\n";
+                                            }
+                                            exhibitionsParticipated.setText(temp);
+                                        break;
                                         case 400:
                                             Toast.makeText(this, "Invalid Celesta Id", Toast.LENGTH_SHORT).show();
                                             break;
