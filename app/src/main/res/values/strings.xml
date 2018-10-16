@@ -49,6 +49,7 @@
     <string name="mobile_no_hint">Mobile No.</string>
     <string name="error_invalid_mobile_no">Invalid Mobile No.</string>
     <string name="register_url">http://celesta.org.in/apiLe/register</string>
+    <string name="eventregister_url">http://celesta.org.in/apiLe/app_register</string>
     <string name="api_key">iitp</string>
     <string name="register_param_name">name</string>
     <string name="register_param_college">college</string>
