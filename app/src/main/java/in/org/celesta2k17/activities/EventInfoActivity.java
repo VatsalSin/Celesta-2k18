@@ -149,7 +149,9 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         registerButton.setOnClickListener(v -> {
             SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
             if (!sharedPreferences.getBoolean(getString(R.string.login_status), false)) {
-                Toast.makeText(this,"log...", Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Please login or signup", Toast.LENGTH_LONG).show();
+                Intent intentLogin = new Intent(this, LoginActivity.class);
+                startActivity(intentLogin);
             } else {
                 Toast.makeText(getApplicationContext(), "Registering..", Toast.LENGTH_SHORT).show();
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, mUrl,

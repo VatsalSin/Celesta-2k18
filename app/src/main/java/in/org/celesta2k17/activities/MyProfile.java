@@ -67,8 +67,6 @@ public class MyProfile extends AppCompatActivity {
                                     int status = Integer.parseInt(jsonObject.getString(getString(R.string.JSON_status)));
                                     switch (status) {
                                         case 200:
-                                            Toast.makeText(this, "Fetching Data...", Toast.LENGTH_LONG).show();
-
                                         JSONArray events = innerLayer.getJSONArray("events");
                                         JSONArray workshop = innerLayer.getJSONArray("workshop");
                                         JSONArray exhibition = innerLayer.getJSONArray("exhibition");
