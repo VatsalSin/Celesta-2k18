@@ -97,14 +97,6 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".activities.MainActivity" />
     </activity>
-        <!-- <activity -->
-        <!-- android:name=".fragments.GalleryFragment" -->
-        <!-- android:label="@string/gallery"> -->
-        <!-- <meta-data -->
-        <!-- android:name="android.support.PARENT_ACTIVITY" -->
-        <!-- android:value=".activities.MainActivity" /> -->
-        <!-- </activity> -->
-
         <activity
             android:name=".activities.RoboticsEvents"
             android:label="Robotics">

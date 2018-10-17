@@ -127,18 +127,6 @@ public class LogInFragment extends AuthFragment{
                                         int userID = Integer.parseInt(jsonObject.getString("userID"));
                                         String name = jsonObject.getString("name");
                                         String college = jsonObject.getString("college");
-//                                        JSONArray events = jsonObject.getJSONArray("events");
-//                                        numEvents = events.length();
-//                                        for(int i=0;i<numEvents;i++)
-//                                        {
-//                                            if(i!=0)
-//                                            {
-//                                                eventList = eventList + ", ";
-//                                            }
-//                                            eventList = eventList + events.get(i);
-//                                        }
-//                                        Log.v("events:", eventList);
-//                                        String events = jsonObject.getString("events");
                                         sharedPreferences.putBoolean(getString(R.string.login_status), true);
                                         sharedPreferences.putString(getString(R.string.full_name), name);
                                         sharedPreferences.putString(getString(R.string.id),""+userID);
@@ -264,13 +252,10 @@ public class LogInFragment extends AuthFragment{
             if (TextUtils.isEmpty(Objects.requireNonNull(emailIDWrapper.getEditText()).getText().toString())) {
                 flag = true;
                 Toast.makeText(getContext(), "Required field Celesta ID", Toast.LENGTH_SHORT).show();
-//            emailIDWrapper.setError(getString(R.string.error_empty_field));
             }
             if (TextUtils.isEmpty(Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString())) {
                 flag = true;
                 Toast.makeText(getContext(), "Required field Password", Toast.LENGTH_SHORT).show();
-
-//            passwordWrapper.setError(getString(R.string.error_empty_field));
             }
         }
         return flag;
