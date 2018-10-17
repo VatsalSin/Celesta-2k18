@@ -53,6 +53,7 @@
     <string name="api_key">iitp</string>
     <string name="register_param_name">name</string>
     <string name="fetch_msg">Fetching Data...</string>
+    <string name="caid">CA Referral ID (optional)</string>
     <string name="register_param_college">college</string>
     <string name="register_param_emailid">emailid</string>
     <string name="register_param_password">password</string>

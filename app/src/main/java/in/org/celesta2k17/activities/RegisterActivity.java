@@ -41,12 +41,14 @@ public class RegisterActivity extends AppCompatActivity {
     TextInputLayout passwordWrapper;
     TextInputLayout confirmPasswordWrapper;
     TextInputLayout mobileNoWrapper;
+    TextInputLayout caIDWrapper;
     String mName;
     String mCollege;
     String mEmail;
     String mPassword;
     String mConfirmPassword;
     String mMobile;
+    String mCAID;
     RequestQueue mQueue;
     private String mUrl;
     private Pattern pattern = Pattern.compile(EMAIL_PATTERN);
@@ -73,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
         emailIdEditText = findViewById(R.id.email_id);
         passwordEditText = findViewById(R.id.password);
         confirmPasswordEditText = findViewById(R.id.password_confirm);
-
+        caIDWrapper = findViewById(R.id.caid_wrapper);
         emailIdEditText.setText(mEmail);
         passwordEditText.setText(mPassword);
         confirmPasswordEditText.setText(mPassword);
@@ -125,7 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
                         params.put(getString(R.string.register_param_emailid), mEmail);
                         params.put(getString(R.string.register_param_password), mPassword);
                         params.put(getString(R.string.register_param_mobile), mMobile);
-                        params.put(getString(R.string.register_param_apiKey), getString(R.string.api_key));
+                        params.put(getString(R.string.register_param_apiKey),mCAID);
 
                         return params;
                     }
@@ -150,6 +152,7 @@ public class RegisterActivity extends AppCompatActivity {
         passwordWrapper.setErrorEnabled(false);
         confirmPasswordWrapper.setErrorEnabled(false);
         mobileNoWrapper.setErrorEnabled(false);
+        caIDWrapper.setErrorEnabled(false);
     }
 
     private boolean validateInputs() {
@@ -161,7 +164,7 @@ public class RegisterActivity extends AppCompatActivity {
         mPassword = Objects.requireNonNull(passwordWrapper.getEditText()).getText().toString();
         mConfirmPassword = Objects.requireNonNull(confirmPasswordWrapper.getEditText()).getText().toString();
         mMobile = Objects.requireNonNull(mobileNoWrapper.getEditText()).getText().toString();
-
+        mCAID = Objects.requireNonNull(caIDWrapper.getEditText()).getText().toString();
         if (!validateEmail(mEmail)) {
             emailIDWrapper.setError(getString(R.string.error_invalid_email));
             return false;
@@ -229,7 +232,6 @@ public class RegisterActivity extends AppCompatActivity {
             flag = true;
             mobileNoWrapper.setError(getString(R.string.error_empty_field));
         }
-
         return flag;
     }
 
@@ -241,5 +243,6 @@ public class RegisterActivity extends AppCompatActivity {
         passwordWrapper.setHint(getString(R.string.password_hint));
         confirmPasswordWrapper.setHint(getString(R.string.confirm_password_hint));
         mobileNoWrapper.setHint(getString(R.string.mobile_no_hint));
+        caIDWrapper.setHint(getString(R.string.caid));
     }
 }
