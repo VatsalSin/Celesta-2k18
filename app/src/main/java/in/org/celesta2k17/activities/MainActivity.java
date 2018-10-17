@@ -219,5 +219,4 @@ public class MainActivity extends AppCompatActivity {
             refreshMenu();
         }
     }
-
 }

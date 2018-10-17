@@ -42,7 +42,6 @@ public class MyProfile extends AppCompatActivity {
     private void setView() {
         setContentView(R.layout.activity_register_signup_or_signin);
         RequestQueue mQueue;
-        mQueue = Volley.newRequestQueue(this);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         TextView eventParticipated = findViewById(R.id.eventsParticipated);
         TextView workshopsParticipated = findViewById(R.id.workshopsParticipated);
@@ -51,14 +50,13 @@ public class MyProfile extends AppCompatActivity {
         TextView nameTextView = findViewById(R.id.nameTextView);
         TextView idTextView = findViewById(R.id.idValue);
         TextView collegeTextView = findViewById(R.id.collegeNameValue);
+        mQueue = Volley.newRequestQueue(this);
         String full_name = sharedPreferences.getString(getString(R.string.full_name), "Mayank Vaidya");
         fullNameTextView.setText(sharedPreferences.getString(getString(R.string.full_name), "Mayank Vaidya"));
         String nameViewText = "" + Character.toUpperCase(full_name.charAt(0)) + Character.toUpperCase(full_name.charAt(full_name.indexOf(' ') + 1));
         nameTextView.setText(nameViewText);
         idTextView.setText("CLST"+sharedPreferences.getString(getString(R.string.id), "12345"));
         collegeTextView.setText(sharedPreferences.getString(getString(R.string.college_name), "IIT Patna"));
-//        eventTextView.setText(sharedPreferences.getString(getString(R.string.event_participated), "-"));
-//        eventTextView.setVisibility(View.GONE);
                     String mUrl = getString(R.string.url_eventinfo);
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, mUrl,
                             response -> {

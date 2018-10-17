@@ -1,14 +1,16 @@
 package in.org.celesta2k17.activities;
-import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.net.Uri;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -18,7 +20,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import android.content.Intent;
+import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import in.org.celesta2k17.R;
 
@@ -58,7 +72,7 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_info);
-
+        String mUrl =  getString(R.string.eventregister_url);
         registerButton = (Button)findViewById(R.id.registerButton);
         rulesButton = (Button)findViewById(R.id.rulesButton);;
         mToolbar        = (Toolbar) findViewById(R.id.main_toolbar);
@@ -77,7 +91,8 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
         final int imageId = intent.getIntExtra(EXTRA_IMAGE_ID, -1);
         final String link = intent.getStringExtra(EXTRA_LINKS);
         final String ruleLink = intent.getStringExtra(EXTRA_RULES_LINKS);
-
+        RequestQueue mQueue;
+        mQueue = Volley.newRequestQueue(this);
         ((TextView) findViewById(R.id.event_info_name)).setText(header);
         mTitle.setText(header);
         if (imageId != -1)
@@ -131,12 +146,56 @@ public class EventInfoActivity extends AppCompatActivity implements AppBarLayout
                 startActivity(intent);
                 }
             });
-        registerButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Uri webpage = Uri.parse(link);
-                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(intent);
+        registerButton.setOnClickListener(v -> {
+            SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+            if (!sharedPreferences.getBoolean(getString(R.string.login_status), false)) {
+                Toast.makeText(this,"log...", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "Registering..", Toast.LENGTH_SHORT).show();
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, mUrl,
+                        response -> {
+                            Log.v("Response:", response);
+                            try {
+                                JSONObject jsonObject = new JSONObject(response);
+                                int status = Integer.parseInt(jsonObject.getString(getString(R.string.JSON_status)));
+
+                                switch (status) {
+                                    case 200:
+                                        Toast.makeText(getApplicationContext(), "Registration successful for "+header, Toast.LENGTH_LONG).show();
+                                        break;
+                                    case 409:
+                                        Toast.makeText(getApplicationContext(), "You are already registed for "+header, Toast.LENGTH_LONG).show();
+                                        break;
+                                    default:
+                                        Toast.makeText(getApplicationContext(), "Error registering. Please try again later.", Toast.LENGTH_SHORT).show();
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        },
+                        error -> {
+                            Log.v("Error : ", error.toString());
+                            error.printStackTrace();
+                            Toast.makeText(getApplicationContext(), "Error registering. Please try again later", Toast.LENGTH_SHORT).show();
+                        }
+                ) {
+                    @Override
+                    protected Map<String, String> getParams() {
+                        Map<String, String> params = new HashMap<>();
+                        params.put("id",sharedPreferences.getString(getString(R.string.id),"12345"));
+                        params.put("event_name", link);
+                        params.put("unsub","0");
+                        return params;
+                    }
+
+                    @Override
+                    public Map<String, String> getHeaders() {
+                        Map<String, String> headers = new HashMap<>();
+                        headers.put("Accept", "application/json");
+                        return headers;
+                    }
+                };
+                mQueue.add(stringRequest);
             }
         });
         rulesButton.setOnClickListener(new View.OnClickListener(){
