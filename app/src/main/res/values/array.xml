@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer-array name="array_home_slide_show">
-        <item>@drawable/capture_the_flag</item>
-        <item>@drawable/robowars</item>
-        <item>@drawable/tech_exhibition</item>
-        <item>@drawable/static_rush2</item>
-        <item>@drawable/electro_exquizite</item>
-        <item>@drawable/mind_benders</item>
+        <item>@drawable/byterace</item>
+        <item>@drawable/robowars1</item>
+        <item>@drawable/stockmart1</item>
+        <item>@drawable/staticrush</item>
+        <item>@drawable/electro</item>
+        <item>@drawable/grafi</item>
     </integer-array>
     <integer-array name="array_pronite_slide_show">
-        <item>@drawable/capture_the_flag</item>
-        <item>@drawable/robowars</item>
-        <item>@drawable/tech_exhibition</item>
-        <item>@drawable/static_rush2</item>
-        <item>@drawable/electro_exquizite</item>
-        <item>@drawable/mind_benders</item>
+        <item>@drawable/byterace</item>
+        <item>@drawable/robowars1</item>
+        <item>@drawable/stockmart1</item>
+        <item>@drawable/staticrush</item>
+        <item>@drawable/electro</item>
+        <item>@drawable/grafi</item>
     </integer-array>
     <string-array name="array_event_headers">
         <item>Lets Code!!</item>
@@ -556,19 +556,19 @@
     </string-array>
 
     <integer-array name="array_photography_event_images">
-        <item>@drawable/comingsoon</item>
-        <item>@drawable/comingsoon</item>
-        <item>@drawable/comingsoon</item>
-        <item>@drawable/comingsoon</item>
+        <item>@drawable/cspl</item>
+        <item>@drawable/techphoto</item>
+        <item>@drawable/techsketch</item>
+        <item>@drawable/grafi</item>
         <item>@drawable/comingsoon</item>
     </integer-array>
 
     <string-array name="array_photography_organizers">
-        <item>Harshit Singh(FIFA)\n Pranil(CSGO)\n Anshul Koshiyari(DOTA2)\n Kshitij Jain(PUBG Mobile)</item>
+        <item>Harshit Singh(FIFA)\nPranil(CSGO)\nAnshul Koshiyari(DOTA2)\nKshitij Jain(PUBG Mobile)</item>
         <item>Rakshit Maheshwari</item>
         <item>Rakshit Maheshwari</item>
         <item>Rakshit Maheshwari</item>
-        <item>Yuvi Dhelawat\n Arohan Panda\n Maurya Bhatt\n Atul Gupta</item>
+        <item>Yuvi Dhelawat\nArohan Panda\nMaurya Bhatt\nAtul Gupta</item>
     </string-array>
 
     <string-array name="array_photography_contacts">
@@ -623,12 +623,12 @@
 
     <integer-array name="array_treasure_event_images">
         <item>@drawable/njath</item>
-        <item>@drawable/static_rush2</item>
+        <item>@drawable/staticrush</item>
     </integer-array>
 
     <string-array name="array_treasure_organizers">
-        <item>Piyush Chauhan\n Bhavani Sushmita</item>
-        <item>Umang Jain\n Prateek Rai</item>
+        <item>Piyush Chauhan\nBhavani Sushmita</item>
+        <item>Umang Jain\nPrateek Rai</item>
     </string-array>
 
     <string-array name="array_treasure_contacts">
@@ -701,11 +701,11 @@
     </string-array>
 
     <integer-array name="array_coding_event_images">
-        <item>@drawable/byte_race</item>
+        <item>@drawable/byterace</item>
     </integer-array>
 
     <string-array name="array_coding_organizers">
-        <item>Vatsal Singhal \n Diksha Bansal</item>
+        <item>Vatsal Singhal \nDiksha Bansal</item>
     </string-array>
 
     <string-array name="array_coding_contacts">
@@ -755,12 +755,12 @@
     </string-array>
 
     <integer-array name="array_expo_event_images">
-        <item>@drawable/tech_exhibition</item>
-        <item>@drawable/comingsoon</item>
+        <item>@drawable/exhibitionposter</item>
+        <item>@drawable/conclave</item>
     </integer-array>
 
     <string-array name="array_expo_organizers">
-        <item>Priyansh Singh Rao(School)\n Amit Priyankar(College)</item>
+        <item>Priyansh Singh Rao\nAmit Priyankar</item>
         <item>Piyush Chauhan</item>
     </string-array>
 
@@ -808,9 +808,9 @@
 
 
     <integer-array name="array_robotics_event_images">
+        <item>@drawable/drone</item>
         <item>@drawable/comingsoon</item>
-        <item>@drawable/comingsoon</item>
-        <item>@drawable/comingsoon</item>
+        <item>@drawable/roborace</item>
         <item>@drawable/comingsoon</item>
     </integer-array>
 
@@ -868,13 +868,13 @@
         <item>-1</item>
     </string-array>
     <integer-array name="array_quizwiz_event_images">
-        <item>@drawable/astro_particle_voyage</item>
-        <item>@drawable/electro_exquizite</item>
+        <item>@drawable/astro</item>
+        <item>@drawable/electro</item>
     </integer-array>
 
     <string-array name="array_quizwiz_organizers">
-        <item>Aftab Mohideen\n Arya Das</item>
-        <item>Manoj Kumar\n Aditya Ranjan</item>
+        <item>Aftab Mohideen\nArya Das</item>
+        <item>Manoj Kumar\nAditya Ranjan</item>
     </string-array>
 
     <string-array name="array_quizwiz_contacts">
@@ -920,9 +920,9 @@
         <item>-1</item>
     </string-array>
     <integer-array name="array_management_event_images">
-        <item>@drawable/ipl_auction</item>
-        <item>@drawable/stockmart</item>
-        <item>@drawable/monopoly</item>
+        <item>@drawable/iplauction</item>
+        <item>@drawable/stockmart1</item>
+        <item>@drawable/pitching</item>
     </integer-array>
     <string-array name="array_management_organizers">
         <item>Niranjan\n Sahil</item>
@@ -1079,7 +1079,6 @@
     <!--<item>Text 5</item>-->
     <!--<item>Text 6</item>-->
     <!--</string-array>-->
-
     <!--&lt;!&ndash;Image ID array&ndash;&gt;-->
     <!--<string-array name="array_day1_event_image">-->
     <!--<item>@mipmap/ic_launcher_round</item>-->
@@ -1089,7 +1088,6 @@
     <!--<item>@drawable/ic_home_white_24dp</item>-->
     <!--<item>@drawable/ic_home_white_24dp</item>-->
     <!--</string-array>-->
-
     <!--Location Array-->
     <string-array name="array_day1_event_location">
         <item>Senate Hall</item>
@@ -1109,7 +1107,6 @@
         <item>R 304, R 305</item>
         <item>Boys\' Hostel - Front Side</item>
     </string-array>
-
     <!--Date Array-->
     <string-array name="array_day1_event_dates">
         <item>07–10–2017</item>
@@ -1129,7 +1126,6 @@
         <item>07–10–2017</item>
         <item>07–10–2017</item>
     </string-array>
-
     <!--Time Array-->
     <string-array name="array_day1_event_time">
         <item>9am to 11am</item>
@@ -1149,7 +1145,6 @@
         <item>5pm to 8pm</item>
         <item>9pm to 11pm</item>
     </string-array>
-
     <string-array name="array_day2_event_header">
         <item>Spageridge</item>
         <item>Adhyayan Video Recording</item>
@@ -1168,7 +1163,6 @@
         <item>Closing Ceremony</item>
         <item>Stockmart</item>
     </string-array>
-
     <!--Location Array-->
     <string-array name="array_day2_event_location">
         <item>R 102</item>
@@ -1188,7 +1182,6 @@
         <item>Senate Hall</item>
         <item>Online</item>
     </string-array>
-
     <!--Date Array-->
     <string-array name="array_day2_event_dates">
         <item>08–10–2017</item>
@@ -1208,7 +1201,6 @@
         <item>08–10–2017</item>
         <item>08–10–2017</item>
     </string-array>
-
     <!--Time Array-->
     <string-array name="array_day2_event_time">
         <item>8am to 5pm</item>
@@ -1228,44 +1220,34 @@
         <item>7pm to 9pm</item>
         <item>10pm to 12am</item>
     </string-array>
-
     <!--Debate events-->
     <string-array name="array_debate_event_headers">
         <item>Parliamentary Debate</item>
     </string-array>
-
     <string-array name="array_debate_event_text">
         <item>Do you want to explicit your philosophy, your feelings about any political issues raised in this world. From simple Government policy to as much as controversial as Section 377. Here we present Parliamentary Debate in a different avtar where you could explore yourself by learning U.S. legislation and expressing yourself by raising your opinion instead of your voice about the political issues and agendas</item>
     </string-array>
-
     <string-array name="array_debate_event_rules">
         <item>-1</item>
     </string-array>
-
     <string-array name="array_debate_event_venue">
         <item>-1</item>
     </string-array>
-
     <string-array name="array_debate_event_date_time">
         <item>-1</item>
     </string-array>
-
     <string-array name="array_debate_organizers">
         <item>Priyansh Singh Rao \n Vibhor Upadhyaya</item>
     </string-array>
-
     <integer-array name="array_debate_event_images">
-        <item>@drawable/parliamentary_debatenew</item>
+        <item>@drawable/pdebate</item>
     </integer-array>
-
     <string-array name="array_debate_contacts">
         <item> - 9511593732\n - 7738923336</item>
     </string-array>
-
     <string-array name="array_debate_links">
         <item>https://celesta.org.in/event_.php?eveID=10502</item>
     </string-array>
-
     <string-array name="array_debate_rule_links">
         <item>https://docs.google.com/document/d/1ta1VQoYFuxksPEpGOdcIjsaeXBFl-4mKf0kI8NtX5eE/edit</item>
     </string-array>
@@ -1355,7 +1337,7 @@
     </string-array>
 
     <integer-array name="array_design_event_images">
-        <item>@drawable/cad_mastro</item>
+        <item>@drawable/cad</item>
     </integer-array>
     <string-array name="array_design_contacts">
         <item> - 7261038443\n - 9102703654</item>
@@ -1405,13 +1387,13 @@
     <string-array name="array_buildit_organizers">
         <item>BANSAL KUMAR\nAMAN DEEP</item>
         <item>Amandeep</item>
-        <item>Vivek Garg \n Yashwanth \n Saurodeep</item>
+        <item>Vivek Garg\nYashwanth\nSaurodeep</item>
     </string-array>
 
     <integer-array name="array_buildit_event_images">
-        <item>@drawable/aqua_soccer</item>
-        <item>@drawable/robowars</item>
-        <item>@drawable/chem_e_switch</item>
+        <item>@drawable/aquasoccer</item>
+        <item>@drawable/robowars1</item>
+        <item>@drawable/chemeswitch</item>
     </integer-array>
     <string-array name="array_buildit_contacts">
         <item> - 9631650805\n - 7568932715\n</item>

@@ -26,12 +26,12 @@
                 android:id="@+id/event_info_imageview"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 android:src="@drawable/expo"
                 android:tint="#11000000"
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.9"
-                tools:src="@drawable/ipl_auction"
+                tools:src="@drawable/iplauction"
                 android:contentDescription="@string/ipl_auction_image"
                 />
             <FrameLayout
