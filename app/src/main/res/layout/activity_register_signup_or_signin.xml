@@ -4,7 +4,7 @@
     android:id="@+id/signedIn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimaryDark"
+    android:background="@drawable/about_background"
     android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
                     android:id="@+id/layoutTop"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/cardBackgroundEvents">
+                    >
 
                 </RelativeLayout>
 
@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_below="@id/layoutTop"
-                    android:background="@color/colorPrimaryDark">
+                    >
 
                 </RelativeLayout>
                 <!--Circle including the initial name -->
@@ -196,7 +196,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/njath_cpt"
+                    android:text="@string/fetch_msg"
                     android:textColor="#fff"
                     android:textAlignment="center"
                     android:textSize="20sp" />
@@ -232,7 +232,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:textAlignment="center"
-                    android:text="@string/njath_cpt"
+                    android:text="@string/fetch_msg"
                     android:textColor="#fff"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:textAlignment="center"
-                    android:text="@string/njath_cpt"
+                    android:text="@string/fetch_msg"
                     android:textColor="#fff"
                     android:textSize="20sp" />
             </LinearLayout>

@@ -148,8 +148,23 @@
                     android:drawablePadding="8dp"
                     android:textColor="@color/colorPrimaryLight"/>
             </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/caid_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/caid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_group_white_24dp"
+                    android:hint="@string/caid"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:drawableTint="@color/colorSignIn"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/colorPrimaryLight"/>
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
-
         <Button
             android:id="@+id/button_register"
             android:layout_width="wrap_content"
@@ -158,5 +173,6 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/colorSponsors"
             android:text="@string/register_button" />
+
     </LinearLayout>
 </ScrollView>
