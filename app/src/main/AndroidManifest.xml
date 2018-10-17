@@ -154,13 +154,6 @@
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
-            android:name=".activities.SignInActivity"
-            android:label="@string/SignIn">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="in.org.celesta2k17.activities.MyProfile" />
-        </activity>
-        <activity
             android:name=".activities.RegisterActivity"
             android:label="@string/SignUp">
             <meta-data
