@@ -2,6 +2,7 @@ package in.org.celesta2k17.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         drawerLayout = findViewById(R.id.home);
         navigationView = findViewById(R.id.navigation_view);
-
+        MainActivity.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Window window = getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -121,8 +122,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         int tabIcons[] = {R.drawable.ic_home_white_24dp,
-                R.drawable.ic_stars_white_24dp,
-                R.drawable.ic_photo_library_white_24dp};
+                R.drawable.ic_stars_white_24dp};
 
         for (int i = 0; i < mPageFragmentAdapter.getCount(); i++)
             Objects.requireNonNull(tabLayout.getTabAt(i)).setIcon(tabIcons[i]);

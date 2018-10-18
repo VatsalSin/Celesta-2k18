@@ -6,7 +6,6 @@ import android.util.AttributeSet;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
-
 import java.lang.reflect.Field;
 
 /**

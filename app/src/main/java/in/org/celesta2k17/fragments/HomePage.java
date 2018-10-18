@@ -121,27 +121,7 @@ public class HomePage extends android.support.v4.app.Fragment {
 //            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
 //            startActivity(intent);
         });
-       /* sponsorsLinearLayout = rootView.findViewById(R.id.sponsors_menu_item);
-        sponsorsLinearLayout.setOnClickListener(view -> comingSoonToast.show());
 
-
-        teamLinearLayout = rootView.findViewById(R.id.team);
-        teamLinearLayout.setOnClickListener(v -> {
-            Intent intent = new Intent(rootView.getContext(), TeamActivity.class);
-            startActivity(intent);
-
-        });
-        socialLinearLayout= rootView.findViewById(R.id.social);
-        socialLinearLayout.setOnClickListener(v -> {
-            Intent intent= new Intent(rootView.getContext(), SocialActivity.class) ;
-            startActivity(intent);
-
-        faqLinearLayout = rootView.findViewById(R.id.faq);
-        faqLinearLayout.setOnClickListener(v -> {
-           Intent intent = new Intent(rootView.getContext() ,FaqActivity.class);
-           startActivity(intent);
-
-        });*/
 
         return rootView;
     }

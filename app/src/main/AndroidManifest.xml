@@ -33,6 +33,7 @@
         </activity>
         <activity
             android:name=".activities.EventsActivity"
+            android:screenOrientation="portrait"
             android:label="@string/events">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -41,6 +42,7 @@
         <activity
             android:name=".activities.ActivityPronite"
             android:label="@string/pronite"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -48,14 +50,16 @@
         </activity>
         <activity
             android:name=".activities.LecturesActivity"
-            android:label="@string/lectures">
+            android:label="@string/lectures"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.SponsorsActivity"
-            android:label="@string/sponsors">
+            android:label="@string/sponsors"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />
@@ -63,6 +67,7 @@
         <activity
             android:name=".activities.landwInfoActivity"
             android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
             >
 
             <meta-data
@@ -71,63 +76,63 @@
         </activity>
         <activity
             android:name=".activities.WorkshopsActivity"
-            android:label="@string/workshops">
+            android:label="@string/workshops"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.MyProfile"
-            android:label="@string/my_profile">
+            android:label="@string/my_profile"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.SocialActivity"
-            android:label="@string/social">
+            android:label="@string/social"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
         <activity
         android:name=".activities.FaqActivity"
-        android:label="@string/faq">
+        android:label="@string/faq"
+        android:screenOrientation="portrait">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".activities.MainActivity" />
     </activity>
-        <!-- <activity -->
-        <!-- android:name=".fragments.GalleryFragment" -->
-        <!-- android:label="@string/gallery"> -->
-        <!-- <meta-data -->
-        <!-- android:name="android.support.PARENT_ACTIVITY" -->
-        <!-- android:value=".activities.MainActivity" /> -->
-        <!-- </activity> -->
-
         <activity
             android:name=".activities.RoboticsEvents"
-            android:label="Robotics">
+            android:label="Robotics"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
             android:name=".activities.ExpoEvents"
-            android:label="Expo">
+            android:label="Expo"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
             android:name=".activities.DebateEvents"
-            android:label="Debate">
+            android:label="Debate"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
             android:name=".activities.BuildItEvents"
+            android:screenOrientation="portrait"
             android:label="Build It!!">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -135,6 +140,7 @@
         </activity>
         <activity
             android:name=".activities.DesignEvents"
+            android:screenOrientation="portrait"
             android:label="Design">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -142,6 +148,7 @@
         </activity>
         <activity
             android:name=".activities.SocialEvents"
+            android:screenOrientation="portrait"
             android:label="Social Events">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -149,6 +156,7 @@
         </activity>
         <activity
             android:name=".activities.AboutActivity"
+            android:screenOrientation="portrait"
             android:label="@string/about">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -156,21 +164,16 @@
         </activity>
         <activity
             android:name=".activities.TeamActivity"
+            android:screenOrientation="portrait"
             android:label="@string/team">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
-            android:name=".activities.SignInActivity"
-            android:label="@string/SignIn">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="in.org.celesta2k17.activities.MyProfile" />
-        </activity>
-        <activity
             android:name=".activities.RegisterActivity"
-            android:label="@string/SignUp">
+            android:label="@string/SignUp"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MyProfile" />
@@ -178,6 +181,7 @@
         <activity
             android:name=".activities.ScheduleActivity"
             android:label="@string/title_activity_schedule"
+            android:screenOrientation="portrait">
             android:parentActivityName=".activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -189,7 +193,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.DevelopersActivity"
-            android:parentActivityName=".activities.MainActivity">
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.MainActivity" />
@@ -204,27 +209,31 @@
         </activity>
         <activity
             android:name=".activities.CodingEvents"
-            android:label="Coding">
+            android:label="Coding"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
             android:name=".activities.PhotographyEvents"
-            android:label="Photography Events">
+            android:label="Photography Events"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
             android:name=".activities.TreasureHunt"
-            android:label="Treasure Hunt">
+            android:label="Treasure Hunt"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.org.celesta2k17.activities.EventsActivity" />
         </activity>
         <activity
             android:name=".activities.StoryWritingEvents"
+            android:screenOrientation="portrait">
             android:label="Story Writing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -232,6 +241,7 @@
         </activity>
         <activity
             android:name=".activities.QuizWizEvents"
+            android:screenOrientation="portrait">
             android:label="Quiz Wiz">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
