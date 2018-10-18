@@ -722,7 +722,7 @@
 
     <!--Expo Events-->
     <string-array name="array_expo_event_headers">
-        <item>School Exhibition</item>
+        <item>Exhibition</item>
         <item>Engineers Conclave</item>
     </string-array>
 
