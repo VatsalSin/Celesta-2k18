@@ -49,11 +49,12 @@
                             android:id="@+id/myProfile"
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
-                            card_view:cardElevation="20dp"
+                            app:cardElevation="24dp"
                             android:padding="0dp"
                             android:layout_margin="4dp"
                             app:cardBackgroundColor="@color/colorMyProfile"
                             android:onClick="toMyProfile"
+
                             >
                             <ImageView
                                 android:layout_width="60dp"
@@ -68,17 +69,18 @@
                                 android:layout_marginBottom="24dp"
                                 android:text="@string/my_profile"
                                 android:textColor="@color/white_transparent"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
                         </android.support.v7.widget.CardView>
                         <android.support.v7.widget.CardView
                             android:id="@+id/schedule"
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
-                            card_view:cardElevation="20dp"
+                            card_view:cardElevation="24dp"
                             android:padding="0dp"
                             android:layout_margin="4dp"
                             app:cardBackgroundColor="@color/colorSchedule"
+                            
                             >
                             <ImageView
                                 android:layout_width="60dp"
@@ -94,7 +96,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:text="@string/schedule"
                                 android:textColor="@color/white_transparent"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />.
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
@@ -114,7 +116,9 @@
                             android:layout_marginTop="4dp"
                             android:padding="0dp"
                             app:cardBackgroundColor="@color/colorEvents"
-                            card_view:cardElevation="20dp">
+                            card_view:cardElevation="24dp"
+
+                            >
 
                             <TextView
                                 android:layout_width="200dp"
@@ -125,8 +129,9 @@
                                 android:rotation="-90"
                                 android:text="@string/events"
                                 android:textColor="@color/white_transparent"
-                                android:textSize="60dp"
-                                android:textStyle="bold" />
+                                android:textSize="58sp"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="38dp"/>
                         </android.support.v7.widget.CardView>
 
                         <android.support.v7.widget.CardView
@@ -138,13 +143,14 @@
                             android:layout_marginTop="8dp"
                             android:padding="0dp"
                             app:cardBackgroundColor="@color/colorGallery"
-                            card_view:cardElevation="20dp">
+                            card_view:cardElevation="24dp"
+                            >
 
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:layout_gravity="left|top"
-                                android:layout_marginTop="18dp"
+                                android:layout_marginTop="28dp"
                                 android:src="@drawable/ic_monetization_on_white_24dp" />
 
                             <TextView
@@ -155,8 +161,9 @@
                                 android:layout_marginTop="2dp"
                                 android:text="@string/charity"
                                 android:textColor="@color/white_transparent"
-                                android:textSize="20dp"
-                                android:textStyle="bold" />
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="-9dp"/>
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
                 </LinearLayout>
@@ -164,13 +171,14 @@
                         android:id="@+id/pronites"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        card_view:cardElevation="20dp"
+                        card_view:cardElevation="24dp"
                         android:padding="0dp"
                         android:layout_marginLeft="4dp"
                         android:layout_marginRight="4dp"
                         android:layout_marginBottom="20dp"
                         android:layout_marginTop="6dp"
                         app:cardBackgroundColor="@color/colorSocial"
+
                         >
                         <ImageView
                             android:layout_width="60dp"
@@ -187,7 +195,7 @@
                             android:layout_marginLeft="140dp"
                             android:text="@string/pronite"
                             android:textColor="@color/white_transparent"
-                            android:textSize="38dp"
+                            android:textSize="38sp"
                             android:textStyle="bold" />
                     </android.support.v7.widget.CardView>
             </LinearLayout>
