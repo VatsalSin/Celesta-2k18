@@ -17,12 +17,10 @@
         <item>@drawable/grafi</item>
     </integer-array>
     <string-array name="array_event_headers">
-        <item>Lets Code!!</item>
-        <item>Robotics</item>
-        <item>Expo</item>
+        <item>Coding n Design</item>
+        <item>Special Robotics</item>
+        <item>Exhibition</item>
         <item>Build It!!</item>
-        <item>Debate</item>
-        <item>Design</item>
         <item>Non Tech</item>
         <item>Treasure Hunt</item>
         <item>Quiz-wiz</item>
@@ -156,9 +154,6 @@
         <item>The Chemical Engineering Club</item>
         <item>Not Just Another Computer Klub</item>
         <item>The Electrical Engineering Club</item>
-        <item>Society of Automobile Engineers</item>
-        <item>Association of Civil Engineers</item>
-        <item>Association of Civil Engineers</item>
     </string-array>
 
     <string-array name="array_event_intent">
@@ -166,8 +161,6 @@
         <item>in.org.celesta2k17.activities.RoboticsEvents</item>
         <item>in.org.celesta2k17.activities.ExpoEvents</item>
         <item>in.org.celesta2k17.activities.BuildItEvents</item>
-        <item>in.org.celesta2k17.activities.DebateEvents</item>
-        <item>in.org.celesta2k17.activities.DesignEvents</item>
         <item>in.org.celesta2k17.activities.PhotographyEvents</item>
         <item>in.org.celesta2k17.activities.TreasureHunt</item>
         <item>in.org.celesta2k17.activities.QuizWizEvents</item>
@@ -179,8 +172,6 @@
         <item>@drawable/robotics</item>
         <item>@drawable/expo</item>
         <item>@drawable/build_it</item>
-        <item>@drawable/debate</item>
-        <item>@drawable/design</item>
         <item>@drawable/photography</item>
         <item>@drawable/treasure_hunt</item>
         <item>@drawable/quiz_wiz</item>
@@ -516,6 +507,7 @@
 
     <!--nontech Events-->
     <string-array name="array_photography_event_headers">
+        <item>Parliamentary Debate</item>
         <item>FIFA-CSGO-DOTA2-PUBG</item>
         <item>Tech Photography</item>
         <item>Tech Sketching</item>
@@ -524,6 +516,7 @@
     </string-array>
 
     <string-array name="array_photography_event_text">
+        <item>Do you want to explicit your philosophy, your feelings about any political issues raised in this world. From simple Government policy to as much as controversial as Section 377. Here we present Parliamentary Debate in a different avtar where you could explore yourself by learning U.S. legislation and expressing yourself by raising your opinion instead of your voice about the political issues and agendas</item>
         <item>For every winner, a loser and for every triumph, a defeat. A story that doesn’t end on the pitch, a smoke that refuses to fade, the ancients that are yet to fall. The dust hasn’t settled yet, wounds still fresh, and the dying embers still flicker. We are once again at a new juncture, a chance for redemption, a chance to prove worthy, a chance to rise up once again and battle your way against all odds to promiseland. The time has come once again. Come be a part of this glorious battle and put your skills to test in FIFA, CSGO and DOTA2 and fight all the way to top. Show no mercy, make most of the moment, clutch it, score it, and be God-like!!!</item>
         <item>“Click!” The only prerequisite to be a photographer, is to be able to see the world differently. And while the camera lens offers you only a small and restricted view, it encompasses a thousand emotions and voices, that sing the tale of what lies beyond the entirety. Celesta presents Tech-Photography, where you have the camera, you have the view, and all you need to do is just find the right angle! Tech-Photography will have you scoping for the technical events running live in Celesta, and your best shot will be your best chance at winning the prize. The best pictures taken by you will be uploaded on Facebook where the viewers will have the chance to vote for their favorites. More the number of points on your post, more will be the chances of you emerging victorious! So what are you waiting for? Pack your gear, and let your Instagrammer spirit loose!</item>
         <item>Carve your brain in the papers plane!! An artist is the one who can sketch storm of emotions from stress, revolutions from war and peace from struggle. Your sketch can convey more than reality! and your shades can design the universe out of a single piece of paper. Celesta \'Tech-sketching\' brings in the opportunity to portrait the real artist in you.So pack your instruments and get ready to breath out your imagination and enliven the canvas!</item>
@@ -537,9 +530,11 @@
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_photography_event_date_time">
+        <item>-1</item>
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
@@ -553,9 +548,11 @@
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <integer-array name="array_photography_event_images">
+        <item>@drawable/pdebate</item>
         <item>@drawable/cspl</item>
         <item>@drawable/techphoto</item>
         <item>@drawable/techsketch</item>
@@ -564,6 +561,7 @@
     </integer-array>
 
     <string-array name="array_photography_organizers">
+        <item>Priyansh Singh Rao \nVibhor Upadhyaya</item>
         <item>Harshit Singh(FIFA)\nPranil(CSGO)\nAnshul Koshiyari(DOTA2)\nKshitij Jain(PUBG Mobile)</item>
         <item>Rakshit Maheshwari</item>
         <item>Rakshit Maheshwari</item>
@@ -572,6 +570,7 @@
     </string-array>
 
     <string-array name="array_photography_contacts">
+        <item> - 9511593732\n- 7738923336</item>
         <item>- 7355674747\n- 6201169731\n- 8356975835\n- 9131604185</item>
         <item>- 7355674747\n</item>
         <item>- 7355674747\n</item>
@@ -580,6 +579,7 @@
     </string-array>
 
     <string-array name="array_photography_links">
+        <item>Parliamentary Debate</item>
         <item>FIFA-CSGO-DOTA2-PUBG Mobile</item>
         <item>Tech Photography</item>
         <item>Tech Sketching</item>
@@ -588,6 +588,7 @@
     </string-array>
 
     <string-array name="array_photography_rule_links">
+        <item>https://docs.google.com/document/d/1ta1VQoYFuxksPEpGOdcIjsaeXBFl-4mKf0kI8NtX5eE/edit</item>
         <item>https://drive.google.com/open?id=15A0IKGJv5887PJFmf6B6veQgq13Lca3s</item>
         <item>-1</item>
         <item>-1</item>
@@ -682,42 +683,52 @@
     <!--Coding Events-->
     <string-array name="array_coding_event_headers">
         <item>BYTE RACE</item>
+        <item>CAD Maestro</item>
     </string-array>
 
     <string-array name="array_coding_event_text">
         <item>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. -- Rick Osborne \nByteRace provides thrilling challenge for the brilliant minds that have honed the art of problem solving. This competition presents challenges for you to show your exceptional coding skills. So if you get the adrenaline rush when you see a difficult problem, then this is definitely for you. Speed, Accuracy and Efficiency matters at last.</item>
+        <item>Think your designing skills are unmatched? Think that you can design better than others? Then here\'s a event to prove your claim. Celesta presents CAD Maestro, the design event wherein you will have to design a CAD drawing of proposed problem and send it to us. The best design wins! Problem statement will be released soon, please follow our Facebook page, Twitter handle, official website and app for further updates.</item>
     </string-array>
 
     <string-array name="array_coding_event_rules">
         <item>1. This is an online event and will be held on HackerEarth platform. \n2. This is an individual event and any form of violation of platform rules will lead to disqualification.\n3. Competition consists of 5 algorithmic puzzles to quench your thirst for the unsolvable. \n4. Participants can participate from their room or from the CC. They need to have a HackerEarth account. \n5. In case of any dispute, the decisions made by the organising committee will be considered final.</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_coding_event_date_time">
+        <item>-1</item>
         <item>-1</item>
     </string-array>
 
     <string-array name="array_coding_event_venue">
         <item>Online Event</item>
+        <item>Online Event</item>
     </string-array>
 
     <integer-array name="array_coding_event_images">
         <item>@drawable/byterace</item>
+        <item>@drawable/cad</item>
     </integer-array>
 
     <string-array name="array_coding_organizers">
         <item>Vatsal Singhal \nDiksha Bansal</item>
+        <item>Shivam\nRakesh Raushan\nPranav Shirke</item>
     </string-array>
 
     <string-array name="array_coding_contacts">
         <item> - 8585992062\n- 9304633963</item>
+        <item> - 7261038443\n- 9102703654</item>
     </string-array>
 
     <string-array name="array_coding_links">
         <item>Byte Race</item>
+        <item>CAD Maestro</item>
     </string-array>
 
     <string-array name="array_coding_rule_links">
-        <item>-1</item>
+        <item>https://docs.google.com/document/d/1fe1C1kQsbOeIPZCrtFZ4BWXkJ_fAqXejJBr8FAA0UNk/edit</item>
+        <item>https://drive.google.com/open?id=1VV7e56uwqawqIBAcq2cMU21Pn3oftg8D</item>
     </string-array>
 
     <!--Expo Events-->
@@ -809,9 +820,9 @@
 
     <integer-array name="array_robotics_event_images">
         <item>@drawable/drone</item>
-        <item>@drawable/comingsoon</item>
+        <item>@drawable/planerace</item>
         <item>@drawable/roborace</item>
-        <item>@drawable/comingsoon</item>
+        <item>@drawable/linefollower</item>
     </integer-array>
 
     <string-array name="array_robotics_organizers">
