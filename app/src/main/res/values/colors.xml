@@ -10,11 +10,11 @@
     <color name="colorPrimaryLight">#eeeeee</color>
     <color name="colorAccent">#9E9E9E</color>
 
-    <color name="primary">#785447</color>
-    <color name="primaryDark">#5B3F36</color>
+    <color name="primary">#1B202B</color>
+    <color name="primaryDark">#151519</color>
     <color name="colorMyProfile">#673AB7</color>
-    <color name="colorEvents">#3F51B5</color>
-    <color name="eventsStatusBar">#002984</color>
+    <color name="colorEvents">#1B202B</color>
+    <color name="eventsStatusBar">#151519</color>
     <color name="colorSchedule">#E91E63</color>
     <color name="colorDevelopers">#5c6bc0</color>
     <color name="colorTeam">#009688</color>

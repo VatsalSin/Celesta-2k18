@@ -45,7 +45,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"
-        android:contentDescription="@string/fb_icon" />
+        android:contentDescription="@string/fb_icon"
+        android:visibility="gone"/>
 
     <ImageView
         android:src="@drawable/linkedin"
@@ -57,7 +58,8 @@
         app:layout_constraintTop_toTopOf="@+id/first"
         app:layout_constraintBottom_toBottomOf="@+id/first"
         app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/linked_icon" />
+        android:contentDescription="@string/linked_icon"
+        android:visibility="gone"/>
 
     <ImageView
         android:src="@drawable/twitter"
@@ -69,7 +71,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/second"
         app:layout_constraintTop_toTopOf="@+id/second"
         app:layout_constraintVertical_bias="1.0"
-        android:contentDescription="@string/twitter_icon" />
+        android:contentDescription="@string/twitter_icon"
+        android:visibility="gone"/>
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
