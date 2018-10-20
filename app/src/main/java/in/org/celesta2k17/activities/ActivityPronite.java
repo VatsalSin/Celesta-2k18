@@ -32,7 +32,7 @@ public class ActivityPronite extends AppCompatActivity implements AppBarLayout.O
     private static final int ALPHA_ANIMATIONS_DURATION = 200;
     private boolean mIsTheTitleVisible = false;
     private boolean mIsTheTitleContainerVisible = true;
-
+    
     private LinearLayout mTitleContainer;
     private TextView mTitle;
     private AppBarLayout mAppBarLayout;

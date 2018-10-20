@@ -111,9 +111,9 @@ public class HomePage extends android.support.v4.app.Fragment {
 
          proniteLinearLayout = rootView.findViewById(R.id.pronites);
         proniteLinearLayout.setOnClickListener(v -> {
-                comingSoonToast.show();
-//            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
-//            startActivity(intent);
+//                comingSoonToast.show();
+            Intent intent = new Intent(rootView.getContext(), ActivityPronite.class);
+            startActivity(intent);
         });
         charityLinearLayout = rootView.findViewById(R.id.charity);
         charityLinearLayout.setOnClickListener(v -> {

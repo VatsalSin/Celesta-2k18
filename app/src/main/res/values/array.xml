@@ -2,6 +2,7 @@
 <resources>
     <integer-array name="array_home_slide_show">
         <item>@drawable/byterace</item>
+        <item>@drawable/background01</item>
         <item>@drawable/robowars1</item>
         <item>@drawable/stockmart1</item>
         <item>@drawable/staticrush</item>
@@ -9,12 +10,9 @@
         <item>@drawable/grafi</item>
     </integer-array>
     <integer-array name="array_pronite_slide_show">
-        <item>@drawable/byterace</item>
-        <item>@drawable/robowars1</item>
-        <item>@drawable/stockmart1</item>
-        <item>@drawable/staticrush</item>
-        <item>@drawable/electro</item>
-        <item>@drawable/grafi</item>
+        <item>@drawable/pro1</item>
+        <item>@drawable/pro2</item>
+        <item>@drawable/background01</item>
     </integer-array>
     <string-array name="array_event_headers">
         <item>Coding n Design</item>

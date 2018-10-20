@@ -59,10 +59,8 @@
                         android:textAppearance="@android:style/TextAppearance.Material.Headline"
                         android:textColor="@android:color/white"
                         android:textSize="30sp"
-                        tools:text="NJATH"
+                        tools:text="Pro-Night"
                         />
-
-
                 </LinearLayout>
             </FrameLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
@@ -78,6 +76,7 @@
 
         >
 
+
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,6 +89,17 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="20dp">
+
+                <Button
+                    android:id="@+id/registerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/event_date_time"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="7dp"
+                    android:padding="16dp"
+                    android:text="@string/register_button"
+                    android:textSize="16sp" />
                 <TextView
                     android:id="@+id/event_date_time"
                     android:layout_width="match_parent"
@@ -97,7 +107,7 @@
                     android:fontFamily="sans-serif-light"
                     android:textAppearance="@android:style/TextAppearance.Material.Headline"
                     android:textSize="20sp"
-                    tools:text="7th Aug, 10:30 pm" />
+                    tools:text="28th October 2018 6PM" />
 
                 <TextView
                     android:id="@+id/event_venue"
@@ -107,7 +117,7 @@
                     android:fontFamily="sans-serif-light"
                     android:textAppearance="@android:style/TextAppearance.Material.Headline"
                     android:textSize="20sp"
-                    tools:text="Tutorial Block - Room no. 107" />
+                    tools:text="MAIN ARENA IIT PATNA, BIHTA, PATNA" />
 
                 <TextView
                     android:id="@+id/event_info_textview"
@@ -118,7 +128,7 @@
                     android:fontFamily="sans-serif-light"
                     android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                     android:textIsSelectable="true"
-                    tools:text="Lorem ipsum dolor sit amet untes gungslla goog oo gaa lossly roemsid dsfaks slal skdlfkan" />
+                    tools:text="@string/proniteinfo" />
 
                 <TextView
                     android:id="@+id/rules_header"
@@ -126,10 +136,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/event_info_textview"
                     android:layout_marginTop="16dp"
-                    android:text="@string/rules_and_regulations"
+                    android:text=""
                     android:textAppearance="@android:style/TextAppearance.Material.Headline"
                     android:textSize="20sp"
-                    android:transitionName="event_text_header_transition" />
+                    android:transitionName="" />
 
                 <TextView
                     android:id="@+id/event_rules_textview"
@@ -139,7 +149,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="sans-serif-light"
                     android:textAppearance="@android:style/TextAppearance.Holo.Medium"
-                    tools:text="Lorem ipsum dolor sit amet untes gungslla goog oo gaa lossly roemsid dsfaks slal skdlfkan" />
+                    tools:text="@string/pronite2" />
 
                 <TextView
                     android:id="@+id/event_organizers_header"
@@ -147,10 +157,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/event_rules_textview"
                     android:layout_marginTop="16dp"
-                    android:text="@string/event_organizers"
+                    android:text=""
                     android:textAppearance="@android:style/TextAppearance.Material.Headline"
                     android:textSize="20sp"
-                    android:transitionName="event_text_header_transition" />
+                    android:transitionName="" />
 
                 <TextView
                     android:id="@+id/event_organizers"
@@ -172,7 +182,7 @@
                     android:textAppearance="@android:style/TextAppearance.Holo.Medium"
                     android:textColor="@color/colorDevelopers"
                     android:textIsSelectable="true"
-                    tools:text="9955539372" />
+                    tools:text="" />
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 
@@ -206,7 +216,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
                 android:gravity="center_vertical"
-                android:text="test"
+                android:text=""
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 />
@@ -228,16 +238,7 @@
         app:startToolbarPosition="2dp"
         app:startXPosition="2dp"
         />
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_share_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="8dp"
-        android:src="@drawable/ic_share_white_24dp"
-        app:backgroundTint="@android:color/holo_blue_light" />
+
 </android.support.design.widget.CoordinatorLayout>
 
     <!--<?xml version="1.0" encoding="utf-8"?>-->
