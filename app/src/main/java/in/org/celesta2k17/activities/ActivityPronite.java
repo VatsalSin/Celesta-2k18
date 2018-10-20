@@ -32,7 +32,7 @@ public class ActivityPronite extends AppCompatActivity implements AppBarLayout.O
     private static final int ALPHA_ANIMATIONS_DURATION = 200;
     private boolean mIsTheTitleVisible = false;
     private boolean mIsTheTitleContainerVisible = true;
-    
+
     private LinearLayout mTitleContainer;
     private TextView mTitle;
     private AppBarLayout mAppBarLayout;
@@ -88,20 +88,20 @@ public class ActivityPronite extends AppCompatActivity implements AppBarLayout.O
         });
         /*Adding automatic swap to the images
          * */
-        FloatingActionButton fab = findViewById(R.id.fab_share_event);
-        fab.setOnClickListener(view -> {
-            Resources resources = getResources();
-            String shareString = "temp";
-            // resources.getText(R.string.share_message) + "\n"
-//                        + resources.getText(R.string.name) + ": " + header + "\n"
-//                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
-//                        + finalText;
-            Intent shareIntent = new Intent();
-            shareIntent.setAction(Intent.ACTION_SEND);
-            shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
-            shareIntent.setType("text/plain");
-            startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab_share_event);
+//        fab.setOnClickListener(view -> {
+//            Resources resources = getResources();
+//            String shareString = "temp";
+//            // resources.getText(R.string.share_message) + "\n"
+////                        + resources.getText(R.string.name) + ": " + header + "\n"
+////                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
+////                        + finalText;
+//            Intent shareIntent = new Intent();
+//            shareIntent.setAction(Intent.ACTION_SEND);
+//            shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
+//            shareIntent.setType("text/plain");
+//            startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
+//        });
         final Handler handler = new Handler();
         final Runnable Update = () -> {
             if (currentPage == NUM_PAGES) {
