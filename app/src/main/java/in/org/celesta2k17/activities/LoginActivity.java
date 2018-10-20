@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         //load a very big image and resize it, so it fits our needs
         Glide.with(this)
                 .asBitmap()
-                .load(R.drawable.busy)
+                .load(R.drawable.busy2)
                 .apply(new RequestOptions().override(screenSize[0]*2,screenSize[1])
                         .diskCacheStrategy(DiskCacheStrategy.ALL))
                 .into(new ImageViewTarget<Bitmap>(background) {
