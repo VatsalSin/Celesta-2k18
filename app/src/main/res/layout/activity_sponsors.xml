@@ -333,9 +333,19 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/chicken" />
 
-
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Foodies"
+            android:textSize="28sp"
+            android:textColor="@color/colorPrimaryLight"
+            android:gravity="center"
+            android:layout_marginBottom="14dp"
+        />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -605,6 +615,22 @@
                 android:src="@drawable/knowafest" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/tbn" />
+
+        </LinearLayout>
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -619,16 +645,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
-            <ImageView
+            <TextView
                 android:id="@+id/blog_adda1"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/blogadda2" />
+                android:text="IMAX Studios"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimaryLight"
+                android:gravity="center"
+                 />
 
         </LinearLayout>
 
