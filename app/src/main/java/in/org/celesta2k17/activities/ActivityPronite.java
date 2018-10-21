@@ -2,6 +2,7 @@ package in.org.celesta2k17.activities;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -14,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.AlphaAnimation;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -88,20 +90,20 @@ public class ActivityPronite extends AppCompatActivity implements AppBarLayout.O
         });
         /*Adding automatic swap to the images
          * */
-        FloatingActionButton fab = findViewById(R.id.fab_share_event);
-        fab.setOnClickListener(view -> {
-            Resources resources = getResources();
-            String shareString = "temp";
-            // resources.getText(R.string.share_message) + "\n"
-//                        + resources.getText(R.string.name) + ": " + header + "\n"
-//                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
-//                        + finalText;
-            Intent shareIntent = new Intent();
-            shareIntent.setAction(Intent.ACTION_SEND);
-            shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
-            shareIntent.setType("text/plain");
-            startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab_share_event);
+//        fab.setOnClickListener(view -> {
+//            Resources resources = getResources();
+//            String shareString = "temp";
+//            // resources.getText(R.string.share_message) + "\n"
+////                        + resources.getText(R.string.name) + ": " + header + "\n"
+////                        + resources.getText(R.string.date_time) + ": " + (dateTime.equals("-1") ? "Keep checking the app and website for updates." : dateTime) + "\n"
+////                        + finalText;
+//            Intent shareIntent = new Intent();
+//            shareIntent.setAction(Intent.ACTION_SEND);
+//            shareIntent.putExtra(Intent.EXTRA_TEXT, shareString);
+//            shareIntent.setType("text/plain");
+//            startActivity(Intent.createChooser(shareIntent, resources.getText(R.string.share_to)));
+//        });
         final Handler handler = new Handler();
         final Runnable Update = () -> {
             if (currentPage == NUM_PAGES) {
@@ -109,6 +111,14 @@ public class ActivityPronite extends AppCompatActivity implements AppBarLayout.O
             }
             viewPagerCustomDuration.setCurrentItem(currentPage++, true);
         };
+        Button registerButton = (Button)findViewById(R.id.registerpro);
+        registerButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.thecollegefever.com/events/celesta-2018-yEYo3DFhwl"));
+                startActivity(myIntent);
+            }
+        });
 
         timer = new Timer(); // This will create a new Thread
         timer.schedule(new TimerTask() { // task to be scheduled
@@ -118,6 +128,7 @@ public class ActivityPronite extends AppCompatActivity implements AppBarLayout.O
                 handler.post(Update);
             }
         }, DELAY_MS, PERIOD_MS);
+
 
     }
 
