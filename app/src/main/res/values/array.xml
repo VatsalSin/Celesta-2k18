@@ -785,6 +785,7 @@
         <item>Flight To Future</item>
         <item>Roborace</item>
         <item>Line Follower</item>
+        <item>Robowars (School)_</item>
     </string-array>
 
     <string-array name="array_robotics_event_text">
@@ -792,9 +793,11 @@
         <item>Problem statement: \nParticipants have to design a RC Plane that can Take off and land at the specified areas. It could be a electric plane or engine powered plane. PNP RC planes are allowed, and we are expecting to see a great flying skill by you.\nWinning amount worth Rs. 20,000</item>
         <item>To Be Updated</item>
         <item>Problem statement : \nThe challenge of the competition is to make a robot that can move on black lines on a white background and reach the finish as soon as possible. The competition area has is a special place defined for the robot\'s operation (hereafter COMPETITION FIELD). The participants must create an autonomous vehicle (hereafter ROBOT), that will move on the COMPETITION FIELD and do certain tasks. The ROBOT which will start on the START tile and reach the FINISH tile block by following the black lines in the shortest time will be nominated the winner.</item>
+         <item>This is the most popular event of IIT Patna. After feeling the adrenaline rush of Death-Race, it’s time to show the power of your bot and your strategy in the battlefield. This event will test the co-ordination between speed, power and strategy.\nFor more details see rules below</item>
     </string-array>
 
     <string-array name="array_robotics_event_rules">
+        <item>-1</item>
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
@@ -806,9 +809,11 @@
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_robotics_event_venue">
+        <item>-1</item>
         <item>-1</item>
         <item>-1</item>
         <item>-1</item>
@@ -821,9 +826,11 @@
         <item>@drawable/planerace</item>
         <item>@drawable/roborace</item>
         <item>@drawable/linefollower</item>
+        <item>@drawable/robowars1</item>
     </integer-array>
 
     <string-array name="array_robotics_organizers">
+        <item>Vivekanand Prasad</item>
         <item>Vivekanand Prasad</item>
         <item>Vivekanand Prasad</item>
         <item>Vivekanand Prasad</item>
@@ -835,19 +842,22 @@
         <item>- 8568985531</item>
         <item>- 8568985531</item>
         <item>- 8568985531</item>
+        <item>- 8568985531</item>
     </string-array>
     <string-array name="array_robotics_links">
         <item>Drone Tussle</item>
         <item>Flight to Future</item>
         <item>Roborace</item>
         <item>Line Follower</item>
+        <item>Robowars</item>
     </string-array>
 
     <string-array name="array_robotics_rule_links">
         <item>https://drive.google.com/file/d/1pkKIwPLcuB2hx6LVwYJNe8JVa6NmaeK1/view?usp=sharing</item>
         <item>https://docs.google.com/document/d/1KWrPz_6JYh5DHG3FFzVvCIfWKCPjczWDrhtX9-GtjIg/edit?usp=sharing</item>
-        <item></item>
+        <item>https://celesta.org.in/event_.php?eveID=10703</item>
         <item>https://drive.google.com/file/d/1qaMxf9W3JDRv3YaiCZnkzZBdw8SOC-k9/view?usp=sharing</item>
+        <item>https://celesta.org.in/event_.php?eveID=10705</item>
     </string-array>
     <!-- Robotics end -->
 

@@ -99,33 +99,6 @@
             android:background="#96777777"
             android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="@string/beverage_sponsors"
-
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/coca_cola"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:padding="5dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/coca" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#96777777"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
             android:text="@string/event_sponsors"
             android:textColor="#FFF"
 
@@ -146,7 +119,32 @@
                 android:src="@drawable/icetl" />
 
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#96777777"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/beverage_sponsors"
 
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/coca_cola"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/coca" />
+        </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
