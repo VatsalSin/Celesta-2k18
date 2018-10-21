@@ -785,7 +785,7 @@
         <item>Flight To Future</item>
         <item>Roborace</item>
         <item>Line Follower</item>
-        <item>Robowars (School)_</item>
+        <item>Robowars (School)</item>
     </string-array>
 
     <string-array name="array_robotics_event_text">
