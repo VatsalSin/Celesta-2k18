@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.menu_item_lectures:
-                    Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(MainActivity.this, LecturesActivity.class));
+//                    Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, LecturesActivity.class));
                     break;
                 case R.id.menu_item_workshops:
-                    Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(MainActivity.this, WorkshopsActivity.class));
+//                    Toast.makeText(MainActivity.this, "Coming Soon!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, WorkshopsActivity.class));
                     break;
                 case R.id.menu_item_exhibitions:
                     startActivity(new Intent(MainActivity.this, ExpoEvents.class));

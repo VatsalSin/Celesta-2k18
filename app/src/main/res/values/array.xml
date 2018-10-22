@@ -26,9 +26,9 @@
     </string-array>
 
     <string-array name="array_lec_headers">
-        <item>Prof. Walter Lewtin</item>
-        <item>Prof. Walter Lewtin</item>
-        <item>Prof. Walter Lewtin</item>
+        <item>Rahul Singh</item>
+        <item>Ashish Jain</item>
+        <item>Hitesh Choudary</item>
     </string-array>
 
     <string-array name="array_lec_topics">
@@ -65,14 +65,14 @@
         <item>9989898999</item>
     </string-array>
     <string-array name="array_lec_intro">
-        <item>Prof at MIT and noble prize winner in physics</item>
-        <item>Prof at MIT and noble prize winner in physics</item>
-        <item>Prof at MIT and noble prize winner in physics</item>
+        <item>IAS officer, Secretary cum Appellate Authority (Information Technology), Finance and IT Dept., Government of Bihar</item>
+        <item>"Ashish, an Industrial Designer, studied at MIT Institute of Design is currently working at LVPEI Center for Innovation, L V Prasad Eye Institute Hyderabad. As much as he loves to create experience focused product solutions, his primary interest lies in designing processes to develop, problem specific and user centric solutions. Ashish and the LVPEI innovation team is currently involved in creating disruptive solutions in the domain of eye care focusing at scalable, accessible and equitable solutions."</item>
+        <item>Founder and CEO of LearnCodeOnline. Renowned expert in Cybersecurity, popular YouTuber with 250K+ subscribers</item>
     </string-array>
     <string-array name="array_lec_images">
-        <item>@drawable/parth</item>
-        <item>@drawable/parth</item>
-        <item>@drawable/parth</item>
+        <item>@drawable/rahulsingh</item>
+        <item>@drawable/ashish</item>
+        <item>@drawable/hitesh</item>
     </string-array>
     <string-array name="array_lec_description">
         <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics..Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics.</item>
@@ -81,62 +81,62 @@
     </string-array>
 
     <string-array name="array_workshop_headers">
-        <item>Prof. Walter Lewtin</item>
-        <item>Prof. Walter Lewtin</item>
-        <item>Prof. Walter Lewtin</item>
+        <item>Robotics and IoT</item>
+        <item>Automobiles and IC Engines</item>
+        <item>Digital Marketing</item>
     </string-array>
 
     <string-array name="array_workshop_topics">
-        <item>Modern physics and Astroparticles</item>
-        <item>Modern physics and Astroparticles</item>
-        <item>Modern physics and Astroparticles</item>
+        <item>Robotics and IoT</item>
+        <item>Automobiles and IC Engines</item>
+        <item>Digital Marketing</item>
     </string-array>
     <string-array name="array_workshop_organiser">
-        <item>mk yadav</item>
-        <item>mk yadav</item>
-        <item>mk yadav</item>
+        <item>Technophilia</item>
+        <item>Techtron Technologies</item>
+        <item>Click Perfect</item>
     </string-array>
     <string-array name="array_workshop_contacts">
-        <item>9989898999</item>
-        <item>9989898999</item>
-        <item>9989898999</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
     <string-array name="array_workshop_date">
-        <item>October 28 2018</item>
-        <item>October 28 2018</item>
-        <item>October 28 2018</item>
+        <item>3rd-4th November</item>
+        <item>17th-18th November</item>
+        <item>3rd-4th November</item>
     </string-array>
 
     <string-array name="array_workshop_time">
-        <item>October 28 2018</item>
-        <item>October 28 2018</item>
-        <item>October 28 2018</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
 
     <string-array name="array_workshop_venue">
-        <item>Senate Hall</item>
-        <item>Senate Hall</item>
-        <item>Senate Hall</item>
+        <item>IIT Patna</item>
+        <item>IIT Patna</item>
+        <item>IIT Patna</item>
     </string-array>
     <string-array name="array_lec_intent">
-        <item>in.org.celesta2k17.activities.CodingEvents</item>
-        <item>in.org.celesta2k17.activities.RoboticsEvents</item>
-        <item>in.org.celesta2k17.activities.ExpoEvents</item>
+        <item>https://in.linkedin.com/in/rahul-singh-688b7a3</item>
+        <item>https://www.linkedin.com/in/ashish-jain-42a93646/</item>
+        <item>https://www.hiteshchoudhary.com/</item>
     </string-array>
     <string-array name="array_workshop_intent">
-        <item>in.org.celesta2k17.activities.CodingEvents</item>
-        <item>in.org.celesta2k17.activities.RoboticsEvents</item>
-        <item>in.org.celesta2k17.activities.ExpoEvents</item>
+        <item>http://www.kyrion.in/download/workshop/Robotics-and-IOT.pdf</item>
+        <item>https://drive.google.com/file/d/1mHEnO4JYp2QLTLn0hVgMDNNZmJGcDLox/view?usp=sharing</item>
+        <item>https://www.slideshare.net/MohdshamsherKhan/digital-marketing-workshop-presentation-ppt-by-shamsher-khan</item>
     </string-array>
     <string-array name="array_workshop_intro">
-        <item>Prof at MIT and noble prize winner in physics</item>
-        <item>Prof at MIT and noble prize winner in physics</item>
-        <item>Prof at MIT and noble prize winner in physics</item>
+        <item>-1</item>
+        <item>-1</item>
+        <item>-1</item>
     </string-array>
     <string-array name="array_workshop_images">
-        <item>@drawable/parth</item>
-        <item>@drawable/parth</item>
-        <item>@drawable/parth</item>
+        <item>@drawable/whataftercollege</item>
+        <item>@drawable/whataftercollege</item>
+        <item>@drawable/whataftercollege</item>
     </string-array>
     <string-array name="array_workshop_description">
         <item>Prof at MIT and noble prize winner in physics.Prof at MIT and noble prize winner in physicsProf at MIT and noble prize winner in physics</item>
