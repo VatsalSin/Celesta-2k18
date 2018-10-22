@@ -58,7 +58,7 @@
                         android:textAppearance="@android:style/TextAppearance.Material.Headline"
                         android:textColor="@android:color/white"
                         android:textSize="30sp"
-                        android:text="Pro-Night"
+                        android:text="Pro-Nite"
                         />
                 </LinearLayout>
             </FrameLayout>
