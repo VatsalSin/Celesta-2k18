@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId "in.org.celesta2k17"
+        applicationId "in.org.celesta2k18"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 3
