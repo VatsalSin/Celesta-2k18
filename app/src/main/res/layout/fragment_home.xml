@@ -123,6 +123,7 @@
                                 android:layout_height="100dp"
                                 android:layout_gravity="center_horizontal|bottom"
                                 android:layout_marginBottom="70dp"
+                                android:layout_marginRight="30dp"
                                 android:paddingTop="0dp"
                                 android:rotation="-90"
                                 android:text="@string/events"
@@ -147,8 +148,8 @@
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
-                                android:layout_gravity="left|top"
-                                android:layout_marginTop="28dp"
+                                android:layout_gravity="left|center_vertical"
+                                android:layout_marginTop="0dp"
                                 android:src="@drawable/ic_monetization_on_white_24dp" />
 
                             <TextView
@@ -156,12 +157,12 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginLeft="56dp"
-                                android:layout_marginTop="2dp"
+                                android:layout_marginTop="10dp"
                                 android:text="@string/charity"
                                 android:textColor="@color/white_transparent"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:layout_marginBottom="-9dp"/>
+                                android:layout_marginBottom="9dp"/>
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
                 </LinearLayout>

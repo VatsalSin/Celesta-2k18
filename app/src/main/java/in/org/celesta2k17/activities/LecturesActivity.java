@@ -2,6 +2,7 @@ package in.org.celesta2k17.activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.content.ContextCompat;
@@ -14,14 +15,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.adapters.LecturesRecyclerViewAdapter;
 import in.org.celesta2k17.data.ClubsData;
 import in.org.celesta2k17.data.EventsData;
 import in.org.celesta2k17.data.lAndwData;
-
-
 import static in.org.celesta2k17.activities.landwInfoActivity.EXTRA_CONTACTS;
 import static in.org.celesta2k17.activities.landwInfoActivity.EXTRA_DATE;
 import static in.org.celesta2k17.activities.landwInfoActivity.EXTRA_DESCRIPTION;
@@ -60,23 +58,17 @@ public class LecturesActivity extends AppCompatActivity implements LecturesRecyc
                 resources.getStringArray(R.array.array_lec_description),
                 resources.getStringArray(R.array.array_lec_organiser),
                 resources.getStringArray(R.array.array_lec_contacts),
-                resources.obtainTypedArray(R.array.array_lec_images));
+                resources.obtainTypedArray(R.array.array_lec_images),
+                resources.getStringArray(R.array.array_lec_intent));
         recyclerView.setAdapter(lecturesRecyclerViewAdapter);
     }
 
     @Override
     public void onListClick(lAndwData landwData, View view) throws ClassNotFoundException {
-        Intent intentNew = new Intent(this, Class.forName("in.org.celesta2k17.activities.landwInfoActivity"));
-
-        intentNew.putExtra(EXTRA_HEADER, landwData.headers);
-        intentNew.putExtra(EXTRA_DESCRIPTION, landwData.description);
-        intentNew.putExtra(EXTRA_TIME, landwData.time);
-        intentNew.putExtra(EXTRA_DATE, landwData.date);
-        intentNew.putExtra(EXTRA_VENUE, landwData.venue);
-        intentNew.putExtra(EXTRA_IMAGE_ID, landwData.img);
-        intentNew.putExtra(EXTRA_ORGANIZERS, landwData.organiser);
-        intentNew.putExtra(EXTRA_CONTACTS, landwData.contacts);
-        startActivity(intentNew);
+//        Intent intentNew = new Intent(this, Class.forName("in.org.celesta2k17.activities.landwInfoActivity"));
+        Uri webpage = Uri.parse(landwData.intents);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(intent);
     }
 }
 

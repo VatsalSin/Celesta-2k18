@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import in.org.celesta2k17.R;
 import in.org.celesta2k17.data.lAndwData;
 
+import static android.view.View.GONE;
+
 public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<WorkshopsRecyclerViewAdapter.WorkshopsViewHolder> {
     private final ListCardClick mOnClickListener;
     ArrayList<lAndwData> dataList = new ArrayList<>();
@@ -25,11 +27,12 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
     String eventDescription[];
     String eventOrganiser[];
     String eventContacts[];
+    String eventIntents[];
     String eventTopic[];
     TypedArray images;
     Context context;
 
-    public WorkshopsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventTopic[] , String eventHeader[], String eventDate[], String eventTime[], String eventVenue[], String eventIntro[], String eventDescription[] , String eventOrganiser[],String eventContact[] ,TypedArray img) {
+    public WorkshopsRecyclerViewAdapter(Context context, ListCardClick listCardClick, String eventTopic[] , String eventHeader[], String eventDate[], String eventTime[], String eventVenue[], String eventIntro[], String eventDescription[] , String eventOrganiser[],String eventContact[] ,TypedArray img,String eventIntent[]) {
         this.eventHeader = eventHeader;
         this.eventDescription = eventDescription;
         this.eventDate = eventDate;
@@ -39,6 +42,7 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
         this.eventTopic= eventTopic;
         this.eventContacts = eventContact;
         this.eventOrganiser=eventOrganiser;
+        this.eventIntents=eventIntent;
         mOnClickListener = listCardClick;
         images = img;
         this.context = context;
@@ -56,14 +60,16 @@ public class WorkshopsRecyclerViewAdapter extends RecyclerView.Adapter<Workshops
 
     @Override
     public void onBindViewHolder(WorkshopsViewHolder holder, int position) {
-        lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],eventOrganiser[position],eventContacts[position],images.getResourceId(position, -1));
+        lAndwData clubsData = new lAndwData(eventHeader[position],eventDate[position],eventTime[position],eventVenue[position],eventIntro[position],eventDescription[position],eventTopic[position],eventOrganiser[position],eventContacts[position],images.getResourceId(position, -1),eventIntents[position]);
         dataList.add(clubsData);
         holder.textViewHeader.setText(eventHeader[position]);
         holder.textViewDate.setText("Date:- "+eventDate[position]);
         holder.textViewVenue.setText("Venue:- "+eventVenue[position]);
-        holder.textViewTime.setText("Time:- "+eventTime[position]);
-        holder.textViewTopic.setText("Topics:- "+eventTopic[position]);
-        holder.textViewIntro.setText("Takeaways:- "+eventIntro[position]);
+//        holder.textViewTime.setText("Time:- "+eventTime[position]);
+        holder.textViewTime.setVisibility(GONE);
+//        holder.textViewTopic.setText(eventTopic[position]);
+        holder.textViewTopic.setVisibility(GONE);
+        holder.textViewIntro.setText("Organised by "+eventOrganiser[position]);
         holder.imageView.setImageResource(images.getResourceId(position, -1));
     }
     @Override

@@ -2,6 +2,7 @@ package in.org.celesta2k17.activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.content.ContextCompat;
@@ -58,24 +59,17 @@ public class WorkshopsActivity extends AppCompatActivity implements WorkshopsRec
                 resources.getStringArray(R.array.array_workshop_description),
                 resources.getStringArray(R.array.array_workshop_organiser),
                 resources.getStringArray(R.array.array_workshop_contacts),
-                resources.obtainTypedArray(R.array.array_workshop_images));
+                resources.obtainTypedArray(R.array.array_workshop_images),
+                resources.getStringArray(R.array.array_workshop_intent));
         recyclerView.setAdapter(workshopsRecyclerViewAdapter);
     }
 
     @Override
     public void onListClick(lAndwData landwData, View view) throws ClassNotFoundException {
-        Intent intentNew = new Intent(this, Class.forName("in.org.celesta2k17.activities.landwInfoActivity"));
-
-
-        intentNew.putExtra(EXTRA_HEADER, landwData.headers);
-        intentNew.putExtra(EXTRA_DESCRIPTION, landwData.description);
-        intentNew.putExtra(EXTRA_TIME, landwData.time);
-        intentNew.putExtra(EXTRA_DATE, landwData.date);
-        intentNew.putExtra(EXTRA_VENUE, landwData.venue);
-        intentNew.putExtra(EXTRA_IMAGE_ID, landwData.img);
-        intentNew.putExtra(EXTRA_ORGANIZERS, landwData.organiser);
-        intentNew.putExtra(EXTRA_CONTACTS, landwData.contacts);
-        startActivity(intentNew);
+//        Intent intentNew = new Intent(this, Class.forName("in.org.celesta2k17.activities.landwInfoActivity"));
+        Uri webpage = Uri.parse(landwData.intents);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(intent);
     }
 }
 

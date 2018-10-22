@@ -42,7 +42,6 @@ public class landwInfoActivity extends AppCompatActivity implements AppBarLayout
             EXTRA_IMAGE_ID = "ImageId",
             EXTRA_ORGANIZERS = "Organizers",
             EXTRA_CONTACTS = "Contacts";
-
     @Override
     public void onLowMemory() {
         super.onLowMemory();
