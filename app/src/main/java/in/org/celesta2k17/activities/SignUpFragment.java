@@ -1,5 +1,4 @@
 package in.org.celesta2k17.activities;
-
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -25,7 +24,6 @@ import in.org.celesta2k17.R;
 import android.widget.Toast;
 
 public class SignUpFragment extends AuthFragment{
-
     @BindViews(value = {R.id.email_input_edit,
             R.id.password_input_edit,
             R.id.confirm_password_edit})
