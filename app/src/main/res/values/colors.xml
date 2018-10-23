@@ -10,6 +10,7 @@
     <color name="colorPrimaryLight">#eeeeee</color>
     <color name="colorAccent">#9E9E9E</color>
 
+    <color name="card">#41495b</color>
     <color name="primary">#1B202B</color>
     <color name="primaryDark">#151519</color>
     <color name="colorMyProfile">#673AB7</color>

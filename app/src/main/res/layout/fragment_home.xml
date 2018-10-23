@@ -22,7 +22,7 @@
                 android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="@color/colorSchedule"
                 >
-            <in.org.celesta2k17.listeners.ViewPagerCustomDuration
+            <in.org.celesta2k18.listeners.ViewPagerCustomDuration
                 android:id="@+id/events_pager"
                 android:layout_width="match_parent"
                 android:background="@color/colorPrimaryDark"

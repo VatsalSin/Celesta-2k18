@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context="in.org.celesta2k17.activities.WorkshopsActivity">
+    android:background="@color/card"
+    tools:context="in.org.celesta2k18.activities.WorkshopsActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_workshops"
