@@ -941,17 +941,17 @@
     <integer-array name="array_management_event_images">
         <item>@drawable/iplauction</item>
         <item>@drawable/stockmart1</item>
-        <item>@drawable/pitching</item>
+        <item>@drawable/pitching1</item>
     </integer-array>
     <string-array name="array_management_organizers">
         <item>Niranjan\nSahil</item>
         <item>Vrushank Verma\nBadrinath</item>
-        <item>Amandeep</item>
+        <item>Raghav Heda\nShristi</item>
     </string-array>
     <string-array name="array_management_contacts">
         <item>- 8686179888\n- 9523264162</item>
         <item>- 8297809999\n- 9949477376</item>
-        <item>- 7568932715</item>
+        <item>- 9685552535\n- 8299844493</item>
     </string-array>
     <string-array name="array_management_links">
         <item>IPL Auction</item>
