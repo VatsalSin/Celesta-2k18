@@ -16,19 +16,20 @@
 
     <View
         android:id="@+id/logo"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="@dimen/logo_size"
-        android:layout_height="@dimen/logo_size"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/email_input"
         style="@style/Widget.TextInputLayout"
-        android:layout_marginTop="12dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo">
@@ -57,17 +58,19 @@
 
     <TextView
         android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="@string/forgot_password"
         android:textColor="#FFF"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/caption"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+        app:layout_constraintTop_toBottomOf="@+id/password_input"
+        app:layout_constraintVertical_bias="0.122" />
 
 
     <in.org.celesta2k18.activities.VerticalTextView
